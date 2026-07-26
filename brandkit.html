@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama Ayoub — Brand Guidelines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0B0D10',
+                            dark: '#13161B',
+                            card: '#1A1D24',
+                            border: '#2A2D35',
+                            muted: '#6B7280',
+                            light: '#F3F4F6',
+                            white: '#FAFAFA',
+                            emerald: '#059669',
+                            'emerald-light': '#34D399',
+                            'emerald-dark': '#047857',
+                            'emerald-deep': '#064E3B',
+                            gold: '#D4A853',
+                            'gold-light': '#E8C97A',
+                            'gold-dark': '#B8903A',
+                            warm: '#F5F0E8',
+                            'warm-dark': '#E8DFD0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            .print-break { page-break-before: always; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .page { box-shadow: none !important; margin: 0 !important; border-radius: 0 !important; }
+        }
+
+        * { scrollbar-width: thin; scrollbar-color: #2A2D35 transparent; }
+
+        .logo-mark {
+            width: 56px; height: 56px;
+            border: 2.5px solid #059669;
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700; font-size: 28px; color: #059669;
+            position: relative;
+            letter-spacing: -1px;
+        }
+        .logo-mark::after {
+            content: '';
+            position: absolute; bottom: -4px; right: -4px;
+            width: 12px; height: 12px;
+            background: #D4A853;
+            border-radius: 3px;
+        }
+        .logo-mark-sm {
+            width: 40px; height: 40px;
+            border: 2px solid #059669;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700; font-size: 20px; color: #059669;
+            position: relative;
+        }
+        .logo-mark-sm::after {
+            content: '';
+            position: absolute; bottom: -3px; right: -3px;
+            width: 9px; height: 9px;
+            background: #D4A853;
+            border-radius: 2px;
+        }
+
+        .swatch { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .swatch:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+
+        .pattern-grid {
+            background-image:
+                linear-gradient(rgba(5,150,105,0.07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(5,150,105,0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .pattern-dots {
+            background-image: radial-gradient(rgba(5,150,105,0.12) 1px, transparent 1px);
+            background-size: 16px 16px;
+        }
+        .pattern-diagonal {
+            background-image: repeating-linear-gradient(
+                45deg, transparent, transparent 10px,
+                rgba(5,150,105,0.05) 10px, rgba(5,150,105,0.05) 11px
+            );
+        }
+        .pattern-cross {
+            background-image:
+                linear-gradient(45deg, rgba(212,168,83,0.06) 25%, transparent 25%, transparent 75%, rgba(212,168,83,0.06) 75%),
+                linear-gradient(45deg, rgba(212,168,83,0.06) 25%, transparent 25%, transparent 75%, rgba(212,168,83,0.06) 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #2A2D35, transparent);
+        }
+
+        .color-copy-toast {
+            position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(100px);
+            background: #1A1D24; color: #F3F4F6; padding: 0.75rem 1.5rem;
+            border-radius: 12px; border: 1px solid #2A2D35;
+            font-size: 14px; z-index: 1000; pointer-events: none;
+            transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.4s ease;
+            opacity: 0; box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .color-copy-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+        .typo-sample { line-height: 1.1; }
+
+        .usage-do { border-left: 3px solid #059669; }
+        .usage-dont { border-left: 3px solid #EF4444; }
+
+        .mockup-card {
+            transition: transform 0.5s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.5s ease;
+        }
+        .mockup-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .float-anim { animation: float 4s ease-in-out infinite; }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .shimmer-line {
+            background: linear-gradient(90deg, #1A1D24 25%, #2A2D35 50%, #1A1D24 75%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+
+        .toc-link {
+            transition: all 0.3s ease;
+            border-left: 2px solid transparent;
+        }
+        .toc-link:hover, .toc-link.active {
+            border-left-color: #059669;
+            color: #059669;
+            padding-left: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-brand-black text-brand-light font-sans antialiased">
+
+    <!-- Toast -->
+    <div id="toast" class="color-copy-toast">
+        <span class="iconify inline mr-2" data-icon="lucide:check-circle" style="color:#059669"></span>
+        <span id="toast-text">Copied!</span>
+    </div>
+
+    <!-- Floating Download Button -->
+    <button onclick="window.print()" class="no-print fixed bottom-6 right-6 z-50 bg-brand-emerald hover:bg-brand-emerald-dark text-white px-6 py-3.5 rounded-2xl flex items-center gap-3 shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-emerald-500/20 group">
+        <span class="iconify text-xl" data-icon="lucide:download"></span>
+        <span class="font-medium text-sm">Download PDF</span>
+    </button>
+
+    <!-- Side Navigation (Desktop) -->
+    <nav class="no-print hidden xl:flex fixed left-0 top-0 h-full w-64 bg-brand-dark/80 backdrop-blur-xl border-r border-brand-border flex-col py-8 px-4 z-40">
+        <div class="flex items-center gap-3 mb-10 px-2">
+            <div class="logo-mark-sm">U</div>
+            <div>
+                <div class="text-sm font-semibold text-brand-white">Usama Ayoub</div>
+                <div class="text-xs text-brand-muted">Brand Guidelines</div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-1 flex-1">
+            <a href="#cover" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Cover</a>
+            <a href="#philosophy" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Brand Philosophy</a>
+            <a href="#logo" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Logo System</a>
+            <a href="#colors" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Color Palette</a>
+            <a href="#typography" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Typography</a>
+            <a href="#patterns" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Patterns & Textures</a>
+            <a href="#components" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Components</a>
+            <a href="#photography" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Photography</a>
+            <a href="#applications" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Applications</a>
+            <a href="#dos-donts" class="toc-link py-2.5 px-3 text-sm text-brand-muted rounded-lg hover:bg-brand-card/50">Do's & Don'ts</a>
+        </div>
+        <div class="text-xs text-brand-muted/50 px-3">v1.0 — 2025</div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="xl:ml-64">
+
+        <!-- ==================== COVER ==================== -->
+        <section id="cover" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 pattern-grid"></div>
+            <div class="absolute top-1/4 -left-32 w-96 h-96 bg-brand-emerald/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 -right-32 w-80 h-80 bg-brand-gold/5 rounded-full blur-3xl"></div>
+            <div class="absolute top-20 right-20 w-2 h-2 bg-brand-emerald rounded-full float-anim opacity-60"></div>
+            <div class="absolute bottom-40 left-40 w-1.5 h-1.5 bg-brand-gold rounded-full float-anim opacity-40" style="animation-delay:1s"></div>
+            <div class="absolute top-1/2 right-1/3 w-1 h-1 bg-brand-emerald-light rounded-full float-anim opacity-30" style="animation-delay:2s"></div>
+
+            <div class="text-center relative z-10 px-6 fade-in">
+                <!-- Logo Mark Large -->
+                <div class="flex justify-center mb-10">
+                    <div class="w-28 h-28 border-[3px] border-brand-emerald rounded-[28px] flex items-center justify-center relative float-anim">
+                        <span class="font-serif font-bold text-6xl text-brand-emerald" style="letter-spacing:-2px">U</span>
+                        <div class="absolute -bottom-2 -right-2 w-7 h-7 bg-brand-gold rounded-md"></div>
+                    </div>
+                </div>
+
+                <div class="inline-flex items-center gap-2 bg-brand-card/60 backdrop-blur-sm border border-brand-border rounded-full px-5 py-2 mb-8">
+                    <div class="w-1.5 h-1.5 bg-brand-emerald rounded-full"></div>
+                    <span class="text-xs font-medium uppercase tracking-widest text-brand-muted">Brand Guidelines</span>
+                </div>
+
+                <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-brand-white mb-6 tracking-tight">
+                    Usama<br><span class="text-brand-emerald">Ayoub</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-brand-muted font-light max-w-xl mx-auto mb-12 leading-relaxed">
+                    A comprehensive guide to the visual identity,<br>voice, and design system of a personal brand.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-brand-muted">
+                    <div class="flex items-center gap-2">
+                        <span class="iconify" data-icon="lucide:calendar"></span>
+                        <span>Version 1.0 — June 2025</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="iconify" data-icon="lucide:lock"></span>
+                        <span>Confidential</span>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="mt-20 flex flex-col items-center gap-2 text-brand-muted/40">
+                    <span class="text-xs uppercase tracking-widest">Scroll</span>
+                    <div class="w-px h-10 bg-gradient-to-b from-brand-muted/30 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== BRAND PHILOSOPHY ==================== -->
+        <section id="philosophy" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">01</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-16 tracking-tight">Brand Philosophy</h2>
+
+                <div class="grid md:grid-cols-2 gap-12 mb-20">
+                    <div>
+                        <h3 class="text-lg font-semibold text-brand-white mb-4">Mission</h3>
+                        <p class="text-brand-muted leading-relaxed">
+                            To build a personal brand that reflects professionalism, expertise, and authenticity. Every touchpoint should communicate trust, innovation, and a commitment to excellence in every endeavor.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-brand-white mb-4">Vision</h3>
+                        <p class="text-brand-muted leading-relaxed">
+                            To become a recognized name associated with quality work, meaningful connections, and impactful contributions—both online and in every professional interaction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brand Values -->
+                <h3 class="text-lg font-semibold text-brand-white mb-8">Core Values</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-6 hover:border-brand-emerald/30 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-brand-emerald/10 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-emerald text-xl" data-icon="lucide:gem"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Integrity</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Honest, transparent, and consistent in every interaction and deliverable.</p>
+                    </div>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-6 hover:border-brand-emerald/30 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-brand-emerald/10 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-emerald text-xl" data-icon="lucide:lightbulb"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Innovation</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Embracing new ideas, technologies, and creative approaches to problem-solving.</p>
+                    </div>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-6 hover:border-brand-emerald/30 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-brand-emerald/10 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-emerald text-xl" data-icon="lucide:users"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Connection</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Building genuine relationships and fostering meaningful professional bonds.</p>
+                    </div>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-6 hover:border-brand-emerald/30 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-brand-emerald/10 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-emerald text-xl" data-icon="lucide:target"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Excellence</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Pursuing the highest quality in every output, no matter the scale.</p>
+                    </div>
+                </div>
+
+                <!-- Brand Voice -->
+                <div class="mt-16 bg-brand-card border border-brand-border rounded-2xl p-8">
+                    <h3 class="text-lg font-semibold text-brand-white mb-6">Brand Voice</h3>
+                    <div class="grid sm:grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-brand-gold mb-3 font-medium">Tone</div>
+                            <p class="text-sm text-brand-muted leading-relaxed">Professional yet approachable. Confident without arrogance. Warm and human.</p>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-brand-gold mb-3 font-medium">Language</div>
+                            <p class="text-sm text-brand-muted leading-relaxed">Clear, concise, and jargon-free when possible. Precise when technical terms are needed.</p>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-brand-gold mb-3 font-medium">Personality</div>
+                            <p class="text-sm text-brand-muted leading-relaxed">Thoughtful, curious, dependable. Someone you'd want on your team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== LOGO SYSTEM ==================== -->
+        <section id="logo" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">02</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Logo System</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">The logo is the cornerstone of the brand. It combines a distinctive monogram mark with clean typography, balanced by a signature gold accent element.</p>
+
+                <!-- Primary Logo -->
+                <div class="mb-20">
+                    <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Primary Logo — Dark Background</h3>
+                    <div class="bg-brand-dark border border-brand-border rounded-3xl p-12 md:p-20 flex flex-col items-center justify-center min-h-[300px]">
+                        <div class="flex items-center gap-5">
+                            <div class="logo-mark">U</div>
+                            <div>
+                                <div class="font-serif text-3xl md:text-4xl font-bold text-brand-white tracking-tight">Usama Ayoub</div>
+                                <div class="text-xs text-brand-muted tracking-widest uppercase mt-1">Personal Brand</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Light Background Version -->
+                <div class="mb-20">
+                    <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Primary Logo — Light Background</h3>
+                    <div class="bg-brand-warm rounded-3xl p-12 md:p-20 flex flex-col items-center justify-center min-h-[300px]">
+                        <div class="flex items-center gap-5">
+                            <div class="w-14 h-14 border-[2.5px] border-brand-emerald-dark rounded-[14px] flex items-center justify-center relative">
+                                <span class="font-serif font-bold text-[28px] text-brand-emerald-dark" style="letter-spacing:-1px">U</span>
+                                <div class="absolute -bottom-1 -right-1 w-3 h-3 bg-brand-gold-dark rounded-[3px]"></div>
+                            </div>
+                            <div>
+                                <div class="font-serif text-3xl md:text-4xl font-bold text-brand-black tracking-tight">Usama Ayoub</div>
+                                <div class="text-xs text-brand-muted tracking-widest uppercase mt-1">Personal Brand</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Variations -->
+                <div class="mb-20">
+                    <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Logo Variations</h3>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-brand-card border border-brand-border rounded-2xl p-8 flex flex-col items-center justify-center aspect-square">
+                            <div class="logo-mark mb-4">U</div>
+                            <span class="text-xs text-brand-muted">Mark Only</span>
+                        </div>
+                        <div class="bg-brand-card border border-brand-border rounded-2xl p-8 flex flex-col items-center justify-center aspect-square">
+                            <div class="logo-mark mb-4" style="border-color:#FAFAFA">
+                                <span style="color:#FAFAFA">U</span>
+                            </div>
+                            <span class="text-xs text-brand-muted">Mark — Reversed</span>
+                        </div>
+                        <div class="bg-brand-card border border-brand-border rounded-2xl p-8 flex flex-col items-center justify-center aspect-square">
+                            <div class="font-serif text-2xl font-bold text-brand-white tracking-tight">Usama Ayoub</div>
+                            <span class="text-xs text-brand-muted mt-3">Wordmark</span>
+                        </div>
+                        <div class="bg-brand-card border border-brand-border rounded-2xl p-8 flex flex-col items-center justify-center aspect-square">
+                            <div class="flex items-center gap-3">
+                                <div class="logo-mark-sm">U</div>
+                                <div class="font-serif text-lg font-bold text-brand-white">UA</div>
+                            </div>
+                            <span class="text-xs text-brand-muted mt-3">Abbreviated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clear Space -->
+                <div class="mb-20">
+                    <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Clear Space & Minimum Size</h3>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-10 flex flex-col items-center">
+                        <div class="relative mb-8">
+                            <div class="logo-mark" style="width:80px;height:80px;border-radius:20px;font-size:40px">U</div>
+                            <!-- Clear space indicators -->
+                            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-px h-4 border-l border-dashed border-brand-emerald/40"></div>
+                            <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-px h-4 border-l border-dashed border-brand-emerald/40"></div>
+                            <div class="absolute top-1/2 -left-4 -translate-y-1/2 w-4 h-px border-t border-dashed border-brand-emerald/40"></div>
+                            <div class="absolute top-1/2 -right-4 -translate-y-1/2 w-4 h-px border-t border-dashed border-brand-emerald/40"></div>
+                            <div class="absolute -top-7 left-1/2 -translate-x-1/2 text-[10px] text-brand-emerald/60">X</div>
+                            <div class="absolute -bottom-7 left-1/2 -translate-x-1/2 text-[10px] text-brand-emerald/60">X</div>
+                            <div class="absolute top-1/2 -left-8 -translate-y-1/2 text-[10px] text-brand-emerald/60">X</div>
+                            <div class="absolute top-1/2 -right-8 -translate-y-1/2 text-[10px] text-brand-emerald/60">X</div>
+                        </div>
+                        <p class="text-sm text-brand-muted text-center max-w-md">Maintain a minimum clear space of <strong class="text-brand-white">X</strong> (equal to the height of the gold accent square) around all sides of the logo.</p>
+                        <div class="mt-6 flex items-center gap-6 text-xs text-brand-muted">
+                            <span>Minimum size: <strong class="text-brand-white">24px</strong> (digital)</span>
+                            <span>Minimum size: <strong class="text-brand-white">8mm</strong> (print)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Construction -->
+                <div>
+                    <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Logo Construction</h3>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-8 md:p-12">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <div class="flex justify-center">
+                                <div class="relative">
+                                    <div class="w-40 h-40 border-2 border-brand-emerald/60 rounded-[32px] flex items-center justify-center">
+                                        <span class="font-serif font-bold text-7xl text-brand-emerald/80" style="letter-spacing:-3px">U</span>
+                                    </div>
+                                    <!-- Construction lines -->
+                                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-3 w-px h-6 bg-brand-gold/40"></div>
+                                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-3 w-px h-6 bg-brand-gold/40"></div>
+                                    <div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-3 w-6 h-px bg-brand-gold/40"></div>
+                                    <div class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-3 w-6 h-px bg-brand-gold/40"></div>
+                                    <div class="absolute -bottom-2 -right-2 w-7 h-7 bg-brand-gold/60 rounded-md"></div>
+                                    <div class="absolute -bottom-5 -right-5 text-[10px] text-brand-gold/60">Gold accent</div>
+                                </div>
+                            </div>
+                            <div class="space-y-4 text-sm text-brand-muted">
+                                <p><strong class="text-brand-white">Monogram:</strong> The letter "U" set in Playfair Display Bold, centered within a rounded square container.</p>
+                                <p><strong class="text-brand-white">Container:</strong> A rounded rectangle with a 14px border-radius (scaled proportionally). The border weight is 2.5px in Emerald.</p>
+                                <p><strong class="text-brand-white">Gold Accent:</strong> A small square positioned at the bottom-right corner, creating visual interest and breaking symmetry.</p>
+                                <p><strong class="text-brand-white">Proportions:</strong> The container maintains a 1:1 ratio. The letter fills approximately 60% of the container height.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== COLOR PALETTE ==================== -->
+        <section id="colors" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">03</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Color Palette</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">A refined palette built on deep neutrals, a signature emerald, and a warm gold accent. Designed for contrast, readability, and sophistication.</p>
+
+                <!-- Primary Colors -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Primary Colors</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
+                    <!-- Emerald -->
+                    <div class="swatch bg-brand-card border border-brand-border rounded-2xl overflow-hidden cursor-pointer" onclick="copyColor('#059669')">
+                        <div class="h-36 bg-brand-emerald flex items-end p-4">
+                            <span class="text-white/70 text-xs font-medium">PRIMARY</span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-sm font-semibold text-brand-white mb-1">Emerald</div>
+                            <div class="text-xs text-brand-muted font-mono">#059669</div>
+                            <div class="text-xs text-brand-muted mt-1">RGB 5, 150, 105</div>
+                            <div class="flex items-center gap-1 mt-3 text-[11px] text-brand-emerald">
+                                <span class="iconify" data-icon="lucide:copy"></span> Click to copy
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gold -->
+                    <div class="swatch bg-brand-card border border-brand-border rounded-2xl overflow-hidden cursor-pointer" onclick="copyColor('#D4A853')">
+                        <div class="h-36 bg-brand-gold flex items-end p-4">
+                            <span class="text-white/70 text-xs font-medium">ACCENT</span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-sm font-semibold text-brand-white mb-1">Gold</div>
+                            <div class="text-xs text-brand-muted font-mono">#D4A853</div>
+                            <div class="text-xs text-brand-muted mt-1">RGB 212, 168, 83</div>
+                            <div class="flex items-center gap-1 mt-3 text-[11px] text-brand-gold">
+                                <span class="iconify" data-icon="lucide:copy"></span> Click to copy
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Black -->
+                    <div class="swatch bg-brand-card border border-brand-border rounded-2xl overflow-hidden cursor-pointer" onclick="copyColor('#0B0D10')">
+                        <div class="h-36 bg-brand-black border-b border-brand-border flex items-end p-4">
+                            <span class="text-white/70 text-xs font-medium">BACKGROUND</span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-sm font-semibold text-brand-white mb-1">Deep Black</div>
+                            <div class="text-xs text-brand-muted font-mono">#0B0D10</div>
+                            <div class="text-xs text-brand-muted mt-1">RGB 11, 13, 16</div>
+                            <div class="flex items-center gap-1 mt-3 text-[11px] text-brand-muted">
+                                <span class="iconify" data-icon="lucide:copy"></span> Click to copy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extended Palette -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Extended Palette</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
+                    <div class="cursor-pointer" onclick="copyColor('#064E3B')">
+                        <div class="h-20 rounded-xl bg-brand-emerald-deep mb-2"></div>
+                        <div class="text-[11px] text-brand-muted font-mono">#064E3B</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#047857')">
+                        <div class="h-20 rounded-xl bg-brand-emerald-dark mb-2"></div>
+                        <div class="text-[11px] text-brand-muted font-mono">#047857</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#34D399')">
+                        <div class="h-20 rounded-xl bg-brand-emerald-light mb-2"></div>
+                        <div class="text-[11px] text-brand-muted font-mono">#34D399</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#B8903A')">
+                        <div class="h-20 rounded-xl bg-brand-gold-dark mb-2"></div>
+                        <div class="text-[11px] text-brand-muted font-mono">#B8903A</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#E8C97A')">
+                        <div class="h-20 rounded-xl bg-brand-gold-light mb-2"></div>
+                        <div class="text-[11px] text-brand-muted font-mono">#E8C97A</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#F5F0E8')">
+                        <div class="h-20 rounded-xl bg-brand-warm mb-2 border border-brand-border"></div>
+                        <div class="text-[11px] text-brand-muted font-mono">#F5F0E8</div>
+                    </div>
+                </div>
+
+                <!-- Neutral Scale -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Neutral Scale</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 mb-16">
+                    <div class="cursor-pointer" onclick="copyColor('#0B0D10')">
+                        <div class="h-16 rounded-lg bg-[#0B0D10] mb-2 border border-brand-border"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">950</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#13161B')">
+                        <div class="h-16 rounded-lg bg-[#13161B] mb-2 border border-brand-border"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">900</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#1A1D24')">
+                        <div class="h-16 rounded-lg bg-[#1A1D24] mb-2 border border-brand-border"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">800</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#2A2D35')">
+                        <div class="h-16 rounded-lg bg-[#2A2D35] mb-2 border border-brand-border"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">700</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#6B7280')">
+                        <div class="h-16 rounded-lg bg-[#6B7280] mb-2"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">500</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#9CA3AF')">
+                        <div class="h-16 rounded-lg bg-[#9CA3AF] mb-2"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">400</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#F3F4F6')">
+                        <div class="h-16 rounded-lg bg-[#F3F4F6] mb-2"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">200</div>
+                    </div>
+                    <div class="cursor-pointer" onclick="copyColor('#FAFAFA')">
+                        <div class="h-16 rounded-lg bg-[#FAFAFA] mb-2 border border-gray-200"></div>
+                        <div class="text-[10px] text-brand-muted font-mono text-center">50</div>
+                    </div>
+                </div>
+
+                <!-- Color Usage -->
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8">
+                    <h3 class="text-lg font-semibold text-brand-white mb-6">Color Usage Ratios</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-brand-muted">Neutrals (Backgrounds, Text)</span>
+                                <span class="text-brand-white font-medium">70%</span>
+                            </div>
+                            <div class="h-2 bg-brand-border rounded-full overflow-hidden">
+                                <div class="h-full bg-brand-muted rounded-full" style="width:70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-brand-muted">Emerald (Primary Actions, Highlights)</span>
+                                <span class="text-brand-white font-medium">20%</span>
+                            </div>
+                            <div class="h-2 bg-brand-border rounded-full overflow-hidden">
+                                <div class="h-full bg-brand-emerald rounded-full" style="width:20%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-brand-muted">Gold (Accents, Badges, CTAs)</span>
+                                <span class="text-brand-white font-medium">10%</span>
+                            </div>
+                            <div class="h-2 bg-brand-border rounded-full overflow-hidden">
+                                <div class="h-full bg-brand-gold rounded-full" style="width:10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== TYPOGRAPHY ==================== -->
+        <section id="typography" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">04</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Typography</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">Two typefaces create a balanced hierarchy: Playfair Display for headings (elegance and authority) and Inter for body text (clarity and readability).</p>
+
+                <!-- Type Specimens -->
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    <!-- Playfair Display -->
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-8">
+                        <div class="flex items-center justify-between mb-8">
+                            <div>
+                                <div class="text-sm font-semibold text-brand-white">Playfair Display</div>
+                                <div class="text-xs text-brand-muted">Headings & Display</div>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-widest text-brand-emerald bg-brand-emerald/10 px-3 py-1 rounded-full">Serif</span>
+                        </div>
+                        <div class="space-y-5 typo-sample">
+                            <div class="font-serif text-5xl font-bold text-brand-white">Aa</div>
+                            <div class="font-serif text-2xl font-bold text-brand-white">Heading One</div>
+                            <div class="font-serif text-xl font-semibold text-brand-white">Heading Two</div>
+                            <div class="font-serif text-lg font-medium text-brand-white">Heading Three</div>
+                            <div class="font-serif text-base italic text-brand-muted">Italic for emphasis and quotes</div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-brand-border grid grid-cols-3 gap-4 text-xs text-brand-muted">
+                            <div>
+                                <div class="font-medium text-brand-white mb-1">Weights</div>
+                                400, 500, 600, 700
+                            </div>
+                            <div>
+                                <div class="font-medium text-brand-white mb-1">Styles</div>
+                                Regular, Italic
+                            </div>
+                            <div>
+                                <div class="font-medium text-brand-white mb-1">Origin</div>
+                                Google Fonts
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inter -->
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-8">
+                        <div class="flex items-center justify-between mb-8">
+                            <div>
+                                <div class="text-sm font-semibold text-brand-white">Inter</div>
+                                <div class="text-xs text-brand-muted">Body & UI Text</div>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full">Sans-serif</span>
+                        </div>
+                        <div class="space-y-5 typo-sample">
+                            <div class="text-5xl font-bold text-brand-white">Aa</div>
+                            <div class="text-2xl font-bold text-brand-white">Heading One</div>
+                            <div class="text-xl font-semibold text-brand-white">Heading Two</div>
+                            <div class="text-lg font-medium text-brand-white">Heading Three</div>
+                            <div class="text-base text-brand-muted leading-relaxed">Body text for paragraphs, descriptions, and longer-form content with excellent readability at all sizes.</div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-brand-border grid grid-cols-3 gap-4 text-xs text-brand-muted">
+                            <div>
+                                <div class="font-medium text-brand-white mb-1">Weights</div>
+                                300, 400, 500, 600
+                            </div>
+                            <div>
+                                <div class="font-medium text-brand-white mb-1">Styles</div>
+                                Regular, Medium
+                            </div>
+                            <div>
+                                <div class="font-medium text-brand-white mb-1">Origin</div>
+                                Google Fonts
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Type Scale -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Type Scale</h3>
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden mb-16">
+                    <div class="divide-y divide-brand-border">
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">96px / 6rem</div>
+                            <div class="font-serif text-6xl font-bold text-brand-white tracking-tight leading-none">Display</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">48px / 3rem</div>
+                            <div class="font-serif text-4xl font-bold text-brand-white tracking-tight leading-none">H1 Heading</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">36px / 2.25rem</div>
+                            <div class="font-serif text-3xl font-semibold text-brand-white tracking-tight leading-none">H2 Heading</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">24px / 1.5rem</div>
+                            <div class="font-serif text-2xl font-medium text-brand-white leading-none">H3 Heading</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">18px / 1.125rem</div>
+                            <div class="text-lg font-medium text-brand-white leading-none">H4 Heading</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">16px / 1rem</div>
+                            <div class="text-base text-brand-light leading-none">Body Text</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">14px / 0.875rem</div>
+                            <div class="text-sm text-brand-muted leading-none">Small Text</div>
+                        </div>
+                        <div class="flex items-center px-6 py-5">
+                            <div class="w-32 text-xs text-brand-muted font-mono shrink-0">12px / 0.75rem</div>
+                            <div class="text-xs text-brand-muted uppercase tracking-widest font-medium leading-none">Caption / Label</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Font Pairing Example -->
+                <div class="bg-brand-dark border border-brand-border rounded-2xl p-8 md:p-12">
+                    <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Font Pairing in Context</h3>
+                    <div class="max-w-2xl">
+                        <div class="font-serif text-3xl font-bold text-brand-white mb-4 tracking-tight">Crafting Digital Experiences</div>
+                        <p class="text-base text-brand-muted leading-relaxed mb-4">
+                            The combination of Playfair Display's elegant serifs with Inter's clean geometry creates a sophisticated yet approachable feel. Headlines command attention while body text remains effortlessly readable.
+                        </p>
+                        <p class="text-sm text-brand-muted leading-relaxed">
+                            <span class="text-brand-emerald font-medium">Use serif for:</span> All headings, quotes, feature titles, and hero text.<br>
+                            <span class="text-brand-gold font-medium">Use sans-serif for:</span> Body text, UI labels, buttons, captions, and navigation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== PATTERNS & TEXTURES ==================== -->
+        <section id="patterns" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">05</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Patterns & Textures</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">Subtle background patterns add depth without distraction. Use at low opacity to maintain readability.</p>
+
+                <div class="grid sm:grid-cols-2 gap-6 mb-16">
+                    <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden">
+                        <div class="h-48 pattern-grid relative">
+                            <div class="absolute bottom-4 left-4 bg-brand-black/80 backdrop-blur-sm px-4 py-2 rounded-lg">
+                                <div class="text-xs font-medium text-brand-white">Grid Pattern</div>
+                                <div class="text-[10px] text-brand-muted">24px spacing · 7% opacity</div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-brand-muted font-mono mb-1">background-image: linear-gradient(...)</div>
+                            <div class="text-xs text-brand-muted">Use for: Section backgrounds, tech-themed layouts</div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden">
+                        <div class="h-48 pattern-dots relative">
+                            <div class="absolute bottom-4 left-4 bg-brand-black/80 backdrop-blur-sm px-4 py-2 rounded-lg">
+                                <div class="text-xs font-medium text-brand-white">Dot Pattern</div>
+                                <div class="text-[10px] text-brand-muted">16px spacing · 12% opacity</div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-brand-muted font-mono mb-1">background-image: radial-gradient(...)</div>
+                            <div class="text-xs text-brand-muted">Use for: Hero sections, feature backgrounds</div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden">
+                        <div class="h-48 pattern-diagonal relative">
+                            <div class="absolute bottom-4 left-4 bg-brand-black/80 backdrop-blur-sm px-4 py-2 rounded-lg">
+                                <div class="text-xs font-medium text-brand-white">Diagonal Lines</div>
+                                <div class="text-[10px] text-brand-muted">45° angle · 11px repeat · 5% opacity</div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-brand-muted font-mono mb-1">repeating-linear-gradient(45deg, ...)</div>
+                            <div class="text-xs text-brand-muted">Use for: Divider sections, subtle texture</div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden">
+                        <div class="h-48 pattern-cross relative">
+                            <div class="absolute bottom-4 left-4 bg-brand-black/80 backdrop-blur-sm px-4 py-2 rounded-lg">
+                                <div class="text-xs font-medium text-brand-white">Cross Pattern</div>
+                                <div class="text-[10px] text-brand-muted">20px repeat · Gold · 6% opacity</div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-brand-muted font-mono mb-1">background-image: linear-gradient(45deg, ...)</div>
+                            <div class="text-xs text-brand-muted">Use for: Premium sections, CTAs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gradient Combos -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Gradient Combinations</h3>
+                <div class="grid sm:grid-cols-3 gap-6">
+                    <div>
+                        <div class="h-32 rounded-2xl mb-3" style="background: linear-gradient(135deg, #059669, #047857)"></div>
+                        <div class="text-xs font-medium text-brand-white">Emerald Depth</div>
+                        <div class="text-[11px] text-brand-muted font-mono">#059669 → #047857</div>
+                    </div>
+                    <div>
+                        <div class="h-32 rounded-2xl mb-3" style="background: linear-gradient(135deg, #D4A853, #B8903A)"></div>
+                        <div class="text-xs font-medium text-brand-white">Gold Warmth</div>
+                        <div class="text-[11px] text-brand-muted font-mono">#D4A853 → #B8903A</div>
+                    </div>
+                    <div>
+                        <div class="h-32 rounded-2xl mb-3" style="background: linear-gradient(135deg, #0B0D10, #1A1D24)"></div>
+                        <div class="text-xs font-medium text-brand-white">Dark Surface</div>
+                        <div class="text-[11px] text-brand-muted font-mono">#0B0D10 → #1A1D24</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== COMPONENTS ==================== -->
+        <section id="components" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">06</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">UI Components</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">Reusable interface elements that maintain brand consistency across all digital touchpoints.</p>
+
+                <!-- Buttons -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Buttons</h3>
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8 mb-16">
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <button class="bg-brand-emerald hover:bg-brand-emerald-dark text-white text-sm font-medium px-6 py-3 rounded-xl transition-colors duration-300">Primary Button</button>
+                        <button class="bg-brand-gold hover:bg-brand-gold-dark text-brand-black text-sm font-medium px-6 py-3 rounded-xl transition-colors duration-300">Gold Button</button>
+                        <button class="border border-brand-border text-brand-white text-sm font-medium px-6 py-3 rounded-xl hover:border-brand-emerald/50 hover:text-brand-emerald transition-all duration-300">Outline Button</button>
+                        <button class="text-brand-emerald text-sm font-medium px-6 py-3 rounded-xl hover:bg-brand-emerald/10 transition-colors duration-300">Ghost Button</button>
+                    </div>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <button class="bg-brand-emerald hover:bg-brand-emerald-dark text-white text-xs font-medium px-4 py-2 rounded-lg transition-colors duration-300">Small</button>
+                        <button class="bg-brand-emerald hover:bg-brand-emerald-dark text-white text-sm font-medium px-6 py-3 rounded-xl transition-colors duration-300">Medium</button>
+                        <button class="bg-brand-emerald hover:bg-brand-emerald-dark text-white text-base font-medium px-8 py-4 rounded-2xl transition-colors duration-300">Large</button>
+                    </div>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <button class="bg-brand-emerald/20 text-brand-emerald-light text-sm font-medium px-6 py-3 rounded-xl cursor-not-allowed opacity-60">Disabled</button>
+                        <button class="bg-brand-emerald hover:bg-brand-emerald-dark text-white text-sm font-medium px-6 py-3 rounded-xl transition-all duration-300 flex items-center gap-2">
+                            <span class="iconify" data-icon="lucide:arrow-right"></span> With Icon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tags / Badges -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Tags & Badges</h3>
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8 mb-16">
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-brand-emerald/10 text-brand-emerald text-xs font-medium px-3 py-1.5 rounded-full">Emerald Tag</span>
+                        <span class="bg-brand-gold/10 text-brand-gold text-xs font-medium px-3 py-1.5 rounded-full">Gold Tag</span>
+                        <span class="bg-brand-card border border-brand-border text-brand-muted text-xs font-medium px-3 py-1.5 rounded-full">Neutral Tag</span>
+                        <span class="bg-brand-emerald text-white text-xs font-medium px-3 py-1.5 rounded-full">Solid Tag</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-brand-emerald/10 text-brand-emerald text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-md">Badge</span>
+                        <span class="bg-brand-gold/10 text-brand-gold text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-md">Premium</span>
+                        <span class="bg-red-500/10 text-red-400 text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-md">New</span>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Card Styles</h3>
+                <div class="grid sm:grid-cols-3 gap-6 mb-16">
+                    <div class="bg-brand-card border border-brand-border rounded-2xl p-6 hover:border-brand-emerald/30 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-brand-emerald/10 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-emerald" data-icon="lucide:layout"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Default Card</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Subtle border with hover accent. Used for features and content blocks.</p>
+                    </div>
+                    <div class="bg-brand-dark border border-brand-border rounded-2xl p-6 shadow-2xl">
+                        <div class="w-10 h-10 bg-brand-gold/10 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-gold" data-icon="lucide:star"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Elevated Card</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Darker background with shadow. Used for highlighted or featured content.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-brand-emerald/10 to-brand-card border border-brand-emerald/20 rounded-2xl p-6">
+                        <div class="w-10 h-10 bg-brand-emerald/20 rounded-xl flex items-center justify-center mb-4">
+                            <span class="iconify text-brand-emerald-light" data-icon="lucide:zap"></span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-brand-white mb-2">Accent Card</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Gradient tint with emerald border. Used for CTAs and key highlights.</p>
+                    </div>
+                </div>
+
+                <!-- Input Fields -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Form Elements</h3>
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8">
+                    <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="text-xs font-medium text-brand-muted uppercase tracking-wider mb-2 block">Name</label>
+                            <input type="text" placeholder="Enter your name" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-brand-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-emerald/50 transition-colors">
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium text-brand-muted uppercase tracking-wider mb-2 block">Email</label>
+                            <input type="email" placeholder="you@example.com" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-brand-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-emerald/50 transition-colors">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="text-xs font-medium text-brand-muted uppercase tracking-wider mb-2 block">Message</label>
+                        <textarea rows="3" placeholder="Your message..." class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-brand-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-emerald/50 transition-colors resize-none"></textarea>
+                    </div>
+                    <button class="bg-brand-emerald hover:bg-brand-emerald-dark text-white text-sm font-medium px-6 py-3 rounded-xl transition-colors duration-300">Send Message</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== PHOTOGRAPHY ==================== -->
+        <section id="photography" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">07</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Photography Direction</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">Images should feel authentic, professional, and purposeful. Avoid overly stock-like or artificial visuals.</p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
+                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/5]">
+                        <img src="https://picsum.photos/seed/office-professional/600/750.jpg" alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="bg-brand-emerald/20 text-brand-emerald-light text-[10px] uppercase tracking-widest font-medium px-2.5 py-1 rounded-md">Recommended</span>
+                            <div class="text-sm text-white mt-2 font-medium">Professional Setting</div>
+                        </div>
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/5]">
+                        <img src="https://picsum.photos/seed/clean-workspace/600/750.jpg" alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="bg-brand-emerald/20 text-brand-emerald-light text-[10px] uppercase tracking-widest font-medium px-2.5 py-1 rounded-md">Recommended</span>
+                            <div class="text-sm text-white mt-2 font-medium">Clean Workspace</div>
+                        </div>
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/5]">
+                        <img src="https://picsum.photos/seed/tech-minimal/600/750.jpg" alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="bg-brand-emerald/20 text-brand-emerald-light text-[10px] uppercase tracking-widest font-medium px-2.5 py-1 rounded-md">Recommended</span>
+                            <div class="text-sm text-white mt-2 font-medium">Minimal Tech</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Treatment -->
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8">
+                    <h3 class="text-lg font-semibold text-brand-white mb-6">Photo Treatment</h3>
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-sm font-medium text-brand-white mb-3">Color Treatment</h4>
+                            <ul class="space-y-2 text-sm text-brand-muted">
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-emerald mt-0.5 shrink-0" data-icon="lucide:check"></span>Slightly desaturated (10-15%)</li>
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-emerald mt-0.5 shrink-0" data-icon="lucide:check"></span>Lowered contrast for softness</li>
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-emerald mt-0.5 shrink-0" data-icon="lucide:check"></span>Subtle warm color temperature shift</li>
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-emerald mt-0.5 shrink-0" data-icon="lucide:check"></span>No heavy filters or dramatic effects</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-brand-white mb-3">Composition Rules</h4>
+                            <ul class="space-y-2 text-sm text-brand-muted">
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-gold mt-0.5 shrink-0" data-icon="lucide:check"></span>Negative space is essential</li>
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-gold mt-0.5 shrink-0" data-icon="lucide:check"></span>Natural lighting preferred</li>
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-gold mt-0.5 shrink-0" data-icon="lucide:check"></span>Shallow depth of field for focus</li>
+                                <li class="flex items-start gap-2"><span class="iconify text-brand-gold mt-0.5 shrink-0" data-icon="lucide:check"></span>Rule of thirds for placement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== APPLICATIONS ==================== -->
+        <section id="applications" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">08</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Brand Applications</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">Real-world applications demonstrating how the brand identity comes to life across different mediums.</p>
+
+                <!-- Business Card Mockup -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Business Card</h3>
+                <div class="grid sm:grid-cols-2 gap-8 mb-20">
+                    <div class="mockup-card bg-brand-black rounded-2xl p-8 aspect-[1.6/1] flex flex-col justify-between border border-brand-border relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-emerald/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+                        <div class="flex items-center gap-3">
+                            <div class="logo-mark-sm">U</div>
+                            <div class="font-serif text-lg font-bold text-brand-white">Usama Ayoub</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-brand-light mb-1">Professional Title</div>
+                            <div class="text-xs text-brand-muted">usama@example.com · linkedin.com/in/usama-ayoub</div>
+                            <div class="text-xs text-brand-muted">+XX XXX XXXXXXX</div>
+                        </div>
+                    </div>
+                    <div class="mockup-card bg-brand-warm rounded-2xl p-8 aspect-[1.6/1] flex flex-col justify-between border border-brand-warm-dark relative overflow-hidden">
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-brand-emerald/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2"></div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 border-2 border-brand-emerald-dark rounded-[10px] flex items-center justify-center relative">
+                                <span class="font-serif font-bold text-xl text-brand-emerald-dark">U</span>
+                                <div class="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-brand-gold-dark rounded-[2px]"></div>
+                            </div>
+                            <div class="font-serif text-lg font-bold text-brand-black">Usama Ayoub</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-brand-black mb-1">Professional Title</div>
+                            <div class="text-xs text-brand-muted">usama@example.com · linkedin.com/in/usama-ayoub</div>
+                            <div class="text-xs text-brand-muted">+XX XXX XXXXXXX</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Banner Mockup -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">LinkedIn Banner</h3>
+                <div class="mockup-card bg-brand-dark rounded-2xl overflow-hidden border border-brand-border mb-20">
+                    <div class="relative h-48 md:h-64 pattern-grid">
+                        <div class="absolute inset-0 bg-gradient-to-r from-brand-black/90 via-brand-black/60 to-transparent"></div>
+                        <div class="absolute top-1/2 left-8 md:left-16 -translate-y-1/2">
+                            <div class="font-serif text-3xl md:text-5xl font-bold text-white tracking-tight mb-2">Usama <span class="text-brand-emerald">Ayoub</span></div>
+                            <div class="text-sm text-brand-muted max-w-md hidden md:block">Building meaningful connections through authentic professional branding and impactful work.</div>
+                        </div>
+                        <div class="absolute bottom-4 right-6 flex items-center gap-2">
+                            <div class="w-8 h-8 border border-brand-emerald/40 rounded-lg flex items-center justify-center">
+                                <span class="font-serif font-bold text-sm text-brand-emerald">U</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex items-center gap-4 bg-brand-card/50">
+                        <div class="w-14 h-14 rounded-full bg-brand-emerald/20 border-2 border-brand-emerald flex items-center justify-center -mt-14 relative z-10">
+                            <span class="font-serif font-bold text-xl text-brand-emerald">U</span>
+                        </div>
+                        <div class="-mt-4">
+                            <div class="text-sm font-semibold text-brand-white">Usama Ayoub</div>
+                            <div class="text-xs text-brand-muted">Professional Title · Location</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Signature -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Email Signature</h3>
+                <div class="bg-white rounded-2xl p-8 max-w-xl mb-20">
+                    <div class="border-t-2 border-brand-emerald pt-5">
+                        <div class="font-serif text-xl font-bold text-gray-900">Usama Ayoub</div>
+                        <div class="text-sm text-gray-500 mb-3">Professional Title</div>
+                        <div class="flex items-center gap-4 text-xs text-gray-400">
+                            <a href="#" class="hover:text-brand-emerald transition-colors flex items-center gap-1">
+                                <span class="iconify" data-icon="lucide:mail" style="font-size:12px"></span> usama@example.com
+                            </a>
+                            <a href="#" class="hover:text-brand-emerald transition-colors flex items-center gap-1">
+                                <span class="iconify" data-icon="lucide:linkedin" style="font-size:12px"></span> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Icons -->
+                <h3 class="text-sm uppercase tracking-widest text-brand-muted font-medium mb-8">Social Icon Treatment</h3>
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8">
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center hover:border-brand-emerald/50 hover:text-brand-emerald transition-all duration-300 cursor-pointer text-brand-muted">
+                            <span class="iconify text-xl" data-icon="lucide:linkedin"></span>
+                        </div>
+                        <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center hover:border-brand-emerald/50 hover:text-brand-emerald transition-all duration-300 cursor-pointer text-brand-muted">
+                            <span class="iconify text-xl" data-icon="lucide:github"></span>
+                        </div>
+                        <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center hover:border-brand-emerald/50 hover:text-brand-emerald transition-all duration-300 cursor-pointer text-brand-muted">
+                            <span class="iconify text-xl" data-icon="lucide:twitter"></span>
+                        </div>
+                        <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center hover:border-brand-emerald/50 hover:text-brand-emerald transition-all duration-300 cursor-pointer text-brand-muted">
+                            <span class="iconify text-xl" data-icon="lucide:instagram"></span>
+                        </div>
+                        <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center hover:border-brand-emerald/50 hover:text-brand-emerald transition-all duration-300 cursor-pointer text-brand-muted">
+                            <span class="iconify text-xl" data-icon="lucide:globe"></span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-brand-muted">Icons use <strong class="text-brand-white">Lucide</strong> icon set. Rounded-xl container (12px radius). Default: muted color. Hover: emerald accent with border highlight.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== DO'S & DON'TS ==================== -->
+        <section id="dos-donts" class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">09</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-6 tracking-tight">Do's & Don'ts</h2>
+                <p class="text-brand-muted mb-16 max-w-2xl">Guidelines to maintain brand integrity. Following these ensures consistent and professional representation.</p>
+
+                <div class="space-y-6">
+                    <!-- Logo -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="usage-do bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-brand-emerald text-lg" data-icon="lucide:check-circle-2"></span>
+                                <span class="text-sm font-semibold text-brand-emerald">DO</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Use the logo on approved backgrounds</div>
+                            <div class="bg-brand-dark rounded-xl p-6 flex justify-center mt-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="logo-mark-sm">U</div>
+                                    <div class="font-serif text-base font-bold text-brand-white">Usama Ayoub</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="usage-dont bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-red-400 text-lg" data-icon="lucide:x-circle"></span>
+                                <span class="text-sm font-semibold text-red-400">DON'T</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Place the logo on busy or clashing backgrounds</div>
+                            <div class="rounded-xl p-6 flex justify-center mt-4 relative overflow-hidden" style="background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3)">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 border-2 border-white/50 rounded-lg flex items-center justify-center relative">
+                                        <span class="font-serif font-bold text-base text-white/60">U</span>
+                                        <div class="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-white/40 rounded-[2px]"></div>
+                                    </div>
+                                    <div class="font-serif text-base font-bold text-white/60">Usama Ayoub</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Distortion -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="usage-do bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-brand-emerald text-lg" data-icon="lucide:check-circle-2"></span>
+                                <span class="text-sm font-semibold text-brand-emerald">DO</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Maintain original proportions</div>
+                            <div class="bg-brand-dark rounded-xl p-6 flex justify-center mt-4">
+                                <div class="logo-mark" style="width:56px;height:56px">U</div>
+                            </div>
+                        </div>
+                        <div class="usage-dont bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-red-400 text-lg" data-icon="lucide:x-circle"></span>
+                                <span class="text-sm font-semibold text-red-400">DON'T</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Stretch, skew, or distort the logo</div>
+                            <div class="bg-brand-dark rounded-xl p-6 flex justify-center gap-4 mt-4">
+                                <div class="w-20 h-10 border-2 border-white/30 rounded-lg flex items-center justify-center relative">
+                                    <span class="font-serif font-bold text-xl text-white/40">U</span>
+                                </div>
+                                <div class="w-10 h-16 border-2 border-white/30 rounded-lg flex items-center justify-center relative">
+                                    <span class="font-serif font-bold text-xl text-white/40">U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colors -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="usage-do bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-brand-emerald text-lg" data-icon="lucide:check-circle-2"></span>
+                                <span class="text-sm font-semibold text-brand-emerald">DO</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Use approved brand colors only</div>
+                            <div class="flex gap-2 mt-4">
+                                <div class="w-10 h-10 rounded-lg bg-brand-emerald"></div>
+                                <div class="w-10 h-10 rounded-lg bg-brand-gold"></div>
+                                <div class="w-10 h-10 rounded-lg bg-brand-black border border-brand-border"></div>
+                                <div class="w-10 h-10 rounded-lg bg-brand-warm"></div>
+                                <div class="w-10 h-10 rounded-lg bg-brand-muted"></div>
+                            </div>
+                        </div>
+                        <div class="usage-dont bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-red-400 text-lg" data-icon="lucide:x-circle"></span>
+                                <span class="text-sm font-semibold text-red-400">DON'T</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Introduce unapproved colors into the palette</div>
+                            <div class="flex gap-2 mt-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-500 relative">
+                                    <div class="absolute inset-0 flex items-center justify-center"><span class="iconify text-white text-sm" data-icon="lucide:x"></span></div>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg bg-purple-500 relative">
+                                    <div class="absolute inset-0 flex items-center justify-center"><span class="iconify text-white text-sm" data-icon="lucide:x"></span></div>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg bg-pink-500 relative">
+                                    <div class="absolute inset-0 flex items-center justify-center"><span class="iconify text-white text-sm" data-icon="lucide:x"></span></div>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg bg-orange-500 relative">
+                                    <div class="absolute inset-0 flex items-center justify-center"><span class="iconify text-white text-sm" data-icon="lucide:x"></span></div>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg bg-cyan-400 relative">
+                                    <div class="absolute inset-0 flex items-center justify-center"><span class="iconify text-white text-sm" data-icon="lucide:x"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typography -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="usage-do bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-brand-emerald text-lg" data-icon="lucide:check-circle-2"></span>
+                                <span class="text-sm font-semibold text-brand-emerald">DO</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Use the specified typeface pairing</div>
+                            <div class="mt-4 space-y-1">
+                                <div class="font-serif text-lg font-bold text-brand-white">Playfair Display + Inter</div>
+                                <div class="text-sm text-brand-muted">Clean hierarchy, great contrast</div>
+                            </div>
+                        </div>
+                        <div class="usage-dont bg-brand-card border border-brand-border rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="iconify text-red-400 text-lg" data-icon="lucide:x-circle"></span>
+                                <span class="text-sm font-semibold text-red-400">DON'T</span>
+                            </div>
+                            <div class="text-sm text-brand-white font-medium mb-2">Use alternative or decorative typefaces</div>
+                            <div class="mt-4 space-y-1">
+                                <div class="text-lg font-bold text-white/40" style="font-family:Comic Sans MS,cursive">Comic Sans + Papyrus</div>
+                                <div class="text-sm text-brand-muted/50">Unprofessional, inconsistent</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mx-12"></div>
+
+        <!-- ==================== QUICK REFERENCE / SPEC SHEET ==================== -->
+        <section class="py-24 md:py-32 px-6 md:px-12 lg:px-20 fade-in print-break">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-emerald">10</span>
+                    <div class="h-px flex-1 bg-brand-border"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-white mb-16 tracking-tight">Quick Reference</h2>
+
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-brand-border">
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium w-1/3">Brand Name</td>
+                                <td class="px-6 py-4 text-brand-white">Usama Ayoub</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Primary Color</td>
+                                <td class="px-6 py-4 text-brand-white flex items-center gap-2"><div class="w-4 h-4 rounded bg-brand-emerald"></div> Emerald #059669</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Accent Color</td>
+                                <td class="px-6 py-4 text-brand-white flex items-center gap-2"><div class="w-4 h-4 rounded bg-brand-gold"></div> Gold #D4A853</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Background</td>
+                                <td class="px-6 py-4 text-brand-white flex items-center gap-2"><div class="w-4 h-4 rounded bg-brand-black border border-brand-border"></div> Deep Black #0B0D10</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Heading Font</td>
+                                <td class="px-6 py-4 text-brand-white font-serif">Playfair Display</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Body Font</td>
+                                <td class="px-6 py-4 text-brand-white">Inter</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Border Radius</td>
+                                <td class="px-6 py-4 text-brand-white">12px (cards), 16px (buttons), 8px (inputs)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Icon Set</td>
+                                <td class="px-6 py-4 text-brand-white">Lucide (via Iconify)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">CSS Framework</td>
+                                <td class="px-6 py-4 text-brand-white">Tailwind CSS v3.4</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-brand-muted font-medium">Version</td>
+                                <td class="px-6 py-4 text-brand-white">1.0 — June 2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BACK COVER ==================== -->
+        <section class="py-32 px-6 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 pattern-dots opacity-30"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-emerald/5 rounded-full blur-3xl"></div>
+            <div class="text-center relative z-10">
+                <div class="flex justify-center mb-8">
+                    <div class="logo-mark">U</div>
+                </div>
+                <div class="font-serif text-3xl font-bold text-brand-white mb-3 tracking-tight">Usama Ayoub</div>
+                <p class="text-sm text-brand-muted mb-8">Brand Guidelines v1.0</p>
+                <div class="w-12 h-px bg-brand-border mx-auto mb-8"></div>
+                <p class="text-xs text-brand-muted/50">This document is confidential and intended for authorized use only.<br>© 2025 Usama Ayoub. All rights reserved.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Copy color to clipboard
+        function copyColor(hex) {
+            navigator.clipboard.writeText(hex).then(() => {
+                const toast = document.getElementById('toast');
+                const toastText = document.getElementById('toast-text');
+                toastText.textContent = `Copied ${hex} to clipboard`;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2000);
+            }).catch(() => {
+                // Fallback
+                const ta = document.createElement('textarea');
+                ta.value = hex;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                const toast = document.getElementById('toast');
+                const toastText = document.getElementById('toast-text');
+                toastText.textContent = `Copied ${hex} to clipboard`;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2000);
+            });
+        }
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Active TOC link tracking
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        const tocObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    const activeLink = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, { threshold: 0.2, rootMargin: '-20% 0px -60% 0px' });
+
+        sections.forEach(section => tocObserver.observe(section));
+
+        // Smooth scroll for TOC links
+        tocLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

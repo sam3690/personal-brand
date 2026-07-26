@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Apify__get-dataset-items",
+      "mcp__Apify__call-actor",
+      "mcp__plugin_ecc_playwright__browser_navigate",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "mcp__2d10a557-4325-438c-b855-38a826512fad__COMPOSIO_MULTI_EXECUTE_TOOL",
+      "mcp__62a19e33-d412-4b23-a718-ba5111d7a8bf__manage_crm_objects",
+      "mcp__62a19e33-d412-4b23-a718-ba5111d7a8bf__search_properties",
+      "Bash(cat >> *)",
+      "mcp__2d10a557-4325-438c-b855-38a826512fad__COMPOSIO_SEARCH_TOOLS",
+      "mcp__Apify__search-actors",
+      "mcp__Apify__fetch-actor-details",
+      "mcp__2d10a557-4325-438c-b855-38a826512fad__COMPOSIO_GET_TOOL_SCHEMAS",
+      "mcp__4ad81076-693f-4c24-b1b0-c8cea7514a68__posts_create",
+      "mcp__4ad81076-693f-4c24-b1b0-c8cea7514a68__posts_list",
+      "Bash(mkdir -p content/drafts/x/2026-07-21 && ls content/drafts/x/2026-07-21)",
+      "mcp__7240bccb-bb9c-47f6-b1c6-e16e6e6214e0__search_threads",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

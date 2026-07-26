@@ -1,0 +1,112 @@
+{
+  "name": "AI SDR 1: Outreach Sender",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 9 * * 1-5" }]
+        }
+      },
+      "name": "Every weekday 9am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "documentId": { "__rl": true, "mode": "list", "value": "" },
+        "sheetName": { "__rl": true, "mode": "list", "value": "" },
+        "options": {}
+      },
+      "name": "Read leads",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "typeValidation": "loose" },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "",
+              "operator": { "type": "string", "operation": "empty" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "name": "Only not-yet-contacted",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "PASTE_YOUR_API_KEY_IN_CREDENTIALS_NOT_HERE" },
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 400, messages: [{ role: 'user', content: 'PASTE PROMPT 1 FROM prompts.md HERE. Lead name: ' + $json.fullName + ', company: ' + $json.company + ', website: ' + $json.website }] }) }}",
+        "options": {}
+      },
+      "name": "AI: draft email",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [660, 0],
+      "retryOnFail": true,
+      "maxTries": 4,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "toEmail": "={{ $('Only not-yet-contacted').item.json.email }}",
+        "subject": "={{ $('Only not-yet-contacted').item.json.company }} leads going cold?",
+        "text": "={{ $json.content[0].text }}",
+        "options": {}
+      },
+      "name": "Send email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [880, 0]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": { "__rl": true, "mode": "list", "value": "" },
+        "sheetName": { "__rl": true, "mode": "list", "value": "" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "email": "={{ $('Only not-yet-contacted').item.json.email }}",
+            "status": "sent"
+          },
+          "matchingColumns": ["email"]
+        },
+        "options": {}
+      },
+      "name": "Mark as sent",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [1100, 0]
+    }
+  ],
+  "connections": {
+    "Every weekday 9am": { "main": [[{ "node": "Read leads", "type": "main", "index": 0 }]] },
+    "Read leads": { "main": [[{ "node": "Only not-yet-contacted", "type": "main", "index": 0 }]] },
+    "Only not-yet-contacted": { "main": [[{ "node": "AI: draft email", "type": "main", "index": 0 }]] },
+    "AI: draft email": { "main": [[{ "node": "Send email", "type": "main", "index": 0 }]] },
+    "Send email": { "main": [[{ "node": "Mark as sent", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" }
+}

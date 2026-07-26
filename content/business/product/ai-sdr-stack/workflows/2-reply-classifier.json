@@ -1,0 +1,102 @@
+{
+  "name": "AI SDR 2: Reply Classifier",
+  "nodes": [
+    {
+      "parameters": {
+        "postProcessAction": "read",
+        "options": {}
+      },
+      "name": "Watch inbox (IMAP)",
+      "type": "n8n-nodes-base.emailReadImap",
+      "typeVersion": 2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "typeValidation": "loose" },
+          "conditions": [
+            {
+              "leftValue": "={{ ($json.subject || '').toLowerCase() }}",
+              "rightValue": "out of office",
+              "operator": { "type": "string", "operation": "notContains" }
+            },
+            {
+              "leftValue": "={{ ($json.subject || '').toLowerCase() }}",
+              "rightValue": "automatic reply",
+              "operator": { "type": "string", "operation": "notContains" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "name": "Skip auto-replies",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "PASTE_YOUR_API_KEY_IN_CREDENTIALS_NOT_HERE" },
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 10, messages: [{ role: 'user', content: 'PASTE PROMPT 2 FROM prompts.md HERE. The reply: ' + ($json.textPlain || $json.textHtml || '') }] }) }}",
+        "options": {}
+      },
+      "name": "AI: classify reply",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 0],
+      "retryOnFail": true,
+      "maxTries": 4,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "typeValidation": "loose" },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.content[0].text }}",
+              "rightValue": "INTERESTED",
+              "operator": { "type": "string", "operation": "contains" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "name": "Is interested?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "toEmail": "YOUR_EMAIL_HERE",
+        "subject": "=HOT LEAD: {{ $('Watch inbox (IMAP)').item.json.from }}",
+        "text": "=They replied:\n\n{{ $('Watch inbox (IMAP)').item.json.textPlain }}\n\nReply personally and send your booking link.",
+        "options": {}
+      },
+      "name": "Notify me",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [880, -80]
+    }
+  ],
+  "connections": {
+    "Watch inbox (IMAP)": { "main": [[{ "node": "Skip auto-replies", "type": "main", "index": 0 }]] },
+    "Skip auto-replies": { "main": [[{ "node": "AI: classify reply", "type": "main", "index": 0 }]] },
+    "AI: classify reply": { "main": [[{ "node": "Is interested?", "type": "main", "index": 0 }]] },
+    "Is interested?": { "main": [[{ "node": "Notify me", "type": "main", "index": 0 }]], "main_1": [[]] }
+  },
+  "settings": { "executionOrder": "v1" }
+}

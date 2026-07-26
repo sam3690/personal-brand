@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1584, height=396">
+    <title>LinkedIn Banner - Usama Ayoub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0B0D10',
+                            dark: '#13161B',
+                            card: '#1A1D24',
+                            border: '#2A2D35',
+                            muted: '#6B7280',
+                            light: '#F3F4F6',
+                            white: '#FAFAFA',
+                            emerald: '#059669',
+                            'emerald-light': '#34D399',
+                            'emerald-dark': '#047857',
+                            'emerald-deep': '#064E3B',
+                            gold: '#D4A853',
+                            'gold-light': '#E8C97A',
+                            'gold-dark': '#B8903A',
+                            warm: '#F5F0E8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+        * { scrollbar-width: thin; scrollbar-color: #2A2D35 transparent; }
+        .banner {
+            width: 1584px;
+            height: 396px;
+            background-color: #0B0D10;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(5,150,105,0.07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(5,150,105,0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
+            pointer-events: none;
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            padding: 48px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .banner-name {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 48px;
+            color: #FAFAFA;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+        }
+        .banner-tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #6B7280;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .banner-logo {
+            width: 56px;
+            height: 56px;
+            border: 2.5px solid #059669;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: #059669;
+            position: relative;
+            letter-spacing: -1px;
+            margin-top: 24px;
+        }
+        .banner-logo::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            right: -4px;
+            width: 12px;
+            height: 12px;
+            background: #D4A853;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div>
+                <div class="banner-name">Usama<span class="text-brand-emerald">Ayoub</span></div>
+                <div class="banner-tagline mt-2">Building meaningful connections through authentic professional branding</div>
+            </div>
+            <div class="banner-logo">U</div>
+        </div>
+    </div>
+</body>
+</html>

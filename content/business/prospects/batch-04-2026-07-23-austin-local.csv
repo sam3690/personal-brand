@@ -1,0 +1,24 @@
+tier,fullName,position,email,linkedinUrl,is_connection_request_sent,is_connected,city,state,organizationName,organizationWebsite,organizationIndustry,phone,rating,reviews,source
+A,,,interiors@austindesigngroup.com,,,,Austin,Texas,Austin Design Group,http://www.austindesigngroup.com/,Building designer,(512) 346-9200,4.9,8,apify-gmaps
+A,,,hello@livingoak.com,,,,Austin,Texas,Living Oak Interior Design,https://livingoak.com/,Interior designer,(512) 660-7043,5,19,apify-gmaps
+A,,,hello@hicountrypaperworks.com,,,,Austin,Texas,Hi-Country Paperworks,https://hicountrypaperworks.com/,Interior designer,(512) 265-1916,5,63,apify-gmaps
+A,,,hello@wilandfaye.com,,,,Austin,Texas,"WIL AND FAYE INTERIORS, LLC",https://www.wilandfaye.com/,Interior designer,(325) 450-9781,5,40,apify-gmaps
+A,,,info@nextlevelaustin.com,,,,Austin,Texas,Next Level Austin,http://www.nextlevelaustin.com/,Interior designer,(512) 499-8385,4.7,13,apify-gmaps
+A,,,vivahomestagingdesign@gmail.com,,,,Austin,Texas,Viva Home Staging Design,http://www.vivahomestagingdesign.com/,Interior Decorator,(512) 585-4700,4.9,34,apify-gmaps
+A,,,info@allisonjaffe.com,,,,Austin,Texas,Allison Jaffe Interior Design,https://allisonjaffe.com/,Interior designer,(512) 394-5045,4.9,27,apify-gmaps
+A,,,billsprauerroofing@gmail.com,,,,Austin,Texas,Bill Sprauer Austin Roofing Company,https://www.sprauerroofingco.com/,Roofing contractor,(737) 703-6290,4.8,132,apify-gmaps
+A,,,glowingskinmedspa.llc@gmail.com,,,,Austin,Texas,Glowing Skin Med Spa,http://glowingskinmedspa.org/,Skin care clinic,(323) 672-7988,4.9,72,apify-gmaps
+A,,,hi@austinaestheticatelier.com,,,,Austin,Texas,Austin Aesthetic Atelier,https://austinaestheticatelier.com/,Medical spa,(512) 643-6430,5,209,apify-gmaps
+A,,,info@lighttouchaustin.com,,,,Austin,Texas,Light Touch Aesthetics PLLC,http://lighttouchaustin.com/,Medical spa,(512) 452-7546,4.9,56,apify-gmaps
+A,,,sosospiffysales@gmail.com,,,,Austin,Texas,Spiffy Home Staging & Design,https://www.sosospiffy.com/,Interior designer,(205) 600-5918,5,6,apify-gmaps
+A,,,info@turnstyleid.com,,,,Austin,Texas,Turnstyle Interior Design,http://turnstyleid.com/,Interior designer,(737) 333-5800,4.7,14,apify-gmaps
+A,,,contact@neoskinaustin.com,,,,Cedar Park,Texas,NeoSkin Spa,https://neoskinaustin.com/,Wellness center,(512) 586-4478,4.8,132,apify-gmaps
+A,,,info.glomedspaaustin@gmail.com,,,,Austin,Texas,Glo Med Spa Austin,https://www.glomedspaaustin.com/,Medical spa,(512) 336-7546,4.6,123,apify-gmaps
+A,,,info@aceroofingtexas.com,,,,Austin,Texas,Ace Roofing Company,https://aceroofingtexas.com/,Roofing contractor,(512) 836-7663,4.8,330,apify-gmaps
+A,,,hello@spasway.com,,,,Austin,Texas,Spa Sway Day + Med Spa,https://spasway.com/,Medical spa,(512) 872-3343,4.6,530,apify-gmaps
+A,,,austin@priorityroofs.com,,,,Austin,Texas,Priority Roofing,https://priorityroofs.com/location/austin/,Roofing contractor,(512) 884-1287,5,1093,apify-gmaps
+A,,,contact@hdroofingandrepairs.com,,,,Austin,Texas,HD Roofing and Repairs,https://www.hdroofingandrepairs.com/,Roofing contractor,(512) 458-6800,4.9,333,apify-gmaps
+A,,,shane@dc-austin.com,,,,Austin,Texas,Dayton Co. Roofing & Renovation,http://daytoncontractingaustin.com/,Roofing contractor,(512) 316-3908,5,188,apify-gmaps
+A,,,concierge@nakedmd.com,,,,Austin,Texas,NakedMD Med Spa Austin,https://www.nakedmd.com/,Medical spa,(737) 359-8186,4.8,468,apify-gmaps
+A,,,info@austinroofingandwaterdamage.com,,,,Austin,Texas,Austin Roofing Company & Water Damage,https://austinroofingandwaterdamage.com/,Roofing contractor,(512) 820-6505,5,1464,apify-gmaps
+A,,,admin@bobcatroofingpros.com,,,,Austin,Texas,Bobcat Roofing,http://bobcatroofingpros.com/,Roofing contractor,(512) 839-9745,4.9,41,apify-gmaps
