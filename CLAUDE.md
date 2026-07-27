@@ -81,10 +81,12 @@ dependent calls: post in reply-chain order, never parallel; source link goes as 
 **Never publish a draft Usama has not confirmed in-session. Agents never attach or generate media.**
 
 ## The routines (the agentic loops)
+Exact schedules + the full prompt of every routine: **`content/ROUTINES.md`** (the recovery file —
+routines live server-side on claude.ai, so recreate them from there after any machine/OS reset).
 - **`daily-x-trending-posts`** — every day ~1pm PKT: Agent 6 reviews yesterday's X metrics (opus) →
   X0 scouts today's trending AI topics → X1/X2/X3 write, brief, QA 2-3 posts → drafts + notify.
   Posting windows: 9am-12pm ET, posts spaced 2+ hours.
-- **`weekly-linkedin-zernio-drafts`** — Sunday ~7pm local: Agent 6 reviews last week via Zernio
+- **`weekly-linkedin-zernio-drafts`** — Sunday ~5pm PKT: Agent 6 reviews last week via Zernio
   analytics (opus) → research → 4 posts → Zernio drafts + a `# Media brief` section at the end of
   EACH draft markdown file (same format as the X drafts: Type · Concept · Text on image · Alt text ·
   Fallback; Canva template link in `x-playbook.md`; carousel posts get slide-by-slide direction) →
