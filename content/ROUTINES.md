@@ -9,9 +9,27 @@ each routine, so restoring the whole engine is a copy-paste job.
 (cron is evaluated in **UTC**), and the prompt verbatim from its section. Then verify with
 `list_triggers`.
 
-**Connectors:** each fired session needs its connectors attached (Zernio, Composio, Apollo,
-HubSpot). Routines created from a Claude Code session may store **no** connectors — if a run
-reports missing `mcp__*` tools, attach them from the claude.ai Routines UI.
+**Connectors:** each fired session needs its connectors attached. **Confirmed 2026-07-27:** routines
+created from a Claude Code session store **no** connector grant, so a connector shows
+`connected: true` org-wide but `enabledInChat: false` in the fired session and none of its tools are
+callable. This is what broke the 2026-07-27 manual run of `weekly-linkedin-zernio-drafts`.
+
+**This cannot be fixed from a Claude Code session.** `update_trigger` has no `connectors`
+parameter, and `create_trigger` rejects one here ("the connectors parameter is not available for
+this organization"). Recreating a trigger therefore does NOT attach connectors — it only resets the
+run history. **Attach connectors from the claude.ai Routines UI**: open the routine, add the
+connectors from the table below, save.
+
+| Routine | Connectors |
+|---|---|
+| `weekly-ceo-review` | none (reads repo files only) |
+| `weekly-linkedin-zernio-drafts` | `Zernio` |
+| `daily-x-trending-posts` | `Composio` |
+| `cold-email-outreach` / `-thu` | `Composio`, `Gmail`, `HubSpot`, `Apollo.io` |
+
+**Repo:** fired sessions have started with an empty working directory. Every prompt below opens with
+a PREFLIGHT step that clones the repo if `content/` is missing, so a missing checkout self-heals
+instead of aborting the run.
 
 ## Schedule at a glance
 
@@ -37,6 +55,8 @@ winter, both inside the 8-10am ET send window.
 ```
 Run the weekly CEO review (`weekly-ceo-review`). CLAUDE.md is auto-loaded; follow it. This runs BEFORE the Sunday LinkedIn routine and sets the directives every other routine obeys for the coming week.
 
+PREFLIGHT. If there is no `content/` directory in the working directory, the repo was not cloned into this session. Self-heal, do not abort: `git clone https://github.com/sam3690/personal-brand.git /home/user/personal-brand`, then work from there (git is proxied with an insteadOf rewrite, no credentials needed) and re-read CLAUDE.md. This routine needs no connectors — it reads repo files only. Never fabricate pipeline numbers to fill a gap; write "no data" and reason from what exists.
+
 Act as Agent CEO per `content/agents/exec/0-ceo.md` — run this yourself on **opus, maximum thinking effort**. Enforce the two mandates: NO BLIND OFFERS (every niche/offer/price call backed by data or real proof, never a hunch) and NO SKIPPED WEEKS (outreach and content cadence never lapse).
 
 1. READ THE TRUTH: `content/performance/*.md` (X + LinkedIn), every `content/business/*-send-log.md`, `content/business/replies-needing-response.md` (if it exists), `content/strategy/current-strategy.md`, `content/business/OFFER_AUDIT.md`, `content/business/revenue-roadmap.md`.
@@ -56,6 +76,8 @@ Be the honest operator, not a cheerleader: if 30 days pass with no client, say s
 ```
 Run the daily X.com content routine (`daily-x-trending-posts`) for today. CLAUDE.md is auto-loaded; follow it.
 
+PREFLIGHT. If there is no `content/` directory in the working directory, the repo was not cloned into this session. Self-heal, do not abort: `git clone https://github.com/sam3690/personal-brand.git /home/user/personal-brand`, then work from there (git is proxied with an insteadOf rewrite, no credentials needed) and re-read CLAUDE.md. Then confirm Composio is callable with COMPOSIO_SEARCH_TOOLS. If it does not respond, STOP and report that its connector is not enabled for this session. Never fabricate metrics or drafts to work around a missing tool.
+
 0. Read `content/strategy/current-strategy.md` FIRST and obey the current niche/offer/directives. Then skim `content/performance/` — what the data says beats the playbook.
 1. Agent 6 Performance Analyst (`content/agents/6-performance-analyst.md`) — spawn on **opus, max thinking**: review yesterday's X metrics via Apify scraping (the X free API is write-only, never pull metrics from it). Append learnings to `content/performance/`.
 2. Content Director (`content/agents/exec/1-content-director.md`, opus) briefs the X team and keeps it on-strategy.
@@ -73,14 +95,17 @@ Register (enforced by X3): hook line first (number / bold claim / curiosity gap)
 ```
 Run the weekly LinkedIn routine (`weekly-linkedin-zernio-drafts`) for the week ahead. CLAUDE.md is auto-loaded; follow it.
 
+PREFLIGHT. If there is no `content/` directory in the working directory, the repo was not cloned into this session. Self-heal, do not abort: `git clone https://github.com/sam3690/personal-brand.git /home/user/personal-brand`, then work from there (git is proxied with an insteadOf rewrite, no credentials needed) and re-read CLAUDE.md. Then confirm Zernio is callable with `accounts_list` (expect account "Usama Ayoub", `6a3cf3529d9472faaedefbd5`). If Zernio does not respond, STOP and report that its connector is not enabled for this session. Never fabricate strategy, performance data, or drafts to work around a missing tool, and never report a Zernio draft as created unless the API call actually returned one.
+
 0. Read `content/strategy/current-strategy.md` FIRST and obey the current niche / offer / price / positioning / this-week directives. Then read `content/performance/` — the data beats the playbook.
 1. Agent 6 Performance Analyst (`content/agents/6-performance-analyst.md`) — spawn on **opus, max thinking**: review last week's LinkedIn performance via Zernio analytics (account "Usama Ayoub", accountId `6a3cf3529d9472faaedefbd5`). Append learnings to `content/performance/`.
 2. Content Director (`content/agents/exec/1-content-director.md`, opus) briefs and supervises the LinkedIn team, then QA-grades the output.
 3. Research: use the latest brief in `content/research/` if it is less than 7 days old — do not re-scout. Otherwise run Agent 0 Research Scout. Reuse angles from `ai-sales-automation-content-angles.md` before inventing new ones.
 4. Run the LinkedIn team on **sonnet, max effort** for 4 posts: 1 Strategist → 2 Hook → 3 Post → 4 CTA → 5 QA. Pass = ≥80 with zero red flags; below that, fix and re-score. Default register is `content/knowledge-base/winning-post-patterns.md` (result-first, show the work with named tools and real numbers, end on a genuine operator question). Stay on the 4 pillars, ≤3 hashtags (default 0), no em dashes, no links in the body (first comment instead).
 5. Save the 4 drafts to `content/drafts/` in the existing structure. EACH draft markdown file ends with a `# Media brief` section in the same format as the X drafts: Type · Concept · Text on image · Alt text · Fallback (Canva template link is in `content/knowledge-base/x-playbook.md`; carousel posts get slide-by-slide direction). Batch the file writes into ONE command.
-6. Create each post in Zernio as a DRAFT — never auto-publish:
-   posts_create_post(is_draft=true, content=<full body incl. CTA/P.S.>, title="<short label> [slot: <day> <time> - ADD IMAGE before publishing]", scheduled_for=<the SLOT's date+time as ISO with +05:00>, timezone="Asia/Karachi", platforms=[{"platform":"linkedin","accountId":"6a3cf3529d9472faaedefbd5"}]) — no publish_now, no media_items.
+6. Create each post in Zernio as a DRAFT — never auto-publish. `posts_create_post` is NOT directly exposed; the exposed `posts_create` cannot express an absolute slot time, so go through the passthrough:
+   call_tool(name="posts_create_post", arguments={"is_draft": true, "content": <full body incl. CTA/P.S.>, "title": "<short label> [slot: <day> <time> - ADD IMAGE before publishing]", "scheduled_for": <the SLOT's date+time as ISO with +05:00>, "timezone": "Asia/Karachi", "platforms": [{"platform":"linkedin","accountId":"6a3cf3529d9472faaedefbd5"}]}) — no publish_now, no media_items.
+   Verified: `is_draft: true` wins over `scheduled_for`; the post returns `status: 'draft'` with the slot stored but not armed to publish. Confirm each response says `status: 'draft'` before reporting it as created.
    `scheduled_for` MUST be the intended posting slot for the WEEK AHEAD, never this routine's run time. Slots are US Eastern: Tue 7:30-9am, Wed 8-10am, Thu 7:30-9am, plus one wildcard (Mon 9-11am or Fri before 9am). Convert to Karachi: 7:30am ET = 4:30pm PKT, 8am ET = 5pm PKT, 10am ET = 7pm PKT.
 7. Commit and push the drafts.
 8. Notify Usama: the 4 posts (pillar, hook, QA score, assigned slot), that each Zernio draft still needs an image before publishing (that is the human gate), the golden-hour ritual at `content/templates/golden-hour-checklist.md`, and a count of any older LinkedIn drafts still unshipped.
@@ -90,6 +115,8 @@ Run the weekly LinkedIn routine (`weekly-linkedin-zernio-drafts`) for the week a
 
 ```
 Run the cold-email outreach routine (`cold-email-outreach`, MONDAY send, ~6pm PKT / 9am ET). CLAUDE.md is auto-loaded; follow it.
+
+PREFLIGHT. If there is no `content/` directory in the working directory, the repo was not cloned into this session. Self-heal, do not abort: `git clone https://github.com/sam3690/personal-brand.git /home/user/personal-brand`, then work from there (git is proxied with an insteadOf rewrite, no credentials needed) and re-read CLAUDE.md. Then confirm Composio, Gmail, HubSpot and Apollo.io are callable. If a required one does not respond, STOP and report exactly which — do not send from a partial toolset, and never log a send that did not actually happen.
 
 0. Read `content/strategy/current-strategy.md` FIRST — current niche, offer, price, proof to lead with, and this week's CEO directives. Obey them. Nothing about strategy is hardcoded here.
 1. Growth Lead (`content/agents/exec/2-growth-lead.md`) — spawn on **opus, max thinking**: read the send logs (`content/business/*-send-log.md`) and the prospect CSVs, then decide exactly what is due today. The 3-touch sequence is touch 1 (day 0) → touch 2 (day 3, in-thread reply) → touch 3 (day 7, "closing the loop" breakup). Enforce cadence: no skipped sends.

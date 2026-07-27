@@ -55,17 +55,28 @@ complex strategy) runs on **opus** (spawn subagents with the model override).
 
 ## Publishing = Zernio, DRAFTS ONLY, human gate
 LinkedIn is connected to Zernio as **"Usama Ayoub", accountId `6a3cf3529d9472faaedefbd5`**.
-Create every post as a **draft** — never auto-publish. Exact call:
+Create every post as a **draft** — never auto-publish.
+
+**`posts_create_post` is NOT a directly-exposed MCP tool.** The Zernio server exposes a simplified
+`posts_create` (single `platform` string, `schedule_minutes`, no `scheduled_for`/`timezone`) which
+CANNOT express an absolute slot time. The full API tool is reachable only through the passthrough.
+Exact call:
 ```
-posts_create_post(
-  is_draft = true,
-  content = <full post body incl. any CTA/P.S.>,
-  title = "<short label> [slot: <day> <time> - ADD IMAGE before publishing]",
-  scheduled_for = "<the slot's date+time as ISO with +05:00 offset>",
-  timezone = "Asia/Karachi",
-  platforms = [{"platform":"linkedin","accountId":"6a3cf3529d9472faaedefbd5"}]
+call_tool(
+  name = "posts_create_post",
+  arguments = {
+    "is_draft": true,
+    "content": <full post body incl. any CTA/P.S.>,
+    "title": "<short label> [slot: <day> <time> - ADD IMAGE before publishing]",
+    "scheduled_for": "<the slot's date+time as ISO with +05:00 offset>",
+    "timezone": "Asia/Karachi",
+    "platforms": [{"platform":"linkedin","accountId":"6a3cf3529d9472faaedefbd5"}]
+  }
 )   # no publish_now, no media_items
 ```
+Verified 2026-07-27: `is_draft: true` **wins over** `scheduled_for` — the post comes back
+`status: 'draft'` with the slot time stored but NOT armed to publish. The human gate holds.
+Use `search_tools` to discover other full-API tools; `call_tool` executes them.
 `scheduled_for` MUST be the intended posting slot, NEVER the routine's run time.
 Slot times are US Eastern (audience US/EU). Convert to Karachi: 7:30am ET = 4:30pm PKT,
 8am ET = 5pm PKT, 10am ET = 7pm PKT. Example: Tue 8am ET slot = "2026-07-07T17:00:00+05:00".
@@ -79,6 +90,26 @@ reviews, drops media path(s) into `media:` → runs **`/x-publish`**, which conf
 in-session, then posts via COMPOSIO_SEARCH_TOOLS + COMPOSIO_MULTI_EXECUTE_TOOL (thread parts are
 dependent calls: post in reply-chain order, never parallel; source link goes as a reply).
 **Never publish a draft Usama has not confirmed in-session. Agents never attach or generate media.**
+
+## Preflight (every scheduled routine, before step 0)
+Routines run in **fresh sessions**. Two things have failed there before; check both first.
+
+1. **Repo present?** If there is no `content/` directory in the working directory, the repo was not
+   cloned into this session. Self-heal, do not abort:
+   ```
+   git clone https://github.com/sam3690/personal-brand.git /home/user/personal-brand
+   cd /home/user/personal-brand
+   ```
+   Git is proxied with an `insteadOf` rewrite, so the https URL works with no credentials. Re-read
+   this file after cloning.
+2. **Connectors callable?** A connector can be connected org-wide yet still be off for the fired
+   session (`enabledInChat: false`). Confirm the ones this routine needs respond before doing the
+   work: Zernio → `accounts_list`, Composio → `COMPOSIO_SEARCH_TOOLS`. Check `ListConnectors` if a
+   call fails.
+
+If a required connector is genuinely unavailable, **stop and say so precisely**. Never fabricate
+strategy, performance data, or drafts to paper over a missing tool, and never report a draft as
+created when no API call succeeded.
 
 ## The routines (the agentic loops)
 Exact schedules + the full prompt of every routine: **`content/ROUTINES.md`** (the recovery file —
