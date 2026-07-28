@@ -13,6 +13,13 @@ each routine, so restoring the whole engine is a copy-paste job.
 HubSpot). Routines created from a Claude Code session may store **no** connectors — if a run
 reports missing `mcp__*` tools, attach them from the claude.ai Routines UI.
 
+**Pushing (2026-07-28 fix):** fresh routine containers repeatedly failed `git push` with 403 —
+confirmed to be a container git-credential issue, NOT a repo branch-protection rule (the repo has
+none). Every routine below now pushes via the **GitHub MCP tool** (`mcp__github__push_files`)
+instead of `git push` — it authenticates through the MCP server's own credentials, bypassing the
+container's git credential layer entirely. Do not revert routine prompts back to `git add` /
+`git commit` / `git push` for the final step.
+
 ## Schedule at a glance
 
 | Routine | Local (PKT, UTC+5) | Cron (UTC) | Fires |
@@ -45,7 +52,9 @@ Act as Agent CEO per `content/agents/exec/0-ceo.md` — run this yourself on **o
 4. DECIDE: keep or change niche / offer / price / positioning. Default is KEEP and let volume accumulate — niche-hopping is what broke this business before. Change ONLY on evidence that the current bet is dead (e.g. a full niche batch fully sequenced with 0 replies AND a clear reason). Document the rationale in the SSOT so the decision is auditable.
 5. DELEGATE: spawn Content Director (`content/agents/exec/1-content-director.md`, opus) for the week's content angle priorities and Growth Lead (`content/agents/exec/2-growth-lead.md`, opus) for the week's outbound plan. Hand each the updated strategy.
 6. WRITE: update `content/strategy/current-strategy.md` — the niche/offer/price/positioning/goal blocks if they changed, and ALWAYS a fresh "## Week of <coming Monday, absolute date> directives" list: 3-6 concrete, assigned ([Growth]/[Content]/[Human — Usama]/[Cadence]), checkable items. Convert every relative date to an absolute one. Never end a review without directives.
-7. Commit and push the updated strategy file.
+7. Push directly via the GitHub MCP tool, NOT git (`mcp__github__push_files`, owner=`sam3690`,
+   repo=`personal-brand`, branch=`main`) — see the pushing note above. Do NOT run
+   `git add`/`git commit`/`git push`.
 8. SUMMARIZE for Usama: the honest pipeline number, what broke, the decision and why, this week's directives, and any HUMAN-ONLY tasks (naming permission, Loom recording, replying to a warm lead, closing a call).
 
 Be the honest operator, not a cheerleader: if 30 days pass with no client, say so and change the plan. No em dashes.
@@ -62,7 +71,9 @@ Run the daily X.com content routine (`daily-x-trending-posts`) for today. CLAUDE
 3. Run the X team on **sonnet, max effort**: X0 Trend Scout (today's trending AI topics — generic AI is in scope, NOT niche-locked) → X1 Post Writer → X2 Media Brief → X3 QA. Pass = QA ≥80 with zero red flags; below that, fix and re-score.
 4. Write the 2-3 approved drafts to `content/drafts/x/<YYYY-MM-DD>/` in the same structure as existing X drafts: frontmatter (`status: pending-approval`, `media: []`, `first_reply`, `qa_score`) plus a `# Media brief` section (Type · Concept · Text on image · Alt text · Fallback). Batch all the file writes into ONE command (a GateGuard hook prompts per new file).
 5. Do NOT publish and do NOT attach or generate media. Publishing is Usama's manual step: he drops media paths into `media:` then runs `/x-publish`.
-6. Commit and push the drafts.
+6. Push directly via the GitHub MCP tool, NOT git (`mcp__github__push_files`, owner=`sam3690`,
+   repo=`personal-brand`, branch=`main`) — see the pushing note above. Do NOT run
+   `git add`/`git commit`/`git push`.
 7. Notify Usama: the drafts written, their hooks and QA scores, the posting windows (9am-12pm ET, posts 2+ hours apart), and a COUNT of X drafts from previous days that are still `pending-approval` and unposted — the CEO flagged that backlog as the #1 revenue leak.
 
 Register (enforced by X3): hook line first (number / bold claim / curiosity gap), ≤280 chars per post, threads only when earned, zero hashtags, no em dashes, no links in the post body (source link goes in the first reply), no engagement bait, no fabricated stats.
@@ -82,7 +93,9 @@ Run the weekly LinkedIn routine (`weekly-linkedin-zernio-drafts`) for the week a
 6. Create each post in Zernio as a DRAFT — never auto-publish:
    posts_create_post(is_draft=true, content=<full body incl. CTA/P.S.>, title="<short label> [slot: <day> <time> - ADD IMAGE before publishing]", scheduled_for=<the SLOT's date+time as ISO with +05:00>, timezone="Asia/Karachi", platforms=[{"platform":"linkedin","accountId":"6a3cf3529d9472faaedefbd5"}]) — no publish_now, no media_items.
    `scheduled_for` MUST be the intended posting slot for the WEEK AHEAD, never this routine's run time. Slots are US Eastern: Tue 7:30-9am, Wed 8-10am, Thu 7:30-9am, plus one wildcard (Mon 9-11am or Fri before 9am). Convert to Karachi: 7:30am ET = 4:30pm PKT, 8am ET = 5pm PKT, 10am ET = 7pm PKT.
-7. Commit and push the drafts.
+7. Push directly via the GitHub MCP tool, NOT git (`mcp__github__push_files`, owner=`sam3690`,
+   repo=`personal-brand`, branch=`main`) — see the pushing note above. Do NOT run
+   `git add`/`git commit`/`git push`.
 8. Notify Usama: the 4 posts (pillar, hook, QA score, assigned slot), that each Zernio draft still needs an image before publishing (that is the human gate), the golden-hour ritual at `content/templates/golden-hour-checklist.md`, and a count of any older LinkedIn drafts still unshipped.
 ```
 
@@ -98,7 +111,9 @@ Run the cold-email outreach routine (`cold-email-outreach`, MONDAY send, ~6pm PK
 4. Log every send to the matching `content/business/batch-NN-send-log.md`, and as a HubSpot EMAIL engagement against the Contact (portal 246685260) so the CRM timeline stays complete. HubSpot never sends — it only records.
 5. After sending, check for bounces and replies. Add bounces to `dead-addresses.md`. Surface ANY reply to Usama immediately and prominently — reply rate and booked calls are the metrics that matter right now.
 6. LinkedIn connection requests: queue names into `content/business/linkedin-connect-todo.md`. Do NOT send them — Usama sends those manually from his own account (~10/day, no note).
-7. Commit and push the send log, CSV, and todo-file updates.
+7. Push directly via the GitHub MCP tool, NOT git (`mcp__github__push_files`, owner=`sam3690`,
+   repo=`personal-brand`, branch=`main`) — see the pushing note above. Do NOT run
+   `git add`/`git commit`/`git push`.
 8. Notify Usama: who was emailed and on which touch, any replies or bounces, prospect list depth, and what is due on Thursday.
 ```
 
