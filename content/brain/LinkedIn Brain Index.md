@@ -35,6 +35,11 @@ account, written for founders & agency owners, and turning posts into booked cal
 
 [[Research Scout]] — agent 0, weekly trend + winning-post research that drives the schedule
 
+## 🦸 Trust layer (founder story)
+[[StoryMarketing Hero Guide]] — be the hero AND the guide; the 3 levels; ~1 founder post per 4-5
+[[One-Sentence Positioning]] — "I'm the [X guy] who believes [Y] because of [Z]"; find the hole in the market
+Full spec: `content/knowledge-base/frameworks/storymarketing-hero-guide.md`
+
 ## 🎨 Design & media
 [[Brand Design System]] — the Green Room kit (colors, type, components) for carousels, banners,
 CTA/featured-post images. Full spec: `content/knowledge-base/brand-design-system.md`. Renderable
