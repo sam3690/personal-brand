@@ -18,7 +18,9 @@
       "mcp__4ad81076-693f-4c24-b1b0-c8cea7514a68__posts_list",
       "Bash(mkdir -p content/drafts/x/2026-07-21 && ls content/drafts/x/2026-07-21)",
       "mcp__7240bccb-bb9c-47f6-b1c6-e16e6e6214e0__search_threads",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "mcp__Claude_Code_Remote__list_triggers",
+      "mcp__Claude_Code_Remote__update_trigger"
     ]
   }
 }
