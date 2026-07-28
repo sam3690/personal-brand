@@ -10,6 +10,7 @@
 2. **`cold-email-outbound-frameworks.md`** — Alex Berman's 3 C's (Compliment/Case Study/CTA) + Aaron Ross's Cold Calling 2.0 lesson, translated for a solo operator. Feeds `../../business/outreach-scripts.md`.
 3. **`content-os-atomic-essays.md`** — Justin Welsh's Content OS + Dickie Bush's Atomic Essay method. Feeds `../brand-profile.md` pillars and `../winning-post-patterns.md`.
 4. **`ai-agency-niche-productization.md`** — 2026 niche-selection criteria and productization practice for AI automation agencies. Validates/extends `../../business/revenue-roadmap.md`'s ICP.
+5. **`storymarketing-hero-guide.md`** — Benjamin Chan's Hero + Guide / 3 Levels of Storytelling. The trust layer for founder-story posts (be the hero AND the guide) plus the One-Sentence positioning formula. Feeds `../winning-post-patterns.md` and the brain notes `StoryMarketing Hero Guide` / `One-Sentence Positioning`.
 
 ## Why kept separate from playbooks
 `playbooks/` answers "what do I do." `frameworks/` answers "where did this come from, and what's the fuller method behind it," so you can go deeper on any one lever without bloating the action-oriented docs. Each framework file names its real-world source.
