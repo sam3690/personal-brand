@@ -35,3 +35,22 @@ Off-niche rows in the CSV, not sent (kept for reference, not a future niche): Bi
 Roofing, Glowing Skin Med Spa, Austin Aesthetic Atelier, Light Touch Aesthetics, NeoSkin Spa, Glo Med
 Spa Austin, Ace Roofing, Spa Sway, Priority Roofing, HD Roofing and Repairs, Dayton Co. Roofing,
 NakedMD Med Spa, Austin Roofing Company & Water Damage, Bobcat Roofing.
+
+## Touch 2 (day 3, due 2026-07-30, sent 2026-07-30 18:26 PKT, on time)
+Sent as in-thread replies (GMAIL_REPLY_TO_THREAD). All 9 threads re-checked for bounces/replies before
+sending (GMAIL_FETCH_MESSAGE_BY_THREAD_ID on each) — none found, clean SENT-only threads, no late
+bounces surfaced. The `[LOOM LINK]` placeholder in outreach-scripts.md is still unfilled (directive #4,
+Usama has not recorded it yet) — dropped that line rather than send a broken/invented link; replaced
+with an offer to send the video ("Want me to?").
+
+- [2026-07-30 18:26 PKT] TOUCH2 SENT interiors@austindesigngroup.com (Austin Design Group) messageId: 19fb32ed6b96b822 hubspotEngagementId: 387291439842 hubspotContactId: 526399494860
+- [2026-07-30 18:26 PKT] TOUCH2 SENT hello@livingoak.com (Living Oak Interior Design, Laura Williams) messageId: 19fb32ed7395d977 hubspotEngagementId: 387291439845 hubspotContactId: 526691551942
+- [2026-07-30 18:26 PKT] TOUCH2 SENT hello@hicountrypaperworks.com (Hi-Country Paperworks, Steve Vaneman) messageId: 19fb32edf553bcd4 hubspotEngagementId: 387291379424 hubspotContactId: 526725986028
+- [2026-07-30 18:26 PKT] TOUCH2 SENT hello@wilandfaye.com (Wil and Faye Interiors LLC, Brooklynn) messageId: 19fb32ede729dc36 hubspotEngagementId: 387295750894 hubspotContactId: 526687924940
+- [2026-07-30 18:26 PKT] TOUCH2 SENT info@nextlevelaustin.com (Next Level Austin) messageId: 19fb32edf684096a hubspotEngagementId: 387291318001 hubspotContactId: 526831100624
+- [2026-07-30 18:26 PKT] TOUCH2 SENT vivahomestagingdesign@gmail.com (Viva Home Staging Design, Ruth Xiomara) messageId: 19fb32edf58d6b2b hubspotEngagementId: 387291163341 hubspotContactId: 526689565428
+- [2026-07-30 18:26 PKT] TOUCH2 SENT info@allisonjaffe.com (Allison Jaffe Interior Design) messageId: 19fb32ee94fb7350 hubspotEngagementId: 387291486934 hubspotContactId: 526687155907
+- [2026-07-30 18:26 PKT] TOUCH2 SENT sosospiffysales@gmail.com (Spiffy Home Staging & Design, Barbara Cooney) messageId: 19fb32ee933e8506 hubspotEngagementId: 387277419252 hubspotContactId: 526716901095
+- [2026-07-30 18:26 PKT] TOUCH2 SENT info@turnstyleid.com (Turnstyle Interior Design) messageId: 19fb32ee8e3a939f hubspotEngagementId: 387291768517 hubspotContactId: 526385425090
+
+9/9 sent, no immediate bounces. Touch 3 due 2026-08-03.

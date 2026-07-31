@@ -40,3 +40,19 @@ Sent as in-thread replies (GMAIL_REPLY_TO_THREAD) to the 6 confirmed-live addres
 (Batch-03 contacts and this touch's engagements were logged to HubSpot for the first time in this run; touch 1 on 07-23 was never logged to CRM. Portal 246685260.)
 
 Live for touch 3 (due 2026-07-30): Levi Brooks, John Surdakowski, Casey Brown, Arya Bina, Brooke Apffel, Cheryl Marchese (6 remaining).
+
+## Touch 3 (day 7, due 2026-07-30, sent 2026-07-30 18:26 PKT, on time)
+Sent as in-thread replies (GMAIL_REPLY_TO_THREAD). All 6 threads re-checked for bounces/replies before
+sending (GMAIL_FETCH_MESSAGE_BY_THREAD_ID on each) — none found, clean SENT-only threads. Price line
+corrected to match current-strategy.md SSOT ($500 founding / $1,500 anchor, not the stale $500/$750
+generic-template line).
+
+- [2026-07-30 18:26 PKT] TOUCH3 SENT hellofellows@useallfive.com (Levi Brooks, Use All Five) messageId: 19fb32ed0745bc7d hubspotEngagementId: 387295785665 hubspotContactId: 526401498836
+- [2026-07-30 18:26 PKT] TOUCH3 SENT john@avexdesigns.com (John Surdakowski, Avex E-commerce) messageId: 19fb32ed16818818 hubspotEngagementId: 387291379421 hubspotContactId: 526835854045
+- [2026-07-30 18:26 PKT] TOUCH3 SENT casey@uppercasebrands.com (Casey Brown, Uppercase Brands) messageId: 19fb32ed07fb9490 hubspotEngagementId: 387295851219 hubspotContactId: 526707435236
+- [2026-07-30 18:26 PKT] TOUCH3 SENT arya@kobedigital.com (Arya Bina, Kobe Digital) messageId: 19fb32ed1487cf79 hubspotEngagementId: 387291055831 hubspotContactId: 526848420567
+- [2026-07-30 18:26 PKT] TOUCH3 SENT brooke@coastalcollectivemarketing.com (Brooke Apffel, Coastal Collective Marketing) messageId: 19fb32ed671c6239 hubspotEngagementId: 387291896510 hubspotContactId: 526691551940
+- [2026-07-30 18:26 PKT] TOUCH3 SENT cheryl@weare325.com (Cheryl Marchese, 325) messageId: 19fb32ed71443c2e hubspotEngagementId: 387295529710 hubspotContactId: 526399494858
+
+6/6 sent, no immediate bounces. Batch-03 sequence is now COMPLETE (all 6 live prospects finished
+touch 1/2/3). No further sends to this batch. Reply rate: 0/6 (0/10 original, 4 dead).
