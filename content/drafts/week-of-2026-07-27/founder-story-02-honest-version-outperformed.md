@@ -24,6 +24,31 @@ behind. Readers who engaged with chapter one get a real payoff instead of a repe
 Level 1 (hero) throughout. **No Level 3 turn, no guide layer, no method disclosure** (see v3). The job
 of this post is recognition and a thought worth reading on a Sunday morning, nothing else.
 
+## v4 changes (Usama, 2026-08-01) — the axis of the comparison
+
+Usama's note: *"this was not best vs worst post, this was showcasing my work vs people getting to know
+my side of the story, so the hook should be like that."*
+
+Correct, and it was a real error in v1 through v3. The post kept measuring one of his posts against
+another on **quality** ("my best work", "the post I put the least expertise into", and the media hook
+"MY WORST POST DID 15X MY BEST ONE"). Two problems with that axis:
+
+1. **It is not what happened.** Both posts were good. One showed his work, one told his story. The
+   audience did not prefer a better post, it responded to a different kind of thing.
+2. **It quietly runs down the work he sells.** Calling the frameworks and cost breakdowns his worst
+   post invites a reader to agree. He sells that work. It is not the loser in this comparison, it is
+   simply the other category.
+
+Changed on this axis:
+- Opening: "100 impressions on my best work / 1,500 on the post where I admitted I have not made it
+  yet" → **"100 impressions when I showed my work / 1,500 when I told my side of the story."**
+- "The post I put the least expertise into travelled the furthest" → **"The post that showed none of
+  my work went the furthest by a distance."**
+- Media hook rebuilt on work-versus-story, with the best/worst framings explicitly rejected in the brief.
+
+**Standing rule:** in this register, never rank his own posts against each other. Contrast the
+*category* (work shown vs story told), never the *quality*.
+
 ## v3 changes (Usama, 2026-08-01) — READ THIS FIRST, it defines the register
 
 Usama's note: *"you are revealing my strategies here, I just want to share my insights and influential
@@ -77,8 +102,8 @@ share. The method is inventory.
 
 ## Post
 
-100 impressions on my best work.
-1,500 on the post where I admitted I have not made it yet.
+100 impressions when I showed my work.
+1,500 when I told my side of the story.
 
 For three months I posted the things I am actually good at. Frameworks. Cost breakdowns. Tool stacks. Careful work. Most of it reached about 100 people and stopped there.
 
@@ -88,7 +113,7 @@ Last Tuesday I posted the honest version instead. That I still work 9 to 6. That
 
 95% of that reach came from people who do not follow me.
 
-The post I put the least expertise into travelled the furthest by a distance.
+The post that showed none of my work went the furthest by a distance.
 
 I have been sitting with that all week.
 
@@ -169,14 +194,20 @@ See the reasoning note below. Never composite the two into one designed card.
   a face and click through. If the only available photo is a polished promotional headshot, leave it
   out; a formal headshot next to a "here is my unfinished receipt" post fights the post.
 - **Text on image (hook overlay, goes on the PHOTO, never on the screenshot):**
-  `100 FOR MY BEST WORK.` / `1,500 FOR THE TRUTH.`
+  `I SHOWED MY WORK: 100 PEOPLE.` / `I TOLD MY STORY: 1,500.`
   Anton uppercase, Bone White, "1,500" in Signal Green. Two lines, nothing else on the card.
-  Rationale: it states a contradiction the image cannot resolve, so the only way to close the gap is to
-  open the post. If the hook card exists, it leads and the screenshot follows as the proof.
-  Approved alternates: `MY WORST POST DID 15X MY BEST ONE` (single line, strongest for cold
-  out-of-network readers) · `95% OF THESE PEOPLE DO NOT FOLLOW ME` (if the network split is the visible
-  focus) · `THREE MONTHS OF GOOD WORK: 100 PEOPLE.` / `ONE HONEST POST: 1,500.` · `I ADMITTED I HAVE
-  NOT MADE IT YET.` / `IT WENT FURTHER THAN ANYTHING I AM PROUD OF.` (most direct, weakest gap).
+  Rationale: the contrast is **work versus story**, not best versus worst. It is not a ranking of his
+  posts, it is two different things a person can put in front of an audience. It states a contradiction
+  the image cannot resolve, so the only way to close the gap is to open the post. If the hook card
+  exists, it leads and the screenshot follows as the proof.
+  Approved alternates, all on the same axis: `NOBODY CAME FOR THE WORK. 1,500 CAME FOR THE STORY.`
+  (sharpest, single line) · `THREE MONTHS OF MY WORK: 100 PEOPLE.` / `ONE POST ABOUT ME: 1,500.` ·
+  `THEY DID NOT WANT THE FRAMEWORKS.` / `THEY WANTED THE PART I LEFT OUT.` (most curiosity, least
+  numeric) · `95% OF THESE PEOPLE DO NOT FOLLOW ME` (if the network split is the visible focus).
+  **Rejected framing, do not reuse:** anything built on best post / worst post ("MY WORST POST DID 15X
+  MY BEST ONE"). It reads as a quality ranking of his own output, which is both wrong and slightly
+  self-deprecating about work he is selling. The frameworks and cost breakdowns are not his worst work.
+  They are his work. The other post was his story. That is the whole distinction.
   **Never overlay text on the analytics screenshot.** Its whole value is being an unretouched receipt,
   and typography on it makes it read as produced, which is the one thing this post argues against.
   Fallback if both images are already final: use the primary hook as the first line of the first comment.
