@@ -168,6 +168,21 @@ See the reasoning note below. Never composite the two into one designed card.
   no text on it at all. It exists so the 95% of readers who do not follow him can attach the story to
   a face and click through. If the only available photo is a polished promotional headshot, leave it
   out; a formal headshot next to a "here is my unfinished receipt" post fights the post.
+- **Text on image (hook overlay, goes on the PHOTO, never on the screenshot):**
+  `100 FOR MY BEST WORK.` / `1,500 FOR THE TRUTH.`
+  Anton uppercase, Bone White, "1,500" in Signal Green. Two lines, nothing else on the card.
+  Rationale: it states a contradiction the image cannot resolve, so the only way to close the gap is to
+  open the post. If the hook card exists, it leads and the screenshot follows as the proof.
+  Approved alternates: `MY WORST POST DID 15X MY BEST ONE` (single line, strongest for cold
+  out-of-network readers) · `95% OF THESE PEOPLE DO NOT FOLLOW ME` (if the network split is the visible
+  focus) · `THREE MONTHS OF GOOD WORK: 100 PEOPLE.` / `ONE HONEST POST: 1,500.` · `I ADMITTED I HAVE
+  NOT MADE IT YET.` / `IT WENT FURTHER THAN ANYTHING I AM PROUD OF.` (most direct, weakest gap).
+  **Never overlay text on the analytics screenshot.** Its whole value is being an unretouched receipt,
+  and typography on it makes it read as produced, which is the one thing this post argues against.
+  Fallback if both images are already final: use the primary hook as the first line of the first comment.
+- **See-more hook (post body, do not change):** mobile truncates around 140 characters, which lands
+  just after "1,500 on the post where I admitted I have not made it yet." The number contrast is fully
+  visible above the fold and the resolution is not. That is the correct break point.
 - **Alt text, image 1:** "LinkedIn analytics for a post from 28 July 2026 showing 1,500 impressions,
   1,056 members reached, 5% in-network and 95% out-of-network, with 12 profile viewers and 3 followers
   gained from the post."
