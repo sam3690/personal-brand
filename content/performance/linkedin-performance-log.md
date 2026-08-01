@@ -1,6 +1,43 @@
 # LinkedIn Performance Log
 <!-- Appended each Sunday by Agent 6 using Zernio analytics. Newest entry on top. -->
 
+## 2026-08-01 — Founder story (2026-07-28) broke every record on the account
+
+Logged from the post's own LinkedIn analytics panel (screenshot supplied by Usama), not a Zernio sync.
+
+| Date | Day | Post (angle) | Impressions | Reached | Reactions | Comments | Profile views | Followers |
+|---|---|---|---|---|---|---|---|---|
+| 07-28 | Tue | Founder story, "that is not a success story, it is a receipt" (P4) | 1,500 | 1,056 | 18 | 5 | 12 | 3 |
+
+**This is the single biggest result the account has produced.** Prior best impressions: 196. Prior best
+reactions: 5. So roughly **7.6x the impressions and 3.6x the reactions of anything before it**, and the
+first post to move profile views and followers in a measurable way.
+
+Distribution split matters: **95% out-of-network, 5% in-network.** Every previous post was
+reach-capped near 100 impressions and stayed inside the follower graph. This one got pushed out. That
+is the algorithm rewarding dwell time and comment depth, which a story earns and a framework post does not.
+
+**What changed vs. the ~100-impression posts:**
+1. **Register.** Level 1 hero story, no CTA, no offer, no client, no framework. Pure first-person.
+2. **Unfinished stakes.** It refused to resolve into a win ("$850, still 9 to 6, no predictable
+   pipeline"). The previous register always closed on a result or a takeaway.
+3. **Question that asks for a confession**, not an opinion. 5 comments off ~1,000 reached.
+
+**Correction to the 2026-07-19 learnings:** "reach, not resonance, is the bottleneck" was right about the
+symptom and wrong about the cause. Timing was not the cap. **Register was.** Cost-delta hooks + named-steps
+frameworks max out around 100-200 impressions on this account because they stay in-network. Story breaks out.
+
+**Learnings for the next drafts:**
+1. **Raise founder-story frequency.** The framework says 1 hero post per 4-5. On this evidence, run
+   **1 per 3** until the reach advantage decays. Do not convert the whole feed to story: authority still
+   has to come from the P1/P2/P3 posts, and hero-only means entertainment with nobody buying.
+2. **The honesty is the mechanism, not the topic.** A polished founder-journey post is still a polished
+   post. What travelled was the admission with a number attached to it.
+3. **Zero-CTA is not costing us anything yet.** The no-CTA post out-earned every CTA post on profile
+   views. Inbound interest is coming from recognition, not from asks.
+4. **Next test (this post, 2026-08-01):** does chapter two of the same story hold the reach, or was
+   07-28 a one-off novelty spike? Check impressions + out-of-network split against 1,500 / 95%.
+
 ## 2026-07-19 — Week of 2026-07-13 review
 
 **Follower growth:** 302 → 308 (+6, +1.99%) over 2026-07-15 to 2026-07-19. Slower than last
