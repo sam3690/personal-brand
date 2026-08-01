@@ -100,6 +100,18 @@ point, not a side effect.
 - **The stakes must be real and specific.** "I struggled" is not a story. "I had $X, N days, and a
   machine that had just died" is a story. Vague hardship reads as manufactured and destroys trust,
   which is the exact opposite of what this framework is for.
+- **Share the result, never the playbook** (added 2026-08-01, Usama's call on founder story 2).
+  A hero post reports what happened and what it means about people. It must NOT end on "so here is what
+  I will do differently from now on." Two reasons: it publishes his positioning for free, and it is the
+  wrong genre. A method announcement asks the reader to watch him improve; an insight hands the reader
+  something they can use on their own morning. Only the second one gets shared, and sharing is what
+  produced the 1,056-person reach in the first place.
+  Concretely, cut lines like "the real number goes before the impressive one" or any description of how
+  he opens sales conversations. Keep the number, the admission, and the observation about people.
+  **The result is his to share. The method is inventory.**
+- **Watch for motivation slop in this register.** These posts sit closest to greeting-card writing of
+  anything we produce. The lift must come from a real number and a plain observation, never from
+  adjectives or imperatives. No "unlock", no "the power of", no "here are 3 things", no tricolon stacks.
 - **Hero-post structure that fits LinkedIn:**
   1. Hook = the lowest point, stated flat, no windup.
   2. What you wanted and why it mattered (stakes).
