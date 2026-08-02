@@ -81,8 +81,17 @@ dependent calls: post in reply-chain order, never parallel; source link goes as 
 **Never publish a draft Usama has not confirmed in-session. Agents never attach or generate media.**
 
 ## The routines (the agentic loops)
-Exact schedules + the full prompt of every routine: **`content/ROUTINES.md`** (the recovery file —
-routines live server-side on claude.ai, so recreate them from there after any machine/OS reset).
+Exact schedules + the full prompt of every routine: **`content/ROUTINES.md`** (the recovery file).
+The 5 routines run **locally** on this machine via `mcp__scheduled-tasks__*`, not on claude.ai — moved
+2026-08-03 after the cloud containers' `git push` proved permanently 403'd (proxy is read-only, no
+user-side fix) and the GitHub-MCP-PR workaround never actually landed a single automated PR in this
+repo's history (every "recovery" required Usama to paste content into a session manually). Local
+tasks push with real SSH/`gh` credentials, so they publish unattended for real — but they **only fire
+while this app is open on this machine**; if that stops covering the schedule, revisit
+`content/ROUTINES.md`, which also holds the disabled (not deleted) cloud-trigger IDs as a fallback.
+`/home/usama/.claude/scheduled-tasks/` is NOT part of this repo and NOT backed up — after any
+machine/OS reset, recreate all 5 from `content/ROUTINES.md` via
+`mcp__scheduled-tasks__create_scheduled_task`.
 - **`daily-x-trending-posts`** — every day ~1pm PKT: Agent 6 reviews yesterday's X metrics (opus) →
   X0 scouts today's trending AI topics → X1/X2/X3 write, brief, QA 2-3 posts → drafts + notify.
   Posting windows: 9am-12pm ET, posts spaced 2+ hours.
