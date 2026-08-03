@@ -4,7 +4,8 @@
 > His credentials as stated: ~5,000 calls booked on LinkedIn organically, no paid ads ever; ~250,000 DMs sent; 2,100+ business owners coached; those clients self-reported ~$172M/year at last survey. These are his self-reported claims, not our benchmarks, and no number of his ever goes into a published post.
 > This file is a WRITING SPEC, not a summary. Agents 1-5 (LinkedIn) read it alongside `../winning-post-patterns.md` and `../linkedin-algorithm-2026.md`. Where the two conflict, Section 9 rules. Where anything in this file conflicts with Section 1A, Section 1A rules.
 > Voice rule: no em dashes anywhere, in this file or in published copy. US English throughout: inquiry not enquiry, color not colour, organized not organised, analyze not analyse. Every line a claim or a proof.
-> Revision 2026-08-03 (Content Director): channel ruling added as 1A, checklist rules A3/A5/A9/C1 recalibrated, cold-email citation corrected, Section 7 reordered to put outreach first. Corrections are marked in place so a future reader knows what changed and why.
+> Revision 2026-08-03a (Content Director): channel ruling added as 1A, checklist rules A3/A5/A9/C1 recalibrated, cold-email citation corrected, Section 7 reordered to put outreach first.
+> Revision 2026-08-03b (CEO override): the tribe is the AI-automation operator, not the interior design studio. Interior design, fragrance and medical sales are proof, not market. 1A rewritten, the subject/reader split deleted, all trade nouns replaced with builder nouns. The raw-confession founder-story register that produced the 2026-07-28 reach spike is retired: it traded a real reach mechanism for buyer confidence, and the CEO has ruled that trade in favor of buyer confidence. That is settled and is not re-argued elsewhere in this file. Corrections are marked in place so a future reader knows what changed and why.
 
 ---
 
@@ -55,7 +56,7 @@ Three mechanics, all independent of audience size:
 | **Comments surface in the commenter's network** | Unlike IG/TikTok, a LinkedIn comment can appear in the commenter's feed with your post attached | "all of these people are donating me their views and impressions" (Lakajev). Reach borrows their graph, not yours |
 | **The niche feed is a separate internet** | "Everybody has a unique different algorithm. Completely different" (Lakajev). You have never seen tribal posts because you are not in that tribe | Your own feed is evidence about you, not about what works |
 
-All three mechanics have a precondition he never states, because it was always true for his clients: **the tribe has to open the app.** See 1A.
+All three mechanics have a precondition he never states, because it was always true for his clients: **the tribe has to open the app.** Ours does, daily. The precondition is met, so all three mechanics are live for us. See 1A.1.
 
 **His proof set (claims, not benchmarks. Never quoted in a post):**
 
@@ -78,49 +79,57 @@ Our founding price is $500 (2 spots), standard $1,500. We are at the floor at fo
 
 ---
 
-## 1A. The channel ruling (governing rule, added 2026-08-03 by the Content Director)
+## 1A. The channel ruling (governing rule, rewritten 2026-08-03 after the CEO's tribe correction)
 
-> Inserted after the playbook was written. Section numbers below are deliberately unchanged, because agents and other repo files already reference them. Where 1A conflicts with anything later in this file, 1A wins.
+> The first version of 1A existed to solve a problem that no longer exists. It assumed the tribe was residential interior designers, who do not live on LinkedIn, so it invented a subject/reader split and a list of "LinkedIn-present adjacents" to work around that. The tribe changed. The workaround is deleted. Where 1A conflicts with anything later in this file, 1A still wins.
 
-### 1A.1 The tribe is not in this place, and the playbook has to say so
+### 1A.1 The tribe and the platform are aligned
 
-Everything in Section 1 assumes the tribe is on the platform. Ours is not. A residential interior designer opens LinkedIn maybe once a month, and it is not where she gets work. Her work comes from referrals, Instagram, Houzz and her GC. The algorithm can only route content to people who open the app, and the comment-borrowing mechanic in 1.4 only pays if the commenter's graph holds more of the tribe. A residential designer's LinkedIn graph is old firm colleagues, vendor reps and recruiters, not other designers.
+The tribe is the AI-automation operator: founders, agency owners, consultants, solo operators and in-house builders who have already decided that AI and automation are how they will run their business, and who are stuck somewhere between wanting it and having it work reliably.
 
-Be honest about the source. Every named win in this course is a LinkedIn-native tribe: ag business owners (Beck), geotechnical and structural engineers (Bill), Canadian university students (Evan), a recruiter's hiring managers. There is not one example in his material of this method winning with a tribe that lives somewhere else. **This is a departure from Lakajev's own examples.** We are running his method on a tribe he never tested it on. That is a real risk, taken deliberately, and the split in 1A.2 is the mitigation.
+Two segments. Both are first-class. Every post is written to one of them on purpose.
 
-### 1A.2 Split the subject from the reader
-
-- **The emotional subject of every post stays the founder-designer / studio owner.** That is who the stories are about, whose objects get named, whose night is described. That is what creates recognition, and it is the person the offer serves.
-- **The reader of record on LinkedIn is the LinkedIn-present part of the same niche.** All of it is already named in-niche by `current-strategy.md`: design-build and remodel firms, kitchen and bath dealers, custom cabinetry and millwork shops, showroom and rep groups, and the operations or studio manager inside a larger design firm. These people are on LinkedIn weekly, they sit adjacent to the designer on every project, and they carry the same lead-response wound at larger deal sizes.
-
-**Therefore: a post that only a solo residential designer could recognize is HALF a post.** The best posts this week are recognizable to the designer AND legible to the remodeler, the cabinet shop and the kitchen-and-bath dealer standing next to her. Write the specific designer detail first, then check that the adjacent operator reads it and thinks "that is my Tuesday too."
-
-This is not a softening instruction. Do not sand the trade nouns off to widen the audience. The designer detail is what makes it real; the adjacent's recognition is what makes it reach.
-
-### 1A.3 Channel roles (fixed until the next CEO review)
-
-| Channel | Job | Who it actually reaches |
+| Segment | Where they are stuck | What they need from us |
 |---|---|---|
-| **Cold email** | Discovery. The primary way we reach the solo studio owner | The founder-designer, the staging studio, the small remodel shop |
-| **Instagram** | Discovery. Where their inquiries already arrive and where they already are | The founder-designer |
-| **LinkedIn, job 1** | The credibility surface a prospect checks AFTER a cold email or a DM lands. Headline, banner, About, featured, last three posts | Anyone we contacted anywhere |
-| **LinkedIn, job 2** | Organic reach plus the connection-request-and-DM lane into the LinkedIn-present adjacents in 1A.2 | Dealers, remodelers, cabinetry and millwork, showroom and rep groups, studio ops |
+| **A. The paralysis** | They know AI matters. They have watched the tutorials. They have an n8n or Make account with two half-built workflows sitting in it. They do not know what to automate first, or whether the thing they picked is even worth automating | Knowledge without a decision. Hand them the decision: what to automate first, what to leave manual, and how to tell the difference before you build |
+| **B. The reliability gap** | They BUILT it. It worked in the demo. It works Tuesday and breaks Thursday. They cannot trust it enough to put it in front of a client or take their hands off it | Higher intent, higher value, and exactly Usama's wedge. Four years of production backend for healthcare orgs and agencies, where a broken workflow loses a patient record, not just money. Error handling, retries, idempotency, and a system you can stop watching |
 
-LinkedIn has exactly those two jobs. It is not the discovery channel for the solo designer and we stop pretending it is.
+Circumstantial pains that sit on top of both, and belong in the circumstance slot in 2.5: inbound arriving faster than they can answer it, not knowing how to sell the thing they built, and generating fewer leads than the effort should produce.
 
-### 1A.4 What this ruling does NOT change
+This tribe opens LinkedIn every day. They post there, they argue about AI there, they follow automation builders there, and the feed already routes this account into that graph. **The precondition Section 1.4 depends on is met.** LinkedIn is a discovery channel here, not only a credibility surface. This is the normal Lakajev case, not the exception, so every mechanic in Sections 1, 2, 5 and 6 applies directly and without adaptation.
 
-1. **The niche is unchanged.** `current-strategy.md` governs: interior design plus adjacent high-ticket home-design studios, including interior designers, home remodel and renovation, kitchen and bath, custom cabinetry and furniture, and landscape design. This file may not narrow that list. Any narrowing goes to a CEO review.
-2. **Nothing here blocks publishing.** No rule in this document may be triggered by a reach fact into a stop-the-line state. The account's number one measured leak is over-generating and under-shipping. See the A5 and C1 corrections in Section 8.
-3. **The 90-day commitment stands** until 2026-10-22. Niche-hopping is what broke us before.
+Usama is inside this tribe. He is not an outsider selling to a trade he had to research. Insider language is native, which means the tribal-noun requirement in 5.7 costs nothing to satisfy.
 
-### 1A.5 The cheap test that settles the LinkedIn question
+### 1A.2 Both lanes work, and here is the honest ranking
 
-Search Usama's own connections and followers for "interior designer," "kitchen and bath," "remodel," "design build," "cabinetry," "millwork." Write the count into `content/performance/linkedin-performance-log.md` this week.
+| Lane | Job | Speed | Ceiling |
+|---|---|---|---|
+| **Connection requests and DMs** | Volume. The accept is explicit permission, then a conversation | Fastest per conversation. Produces a real number in week one | Capped by how many messages a human can send by hand |
+| **Content** | Inbound. Recognition at scale, and the raw material every DM references | Slowest to start, weeks not days | Compounds. The only lane that keeps working while asleep |
 
-If the count is under about 20, the LinkedIn FEED is not a discovery channel for this tribe, and the connection-request plus DM lane is the only LinkedIn mechanic that survives a buyer who opens the app monthly. **The inbox waits. The feed does not.** That single sentence is the reason Section 7 was reordered.
+Content produces the inbound. The DM lane produces the volume. Section 7 keeps outreach as Lane 1 because it builds more trust per interaction (7.3) and because it is the lane that does not exist today, **not because content is a secondary surface.** On this tribe, content is discovery. A post that lands is the reason the DM gets answered, and 7.2's test still holds: did this post give me something to say in a DM, or someone to say it to?
 
----
+### 1A.3 The clients are proof, not the market
+
+Interior design, fragrance e-commerce and medical sales are **case studies**. Any post may use them. No post is written TO them.
+
+- Wrong: a post addressed to interior designers about their inquiry flow.
+- Right: a post addressed to operators about a WhatsApp booking system that took reply time from about 24 hours to seconds, which happened to be built for an interior design studio.
+
+Naming permission has not been granted. In public copy they stay "an interior design studio," "a fragrance brand," "a medical-sales team." Full record: `../playbooks/proof-assets.md`. Do not invent anything beyond it.
+
+### 1A.4 Positioning posture: write from ahead
+
+Usama writes as the person who has already solved this, teaching from in front. Not as a peer struggling alongside the reader.
+
+- **Retired, per CEO instruction:** struggle admissions and failure stories. No cash position, no "pre-revenue," no "no clients yet," no zero-reply outreach counts, no "still figuring this out." Nothing that tells a buyer this person has not been paid.
+- **Still allowed:** vulnerability that demonstrates competence. A bug he found and fixed. A wrong assumption he corrected with a better system. A thing that broke in production and the change that stopped it recurring. **The scar ships with the fix attached. Never an open scar.**
+- **Unchanged:** the honesty floor. Never fabricate a client, a conversation, a statistic or a scene. Not leading with failure is a positioning choice. Making things up is a different thing and is still an A10 blocker.
+
+### 1A.5 What this ruling does not change
+
+1. **Nothing here blocks publishing.** No rule in this file may be triggered into a stop-the-line state by a reach fact. The account's number one measured leak is over-generating and under-shipping. See the A5 and C1 corrections in Section 8.
+2. **The proof stack is the asset, and it has been badly underused.** 4 years of production backend systems for healthcare orgs and agencies, a shipped contribution to Axios (running in millions of Node apps, credential-only until the PR link is on file), and three shipped client systems. That stack is the answer to Segment B, and Segment B is the wedge. **Retired from copy by `strategy/tribe.md` section 8.1 and NOT usable here: the "500+ workflows" figure and the slogan "Move fast and don't break things."** Where this file and `tribe.md` disagree on what may be published, tribe.md wins.
 
 ## 2. Tribes, not niches
 
@@ -166,7 +175,7 @@ Anywhere people congregate, physical OR digital. The platform itself counts.
 
 Its power is that it cannot be faked: you have to have actually been there. Examples: Sydney's Northern Beaches (breakfast with no shoes on is normal), rural and regional Australia (drive past the cotton farms), Canadian universities, Oklahoma.
 
-**LinkedIn's own place-tribe vocabulary,** as he lists it: "AI comments," "Claude Code lead magnets," "personal brand gurus," "engagement pods." Every LinkedIn native decodes all four. Nobody else does.
+**LinkedIn's own place-tribe vocabulary,** as he lists it: "AI comments," "Claude Code lead magnets," "personal brand gurus," "engagement pods." Every LinkedIn native decodes all four. Nobody else does. **This is now a live slot for us, not an illustration.** Our tribe is LinkedIn-native, so LinkedIn's own vocabulary stacks on top of the build vocabulary in 2.5 at zero cost.
 
 #### Type 3: The circumstantial tribe
 Something happened to you, and now certain objects carry meaning. His prop is toilet paper: say COVID-19 and everyone sees empty shelves.
@@ -191,11 +200,11 @@ Target size: 5,000-10,000 people. Not 8 billion.
 
 | Slot | Our answer | Notes |
 |---|---|---|
-| **Chosen** | The owner-operator of a design, remodel or kitchen and bath studio of 1 to 6 people. Interior designers, kitchen and bath designers, renovation and remodel studio owners, custom cabinetry and millwork, landscape design. The people who chose the trade and identify as "designer" or "builder," not "business owner" | Initiation is real: the resale certificate, the first trade account approval, eating the first custom mistake out of your own pocket, floating client money on a PO. Credentials (NKBA, ASID, IIDA, CKBD, NCIDQ where licensure applies) are a marker, not the price of entry. Do not gatekeep on a credential half the tribe never sat |
-| **Reader of record (LinkedIn only)** | Design-build and remodel firms, kitchen and bath dealers, cabinetry and millwork shops, showroom and rep groups, the studio or operations manager inside a larger design firm | Added 2026-08-03 per 1A.2. Same wound, larger deal sizes, and they actually open the app. The designer is the subject; this row is the reader |
-| **Place (digital)** | Instagram DMs, Houzz and Houzz Pro, Pinterest, the website contact form, the missed call with no voicemail. This is where their inquiries physically arrive and where the pain lives | Strongest place tribe because Usama sells remote to US/EU and cannot claim a suburb. Meta lead ads belong here only for the minority actually running ads. Do not assume ad spend |
-| **Place (physical, optional)** | KBIS, High Point Market (April and October), the local trade showroom, the slab yard | Use sparingly for events we have not attended. "The slab yard" is the single most load-bearing noun available and it costs nothing to use honestly |
-| **Circumstance** | The owner who is also the lead designer AND the person answering the phone. Studio of 1 to 6. Peak spring remodel rush. The season that sold in January and installs in November | The sharpest slot we have. It is the reason the inquiry sits unanswered until 9pm |
+| **Chosen** | The operator who systematizes before staffing: agency owners, consultants, solo operators, technical founders, and the person inside a bigger company who quietly became the automation department. They identify as the one who builds it, not as "a business owner" | Initiation is real and every member has paid it: the first workflow that ran without you, the first API key pasted into a credential field, the first webhook that fired, the first thing that broke in front of a client, the first paid build |
+| **Reader of record** | Same person as the subject. Deleted 2026-08-03b: the subject/reader split existed only because the old tribe did not open LinkedIn. This one does, daily | See 1A.1 |
+| **Place (digital)** | n8n, Make, Zapier, Airtable, Retool, Supabase, the n8n community forum, r/n8n and r/automation, automation Skool and Discord servers, YouTube build tutorials at 1.5x, X build-in-public, and LinkedIn itself | Strongest slot we have. Usama is natively inside every one of these, so insider vocabulary costs nothing. Name the actual tool, never "an automation platform" |
+| **Place (physical)** | None worth claiming. This is a digital-native tribe and inventing a conference presence is an A10 fail | Do not fabricate event attendance |
+| **Circumstance** | Three segments, never mixed in one post. A: knows AI matters, two half-built workflows, cannot decide what to automate first. B: built it, it works Tuesday and breaks Thursday, cannot take their hands off. C: an inventory of builds, no idea which are still running | The sharpest slot we have. B is the wedge, C is the nearest money, A is the reach. Full detail in `../../strategy/tribe.md` section 2.3 |
 
 **Our tribal noun bank (use these, never the category word):**
 
@@ -210,7 +219,7 @@ Target size: 5,000-10,000 people. Not 8 billion.
 | the process | mood board, spec sheet, FF&E schedule, punch list, reveal day, install day, site visit, showroom appointment, "the acknowledgment says 22 weeks" |
 | the money | design fee vs cost-plus, trade net vs MSRP, resale cert, procurement, the deposit, "our minimum is" |
 
-**The taboo (use it, it is the sharpest tool we have):** in this tribe, being slow to reply is embarrassing, not just inefficient. They are selling taste and care. A cold inquiry sitting for two days contradicts the brand they sell. The true mechanism, and the line that lands: a client cannot judge taste, so they judge the proxies, and reply time is the loudest proxy they have. **Your reply time is being read as your project management.**
+**The taboo (use it, it is the sharpest tool we have):** in this tribe, the shameful thing is a build that fails silently. Not a build that fails, a build that fails and nobody knows until the client tells you. Shipping a workflow with no error branch, hardcoding a key into a node, charging for something you cannot support, "it works on my machine." The true mechanism, and the line that lands: a client cannot evaluate your architecture, so they evaluate the proxies, and how you handle a failure is the loudest proxy they have. **Your error handling is being read as your competence.**
 
 ### 2.6 The trap: the wrong tribe still travels (recalibrated 2026-08-03)
 
@@ -240,7 +249,7 @@ If you post "five tips to prevent burnout" and Bartlett posts "five tips to over
 
 **Pre-publish test:** would Steven Bartlett, Simon Sinek, or in our lane, a large AI-newsletter account, post this exact title? If yes, kill it and rewrite for a tribe subset.
 
-**Our version of the test:** would Nate Herk, Liam Ottley or an n8n template account post this exact title? "7 n8n workflows that print money" fails. "The Houzz inquiry that sat unread until Monday" passes.
+**Our version of the test, and it is harder now.** We share a feed with Nate Herk, Liam Ottley and every n8n template account, so the test is not "do they cover automation," it is "could they write this exact post." They cover the build. They do not cover what happens after it ships. "7 n8n workflows that print money" fails. "How I make an n8n workflow survive a 429 without duplicating the record" passes, because a template account cannot write it and 4 years of production backend is what makes it writable.
 
 ### 3.3 The headline rule: no "I help" statements
 
@@ -256,8 +265,8 @@ Beck's single insider word does the whole job: > "no one in agriculture says agr
 
 ### 3.4 Our positioning rewrite
 
-**Current headline (still live as of 2026-08-03, still wrong):** "GTM Agents + AI automation for Founders & agency owners | One system replaces a $20k/year admin hire."
-Fails on: category audience, tool-first, no tribe, competes with every AI automation account, and it names the ICP we left. Anyone who clicks through from a cold email reads, in their own words, "not for you." This is the cheapest fix on the entire list and it has not shipped.
+**Current headline (live, and CORRECT as of the 2026-08-03 CEO ruling. Do not change it):** "GTM Agents + AI automation for Founders & agency owners | One system replaces a $20k/year admin hire."
+It passes the role-for-tribe formula, it names the tribe the CEO ruled on, it carries no "I help," and the second clause is a concrete outcome rather than a value proposition sentence. The previous version of this section marked it wrong on the assumption that the market was interior design studios. That assumption is void. This item is closed.
 
 **Replacement candidates, ranked:**
 
@@ -265,12 +274,12 @@ Fails on: category audience, tool-first, no tribe, competes with every AI automa
 2. `The 60-second reply guy for design and remodel studios`
 3. `I build the thing that answers the inquiry while you are on a jobsite` (stronger recognition, weaker as a label; use as the About first line)
 
-**Banner:** not a logo, not a gradient. A real, PII-redacted screenshot from the system we actually built: an inquiry that landed at 9:14pm and got answered at 9:14pm. Never fabricate a banner screenshot. Lakajev's parallel: Beck's banner is a cotton farm that means nothing to outsiders.
+**Banner:** not a logo, not a gradient. A real, PII-redacted artifact from a system we actually shipped: the n8n canvas with the error workflow and retry branch visible, or an execution log showing a failed run that self-recovered. An outsider sees noise, an operator reads it instantly, which is the whole test. Never fabricate a banner screenshot. Lakajev's parallel: Beck's banner is a cotton farm that means nothing to outsiders.
 
 **Stacked-bio formula (his):** `[what you do] for [chosen tribe] [circumstance] on/in [place]`
 Ours: `Lead response systems for owner-run design and remodel studios.`
 
-**Channel honesty rule (verified 2026-08-03).** There is no shipped Instagram-DM-native build. The one exact-fit build routed Meta ad inquiries into WhatsApp. Until an Instagram path is built on Usama's own account and screenshotted, no post, headline, DM or banner may claim one. Safe public phrasing for capability: "answered in under 60 seconds, wherever it comes in: Instagram DM, form, text, missed call." Safe phrasing for the case study: name WhatsApp only when telling the actual build story.
+**Capability honesty rule (verified 2026-08-03).** Claim only stacks and channels that exist in \`../playbooks/proof-assets.md\`: Meta and Instagram ads into WhatsApp booking, content-posting workflows and AI agents, a WhatsApp customer assistant, and an AI voice calling agent that books meetings. There is no shipped Instagram-DM-native build and no shipped Slack, Teams or Salesforce build. Until one exists and is screenshotted, no post, headline, DM or banner may claim it. Safe public phrasing for capability: "it answers in seconds, wherever it comes in." Safe phrasing for a case study: name the actual stack only when telling the actual build story.
 
 ### 3.5 Who we are explicitly NOT for
 
@@ -318,9 +327,9 @@ Write two dot points against each. That document is the raw material for every P
 | 6 | **Ahead, not above** | No status flexing. Lambo content attracts "number one, narcissists. Number two, insecure people" (Lakajev) | Pre-revenue, building in public, one client of proof. Say it plainly |
 | 7 | **Pick a side** | A convicted contrarian position, plus what you are against. No religion, no politics | Against: AI agents sold as demos that break in production. For: boring, reliable plumbing, owned by the client, no retainer |
 
-**Proof hygiene (hard rule, verified 2026-08-03).** The interior client is a solo-preneur studio and naming permission has NOT been granted. In any public copy the client is "an interior design studio" or "the studio." Never named, never located, never gendered, never pluralized into "studios" or "clients." Lead with the safe number, "24 hours to seconds." The consult count (7-8 a month to 27) goes in the body with a capacity frame, never in the hook: they were not short of inquiries, they were short of answered ones. A high-ticket reader does the math on 27 consults and concludes you serve a volume shop.
+**Proof hygiene (hard rule, verified 2026-08-03).** Naming permission has NOT been granted for any of the three builds. In public copy they are "an interior design studio," "a fragrance brand," "a medical-sales team." Never named, never located, never gendered, never pluralized into "studios" or "clients." Safe hook numbers: "24 hours to seconds," "hours to seconds," "14 new customers in 3 weeks." The consultation count (7-8 a month to 27) stays in the body with the capacity frame, never in a hook: they were not short of inquiries, they were short of answered ones. Presented to this tribe, all three are architecture stories first and outcome stories second: what was built, what could have broken, what stopped it breaking.
 
-**The workaround when you have not done it with this exact ICP** (directly applicable to us, we have one interior client):
+**The workaround when you have not done it with this exact ICP** (largely obsolete for us now: three shipped systems and 500+ workflows clear the "you've done it" bar, and Usama is inside the tribe rather than selling into a trade he studied. Keep it only for a specific stack or vertical we have genuinely never touched):
 
 > "I've never worked with anyone, but I've done 200 hours of research and that's my live credibility." (Lakajev)
 
@@ -330,7 +339,7 @@ His script: get on 5 calls with people in the tribe in a week, help free, buy th
 
 > "What would I be comfortable sharing to a table of 12 people? ... If you are not comfortable about telling this table of 12 people something, do not post it online." (Lakajev)
 
-This is our guardrail against forced vulnerability. The 2026-07-28 story passed it. Anything that would not be said standing at a dinner table gets cut.
+This is our guardrail against forced vulnerability, and it now runs alongside the posture rule in 1A.4. A bug you found and closed is table-of-12 material. Your bank balance is not, whether or not you would say it out loud. Anything that fails either test gets cut.
 
 ### 4.4 Self-trust (the input to all of it)
 
@@ -370,7 +379,7 @@ Two axes. **Tribal density** = does the tribe see themselves. **Brand alignment*
 
 > "the classic thing where people say, 'Your mum should understand exactly what you do.' That's not correct anymore... it's specifically that other people shouldn't understand what you do" (Lakajev)
 
-Ask: would someone outside the trade understand every line? If NO, ship it. If a general business reader can follow all of it, add insider terminology until they cannot.
+Ask: would someone who has never built a workflow understand every line? If NO, ship it. If a general business reader can follow all of it, add build-layer specifics until they cannot. Note the calibration change: the outsider is now the non-builder, not the non-designer, and the insider language is Usama's own, so this test costs nothing to pass.
 
 **Test 2: brand alignment.** "does it position you as the answer?" (Lakajev). A post can pass one and fail the other. Only posts passing both generate leads. Note the calibration: brand alignment is about whether the post points at a problem you solve, not about whether outsiders enjoyed it.
 
@@ -384,7 +393,7 @@ Ask: would someone outside the trade understand every line? If NO, ship it. If a
 4. Where do they go for walks?
 5. What do they sit on on the commute?
 
-Our version for a studio owner: the Houzz Pro inbox with 4 unread. The Instagram DM that came in during a site visit, "hi! do you do full kitchens?", read, not replied, three days ago. The tote of memos in the back seat, rubber-banded, unsorted since April. The fan deck in the door pocket. The missed call at 4:40pm from an unknown local number, no voicemail, while she was at the slab yard. The contact form from Saturday morning, opened Monday 9:12am.
+Our version for an operator: the n8n canvas with two workflows named "test" and "test 2 FINAL." The 41 saved build tutorials nobody has watched twice. The execution log opened on Monday morning showing the run went red on Thursday. The Slack message from a client that starts "hey, is the thing working?" The .env file with a key still hardcoded in a node from the first version. The tab group of six half-read n8n forum threads about the same 429. The Make scenario that ran twice and made two records.
 
 **Use the brand noun, never the category noun.** > "So you don't write supplements, you'd write LMNT in the content." (Lakajev) His own hook says iPhone, not phone, "because people can visualize an iPhone."
 
@@ -394,7 +403,7 @@ Our version for a studio owner: the Houzz Pro inbox with 4 unread. The Instagram
 
 **The no-hook proof.** He claims that three tribal nouns with no hook at all still work: "5:30am WAD," "B-Line Pittwater Road," "four wakeups last night." The CrossFit dad builds the whole scene himself. Recognition does the job a hook normally does.
 
-Our equivalent three-noun test: "The Instagram DM at 9:40pm." "The acknowledgment says 22 weeks." "Install day moved again." A studio owner constructs the scene. A cabinet shop owner reading the same line constructs his own version of it, which is the point of 1A.2.
+Our equivalent three-noun test: "Two workflows in the account, both named test." "It ran Tuesday and broke Thursday." "The node went red at 2am." An operator builds the whole scene from any one of those. Segment A recognizes the first, Segment B recognizes the second and third, and both are the tribe.
 
 ### 5.4 Hook construction: the Hook Movie Trailer
 
@@ -417,7 +426,7 @@ Four parts. You do not need all four every time. The pass condition is the ChatG
 
 Text-only works. Bill's best post has no image at all.
 
-**Hook honesty rule.** Any hook implying access to a client's data must name the one real engagement (the anonymized interior studio) or be cut. No invented designer, no invented call, no invented dataset. See A4 and A10.
+**Hook honesty rule.** Any hook implying access to a client's system or data must trace back to one of the three real engagements in \`../playbooks/proof-assets.md\`, anonymized, or be cut. No invented client, no invented call, no invented dataset, no invented audit of "50 n8n accounts." See A4 and A10.
 
 ### 5.5 Stealing formats (the coloring book)
 
@@ -448,7 +457,7 @@ He does not generate ideas. He steals structures.
 > "on LinkedIn, it just doesn't promote your content. the people commenting on your post that shows up in other people's feeds" (Lakajev)
 > "The best type of content isn't the one that just generates the most views. It's the one that gets the most engagement and comments from your ideal clients." (Lakajev)
 
-**Engineer in-niche-to-in-niche argument.** Give the tribe something to disagree about with each other: a contested number, a claim about their industry's pricing, a practice they defend. White Dove vs Alabaster vs Swiss Coffee is comment bait without being engagement bait.
+**Engineer in-niche-to-in-niche argument.** Give the tribe something to disagree about with each other: n8n vs Make, self-hosted vs cloud, agent vs deterministic workflow, whether you let the model choose the tool or hardcode the branch, whether Airtable counts as a database, build fee vs retainer. Every one of those is comment bait without being engagement bait, because operators genuinely argue about them.
 
 **Structure of a debate post:** flat contrarian claim + "here's why" + credentials by experience (duration, place, volume) + a stake-in-the-ground line + explicit invitation to argue. Choose one word you know the purists will attack.
 
@@ -456,7 +465,7 @@ He does not generate ideas. He steals structures.
 
 > "if your ideal clients don't even like your post or they don't even view your LinkedIn profile after you put a content out that's for these people, it's not tribal enough" (Lakajev)
 
-Calibration for a 308-follower account with almost no designers in the graph: zero designer comments is the EXPECTED outcome of a perfect post, because they are not in the room. Count the adjacents, count out-of-network share, and keep publishing. See the C1 correction.
+Calibration change: the tribe IS in the room now, so zero in-niche comments is real information rather than an artifact of the graph. On 308 followers it still takes weeks, so treat a miss as a register note, not a verdict, and never as a gate. Count builders and operators by profile, count out-of-network share, and keep publishing. See the C1 correction.
 
 ### 5.7 Tribal language as a filter, and as targeting data
 
@@ -468,7 +477,7 @@ Do not soften the jargon for general readability. Aim for 3-5 tribal proper noun
 
 > "if you don't use nouns and pronouns that are things people have in their bag, on their computer, that's exclusive to them, you can't create trust through your content, it cannot occur" (Lakajev)
 
-**Vocabulary that must appear and must not be paraphrased:** memo, pull memos, CFA, COM, the workroom, the fabricator, the slab yard, the acknowledgment, lead time, punch list, install day, reveal day, spec, FF&E, trade net vs MSRP, resale cert, scope creep, "our minimum is." Never write supplies, stone supplier, response time, leads, funnel, pipeline or speed to lead in copy aimed at them.
+**Vocabulary that must appear and must not be paraphrased:** node, canvas, sub-workflow, execution log, run history, error workflow, retry branch, idempotency key, webhook vs polling, cron, rate limit, 429, timeout, OAuth refresh, credential, self-hosted vs cloud, staging run, system prompt, tool call, token spend, per-run cost. Never write "automation solution," "AI-powered," "seamless integration," "digital transformation" or "leverage AI" in copy aimed at them. Leads, pipeline and CRM are native to this tribe and are allowed.
 
 ### 5.8 Painkiller, not vitamin
 
@@ -478,7 +487,13 @@ Vitamin content = objectively good advice with no acute pain attached, so nobody
 
 > "if you can't describe what it's like for them right now they're not going to trust you to take the fish oil later." (Lakajev)
 
-**For us:** "you should have a lead response system" is a vitamin. "The inquiry that landed Saturday at 9:40pm is still unread and she booked someone else on Monday" is a painkiller.
+**For us:** "you should add error handling" is a vitamin. "Your workflow failed at 2am on Thursday, it did not tell anyone, and the client found out before you did" is a painkiller. For Segment A: "you should plan your automation roadmap" is a vitamin. "You have two half-built workflows and neither of them is the one that would have saved you six hours a week" is a painkiller.
+
+FIND:
+**One correction to the claim we make about it.** Speed does not win a $40,000 job. Nobody hands a full first floor to whoever texts back first: they interview two or three studios, they came from a GC or a friend's house, and they pick on taste and on whether they can stand you for fourteen months. Write the true version: **speed decides whether you are one of the two she calls back.** And the mechanism underneath it, from 2.5: a slow reply is not read as busy, it is read as how you will run the project.
+
+REPLACE:
+**One correction to the claim we make about it.** Reliability does not win the deal on its own. Nobody buys a build because it has retries. They buy because the thing does a job they need done, and then they keep it because it does not embarrass them. Write the true version: **reliability decides whether they can take their hands off it, and taking their hands off it is the outcome they are actually paying for.** The mechanism underneath it, from 2.5: a silent failure is not read as bad luck, it is read as how you build.
 
 **One correction to the claim we make about it.** Speed does not win a $40,000 job. Nobody hands a full first floor to whoever texts back first: they interview two or three studios, they came from a GC or a friend's house, and they pick on taste and on whether they can stand you for fourteen months. Write the true version: **speed decides whether you are one of the two she calls back.** And the mechanism underneath it, from 2.5: a slow reply is not read as busy, it is read as how you will run the project.
 
@@ -518,7 +533,13 @@ A referral arrives pre-vouched. A cold email arrives at gate 1. Running the refe
 
 **The corrected cold-email citation (verified in the repo 2026-08-03. Use this wording everywhere, and delete "0/16" on sight):**
 
-> **25 cold emails sent across two ICPs, 0 replies.** Batches 1 and 2 were the OLD ICP (agencies and founders), 16 sent. Batch-04 is the NEW niche: 9 Austin, Texas interior-design and home-staging studios, touch 1 sent 2026-07-27, touch 2 sent 2026-07-30, zero replies. **The identical test against the new tribe is also at zero.**
+> **Internal only. These counts never appear in a post, a DM or a lead magnet: see 1A.4.** 25 cold emails sent across two prospect lists, 0 replies. 16 to agencies and founders, 9 to interior-design and home-staging studios, touch 1 sent 2026-07-27, touch 2 sent 2026-07-30. Two completely different lists, identical result.
+
+FIND:
+Which means "0/16 proves the old ICP was wrong" is a broken inference: the result does not discriminate between ICPs. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their site, one line on what was built for one interior studio, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
+
+REPLACE:
+Which means "the list was wrong" is a broken inference: the result does not discriminate between lists. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their own build or post, one line on a system we shipped, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
 
 Which means "0/16 proves the old ICP was wrong" is a broken inference: the result does not discriminate between ICPs. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their site, one line on what was built for one interior studio, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
 
@@ -585,7 +606,7 @@ This is the single most important mechanic in the file for our situation. A conn
 
 **The universal opener:** ask them a question about the exact thing they engaged with, then offer the matching resource.
 
-> Hey [Name], saw you engaged on the post about the 9pm inquiry. Has that happened to you, where the DM comes in after hours and they have booked someone else by Monday? I put together a one-page checklist of the five places studio inquiries leak. Want me to send it?
+> Hey [Name], saw you engaged on the post about the workflow that works Tuesday and breaks Thursday. Has that hit you, where it runs clean for a week and then something quietly stops firing? I put together a one page checklist of the five places n8n workflows fail silently in production. Want me to send it?
 
 **Being wrong about which post does not matter.** > "What happens if they didn't see that post and they saw another one? Who cares? We're trying to start a chat." (Lakajev)
 
@@ -638,11 +659,17 @@ Only about 3% of a market is ready to buy right now. Some buyers hold a personal
 
 ### 7.1 Lane 1: the outreach lane (daily minimum, non-negotiable)
 
-This lane does not exist today. LinkedIn DM volume is zero. It is the single biggest actionable gap in the whole system, and it is the only LinkedIn mechanic that reaches a buyer who opens the app once a month.
+This lane does not exist today. LinkedIn DM volume is zero. It is the single biggest actionable gap in the whole system. It is Lane 1 because it builds the most trust per interaction (7.3) and produces a number in week one, not because content is secondary: see the ranking in 1A.2.
+
+FIND (targeting cell): `Automation operators per 1A.1: agency owners and consultants who post builds, n8n and Make users, GTM and RevOps people, fractional ops, technical founders. Target by what they post and what they follow, not by metro`
+REPLACE: `Segment A and B operators: automation agency owners, AI consultants, n8n and Make builders, RevOps and GTM leads, technical founders, in-house ops people who build. Source by behavior, not geography: people commenting on n8n, Make, Claude Code and agent posts, members of automation communities, and the engaged audiences of the big build accounts`
+
+FIND (comments cell): `Adjacent operators and trade accounts. Also 10 extra reps a day at writing online`
+REPLACE: `Builder accounts and operator posts, especially threads where someone is describing a failure. Also 10 extra reps a day at writing online`
 
 | Move | Daily minimum | Weekly | Target |
 |---|---|---|---|
-| **Connection requests, no note** | **10** | 50 | LinkedIn-present adjacents per 1A.2: design-build and remodel firms, kitchen and bath dealers, cabinetry and millwork shops, showroom and rep groups, studio and operations managers. Metros: Austin, Dallas, Nashville, Scottsdale, Denver |
+| **Connection requests, no note** | **10** | 50 | Automation operators per 1A.1: agency owners and consultants who post builds, n8n and Make users, GTM and RevOps people, fractional ops, technical founders. Target by what they post and what they follow, not by metro |
 | **New conversations opened** | **5** | 25 | Newly accepted connections first, then intent signals (post engagers, profile viewers, followers), then cold |
 | **Follow-ups on live threads** | **3** | 15 | The 26-touch arc. A thread is not dead until they say so |
 | **Comments on other people's posts** | **10** | 50 | Adjacent operators and trade accounts. Also 10 extra reps a day at writing online |
@@ -651,9 +678,9 @@ Time cost: 30-60 minutes a day. LinkedIn allows roughly 150-200 connection reque
 
 **Script 1, the accepted-connection opener (send within 24 hours of the accept):**
 
-> Hey [Name], thanks for connecting. I saw [specific thing: the kitchen you posted, the showroom remodel, that you run [company]].
+> Hey [Name], thanks for connecting. I saw [specific thing: the agent you posted, the n8n build, that you run [company]].
 >
-> Quick one since you are in this world: when an inquiry comes in after 5pm, who answers it? I ask because I keep finding the same gap in design and remodel shops and I am trying to work out if it is universal or if I am just seeing a bad sample.
+> Quick one since you are in this world: when one of your workflows fails at 2am, how do you find out? I ask because I keep hitting the same gap in shipped builds and I am trying to work out if it is universal or if I am just seeing a bad sample.
 
 **Script 2, the intent-signal opener (someone engaged or viewed):** use the universal opener in 6.4, verbatim.
 
@@ -693,7 +720,7 @@ So the test for every post is not "was it good." It is: **did this post give me 
 | 6 | Zoom | Face, emotion, tone |
 | 7 (fastest) | In person | Not available to us for US/EU buyers. Substitute Loom video, which is our closest analogue |
 
-Match the medium to the buyer. Buyers 45+ traditionally do business on the phone and in person. A studio owner or a cabinet shop owner in their 40s or 50s is more likely to trust a voice note or a call than a text thread.
+Match the medium to the buyer. This tribe is younger and text-native, so the DM thread carries further here than it would with a trade buyer, and a Loom outperforms a phone call. Escalate to voice or Zoom only once the build is being scoped, not to build rapport.
 
 ### 7.4 The monthly campaign
 
@@ -709,7 +736,7 @@ Daily activity deposits trust. Once a month you extract.
 
 **Month 1 campaign (Florence), invite script:**
 
-> Hey [Name], we have been talking on and off for a bit. I am doing three free inquiry-flow teardowns this month for design and remodel studios. I take your public inquiry paths (DM, form, missed call), map where they leak after hours, and send you a 5 minute Loom with the fix. Yours to keep whether we work together or not. Want one?
+> Hey [Name], we have been talking on and off for a bit. I am doing three free workflow teardowns this month. You send me one build that is not behaving, I map every place it can fail silently, and I send you a 5 minute Loom with the retry and error handling that closes it. Yours to keep whether we work together or not. Want one?
 
 **Sell before you build.** > "don't build the thing. Sell the thing first and then build it as you're selling it." (Lakajev)
 
@@ -736,7 +763,7 @@ Log these from day one. The first four produce a number in week one, which is th
 | **DM reply rate** | The DM's only job is a reply | Not tracked, lane does not exist | 20%+ |
 | **Conversations opened** (threads with at least one reply from them) | The actual unit of this business | 0 | 10 live threads by end of week 2, 25 by week 4 |
 | **Conversations at 13 sent messages** | The 26-touch arc | 0 | 3 by week 6 |
-| **In-niche comments** (commenter's job title is designer, studio owner, remodeler, dealer, cabinetry, millwork, showroom, studio ops) | Best signal that the register is landing | 0 | 1+ per post within 3 weeks |
+| **In-niche comments** (commenter is a founder, agency owner, automation consultant, AI or ops engineer, RevOps or GTM lead, or their profile shows they build) | Best signal that the register is landing | 0 | 1+ per post within 3 weeks, and this is now a realistic target because the tribe is on the platform |
 | **Out-of-network %** | Whether the post left the follower graph | 95% on the story post, ~5-30% on everything else | 50%+ on tribal posts |
 | **Profile views by title** | Gate 2 opened | 12 total on the best post, source unknown | Track title-level, 5+/week |
 | **Inbound DMs** | Gate 3 opened | 0 | 1 in 4 weeks, 4/month by week 12 |
@@ -794,14 +821,14 @@ Brand alignment for these posts is carried by the **profile**, not the post body
 | B7 | Post paints their house: at least 2 of the 5 reality questions answered concretely | 10 | 5 per answer, max 10 |
 | B8 | Brand nouns used instead of category nouns throughout | 10 | 10 if zero category words survive, 5 if 1-2, 0 if more |
 | B9 | Ends with a question an operator can answer from experience, and that invites disagreement | 10 | 10 debate-inviting, 5 generic, 0 none or bait |
-| B10 | Carries ONE plain-language line a non-technical studio owner understands (our clarity rule) | 10 | 10 / 0 |
-| B11 | Legible to the adjacent operator per 1A.2: a remodeler, cabinet shop or K&B dealer reads it and thinks "that is my Tuesday too" | 5 | 5 / 0 |
+| B10 | Carries ONE line that states the mechanism in plain words, so a buyer who does not build can still follow it (our clarity rule) | 10 | 10 / 0 |
+| B11 | Segment discipline: the draft names Segment A or Segment B, and the post is legible to the other one without being written to it | 5 | 5 / 0 |
 
 ### Section C: post-publish audit (Agent 6, within 48h). **Nothing in Section C blocks publishing.**
 
 | # | Check | Pass condition |
 |---|---|---|
-| C1 | **In-niche comment audit** (rewritten 2026-08-03) | PASS if at least one commenter is in-niche by job title, **counting the adjacents** (dealer, remodeler, cabinetry, millwork, showroom, studio ops, design-build), **OR** out-of-network share is above 50%. Either condition alone is a pass. **C1 never blocks publishing. On a miss it appends a note to the performance log and the next draft carries one more trade noun in the first two lines. It never halts the queue and never triggers a rewrite of unpublished drafts** |
+| C1 | **In-niche comment audit** (rewritten 2026-08-03) | PASS if at least one commenter is in-tribe (builds or buys automation: agency owner, consultant, ops or RevOps, technical founder, automation freelancer), **OR** out-of-network share is above 50%. Either condition alone is a pass. **C1 never blocks publishing. On a miss it appends a note to the performance log and the next draft carries one more trade noun in the first two lines. It never halts the queue and never triggers a rewrite of unpublished drafts** |
 | C2 | Out-of-network split | Logged. Under 30% is a flag on that post's tribal density, not a gate |
 | C3 | Profile views by title | Logged where visible |
 | C4 | DMs and conversations generated | Logged. This is the real scoreboard |
@@ -838,7 +865,7 @@ The corollary matters too. If recognition is the mechanism, then a rule that pun
 
 ### 9.2 The missing quadrant is where all future work goes
 
-High recognition x high brand alignment. That is a post that names Houzz, the 9:40pm Instagram DM, the acknowledgment at 22 weeks, the missed call from the slab yard, AND ends with Usama as the person who fixes it. We have never published one.
+High recognition x high brand alignment. That is a post that names the n8n canvas, the run that went red at 2am, the 429 that killed the batch, the token that expired without telling anyone, AND ends with Usama as the person who makes it stop happening. We have never published one.
 
 ### 9.3 The founder story does not get retired, it gets re-aimed
 
