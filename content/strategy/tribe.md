@@ -382,8 +382,11 @@ one day already cost more than the content they produced.
 
 **Open actions (owner: Usama unless noted).**
 1. **Get one agency case study.** The single highest-value item on this list. It closes the gap in 8.1.
+   Pilot-offer script and outreach order: `../business/agency-case-study-pilot-offer.md`.
 2. Paste the Axios PR link and a one-line description into `proof-assets.md`.
 3. Naming permission for the three client systems, plus one publishable screenshot each.
-4. **CEO:** decide the white-label/resell pricing shape before an agency asks (8.3 item 5).
+4. ~~**CEO:** decide the white-label/resell pricing shape before an agency asks (8.3 item 5).~~
+   **Decided 2026-08-04:** per-account license, same $500/$1,500 pricing charged per client account.
+   See `current-strategy.md` LANE 2 OFFER.
 5. Count agency owners in the LinkedIn graph the way the automation count was run on 2026-08-03. Expect
    a low number and plan the connection-request lane accordingly.

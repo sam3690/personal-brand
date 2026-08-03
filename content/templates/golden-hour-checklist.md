@@ -22,9 +22,14 @@
 - [ ] Comment on 3–5 more niche posts to keep your activity warm.
 
 ## After
-- [ ] Log result in `../performance-log.md` (create on first use): date, pillar, format, hook formula,
+- [ ] Log result in `../performance/linkedin-performance-log.md`: date, pillar, format, hook formula,
       likes / comments / reposts / saves at 24h, and the comment-to-like ratio.
 - [ ] Note what to repeat. Double down on whatever pillar+format+hook earns the best comment ratio.
+- [ ] **Funnel check (do this even on weeks with zero activity — zero is a real data point):** in the
+      next 72 hours, note any DM this post produced, whether you replied, whether it became a real
+      conversation, and whether it turned into a booked call. Add it to the STANDING FUNNEL TRACKER
+      row at the top of `../performance/linkedin-performance-log.md` under this post's week. This is
+      the number that proves the agency-owner tribe converts, not impressions.
 
 ## Weekly rhythm (4 posts)
 | Day | Slot | Pillar (rotate) | Format |

@@ -11,7 +11,7 @@ business.** Nothing about this requires reconciling the two into a single ICP. T
 
 | | Lane 1: Cold email (outbound) | Lane 2: LinkedIn (content) |
 |---|---|---|
-| **Audience** | Interior design + adjacent high-ticket home-design studios (unchanged, see below) | The AI-automation operator, see `tribe.md` |
+| **Audience** | Interior design + adjacent high-ticket home-design studios (unchanged, see below) | The agency owner, see `tribe.md` |
 | **Offer** | "The 7-Day Lead Rescue," unchanged, see below | The three-rung reliability ladder, see below |
 | **Why separate** | Exact-fit proof (UF Designs), high-ticket, referral-dense, and the list already exists and is mid-sequence | Barely any interior designers are on LinkedIn; the automation-operator tribe is LinkedIn-native and is who actually reads and shares this account's posts |
 | **Owning doc** | This section + `outreach-scripts.md` | `tribe.md` + `frameworks/lakajev-linkedin-leadgen.md` |
@@ -90,9 +90,13 @@ floor. Do not revive it without a CEO decision.
 apply: **$500 founding for the first 2, then $1,500.** 50% upfront (Payoneer). Guarantee: not live and
 booking in 7 days, you do not pay. Revisit only once there is a delivered agency client and a testimonial.
 
-**Open pricing question, flagged not answered (tribe.md §8.3 item 5):** an agency that wants to resell
-this white-label across multiple client accounts is a different pricing conversation (per-seat, per-account,
-or a partner rate). Decide the shape before an agency asks, not during the call.
+**White-label/resell pricing (CEO decision, 2026-08-04, resolves tribe.md §8.3 item 5):** per-account
+license. Same price as a single deal, **$500 founding for the first, $1,500 standard**, charged per
+client account the agency deploys to, not a flat partner rate and not a revenue share. An agency
+running this on 5 client accounts is a 5x deal at full price, which is the "highest LTV, repeats across
+their whole book" case Lane 2 is already built around. No discount for volume until there's a delivered
+agency client and a real negotiation, not a hypothetical one. Simplest to quote on a call, and it
+requires no revenue-share reporting or trust infrastructure with a first-time partner.
 
 Headline stays as-is and is CEO-locked: "GTM Agents + AI automation for Founders & agency owners |
 One system replaces a $20k/year admin hire." The banner's existing **"Book a Free Audit"** button is the
