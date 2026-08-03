@@ -26,22 +26,31 @@ to completion under this ICP. No LinkedIn tribe language, no automation-operator
 jargon in cold-email copy: `outreach-scripts.md` and the send logs are the source of truth here, not
 `tribe.md`.
 
-### Lane 2: LinkedIn → the AI-automation operator
-Founders, agency owners, consultants, solo operators and in-house builders who have already decided AI
-and automation is how the work gets done, and who are stuck between wanting it and having it run without
-them. **Usama is inside this tribe:** he is not an outsider selling into a trade, he is a member who got
-further than most. Three segments, never mixed in one post, full detail in `tribe.md`:
-- **A, the paralysis.** Knows AI matters, watched the tutorials, two half-built workflows, cannot decide
-  what to automate first. Largest audience, **reach not revenue.**
-- **B, the reliability gap.** Built it, it worked in the demo, it works Tuesday and breaks Thursday,
-  cannot take their hands off it. **The wedge.** Our 4 years of production backend for healthcare orgs
-  is the exact credential this calls for.
-- **C, the maintenance debt.** An inventory of builds and no idea which are still running. **Nearest money.**
+### Lane 2: LinkedIn → the agency owner
+**"I am an agency owner"** is an identity people claim out loud, which is what makes it a tribe rather
+than a demographic. Owner or co-owner of a service business selling to other businesses, 1 to 20 people:
+marketing and performance agencies, creative studios, web and dev shops, consultancies, fractional teams.
+Full detail in `tribe.md`, which is the operating document.
+
+**The pain, in two shapes, never mixed in one post:**
+- **Shape A, their client's inbox (LEAD WITH THIS).** They run the ads, leads arrive, the client answers
+  them Tuesday, booked calls come in low, the client says "the leads are garbage" and churns. The agency
+  gets fired for a follow-up problem that was never theirs. Agency-specific, bigger number, recurs across
+  their whole book of accounts. This is a **retention** product.
+- **Shape B, their own inbox.** Their own new-business inquiries arrive while they are delivering. The
+  Friday referral gets answered Monday. Easier first yes, smaller ceiling, and the door into shape A.
+
+**Why this replaced the AI-automation-operator tribe (2026-08-03, third and final re-point).** That
+version targeted people with Usama's own skill set, which is adverse selection: the most n8n-fluent
+people are the least likely to pay anyone to do n8n. The 2026-08-03 graph audit confirmed it, most
+tribe-matching connections were competitors selling the same services. Agency owners have the pain
+without the skill, have budget, and are already what the LinkedIn headline promises. **Locked, do not
+re-point before the next quarterly review.**
 
 The three shipped systems (interior design studio, fragrance e-commerce, medical-sales voice agent) are
-**proof, not persona,** for LinkedIn content: any post may use them as a case study, no post is written
-TO an interior designer on LinkedIn. That does not change what the interior studio IS in Lane 1: there,
-it is the actual client type being pursued, not a case study.
+**proof, not persona,** for LinkedIn content. Honest gap: none was delivered to an agency, so "I do this
+for agencies" is a positioning bet, not a proven claim. Never write a sentence implying an agency client
+exists. Getting one agency case study is the highest-value proof action open.
 
 ## LANE 1 OFFER: "The 7-Day Lead Rescue" (for design studios, unchanged)
 Every enquiry (Meta/IG ad, form, DM, missed call) answered in under 60 seconds on WhatsApp, qualified,
@@ -60,28 +69,35 @@ and booked into your calendar. Live in 7 days. You own the whole system, no reta
 **Guarantee:** not live and booking in 7 days = you don't pay.
 **First win:** instant-reply live in 48h, full qualify + book by day 7.
 
-## LANE 2 OFFER: the reliability ladder for automation operators (tribe.md §8.0)
-**We sell the part that does not break.** Not the build: this tribe can already build. The unit of sale
-is a system that runs unattended, plus the standing guarantee that it keeps doing so. Three rungs, now
-priced (drafted below on Value Equation reasoning, i.e. dream outcome, likelihood, time delay, effort;
-**PROPOSED, pending your confirmation, not yet used in any published copy**):
+## LANE 2 OFFER: the last mile, for agency owners (tribe.md §8.0)
+**We sell the last mile.** Every inquiry answered in under 60 seconds wherever it arrives, qualified,
+and booked into a calendar. This is what the LinkedIn headline already promises and the only offer all
+three proof assets actually support.
 
-1. **The audit, $297 flat.** One pass over the workflows they already have. Output is a ranked list of
-   what will break, why, and in what order to fix it. Delivered in 48h. Cheapest entry, qualifies the
-   bigger rungs (B and C). Low effort for you (a few hours against their exported workflows or read-only
-   instance access), high perceived likelihood (it is documentation of what already exists, not a
-   promise), so it can sit near the price floor without reading as junior. **If they upgrade to the
-   takeover or the build within 30 days, the $297 credits against it,** which is what makes saying yes
-   to the audit close to free in their head.
-2. **The takeover, $497/mo founding (first 3 clients), then $900/mo.** Covers up to 15 workflows,
-   +$25/mo per additional 5. Usama owns the running systems: error paths, monitoring, the alert that
-   reaches a human, the fixes. **The money rung** (C). Monthly, no long lock-in beyond a 30-day notice.
-3. **The build, $750 founding (2 spots), then $2,000.** The GTM system itself (inbound answered in
-   seconds wherever it arrives, qualified, booked, logged) with the full reliability stack (`tribe.md`
-   §8.2: Error Workflow, credential-separated alerting, heartbeat, dedupe/idempotency, static-data
-   pointer) built in from day one, not bolted on later. Priced above Lane 1's Lead Rescue because it
-   ships with everything Lane 1's value stack itemizes PLUS the reliability layer Lane 1 does not
-   include, to an audience with higher willingness to pay for infrastructure specifically (segment B).
+**The reliability ladder is RETIRED** (the $297 audit, the $497/mo takeover, the $2,000 reliability
+build). It was designed for automation builders who could not be sold a build. Agency owners can be sold
+a build, cannot build it themselves, and the $297 entry sat below Lakajev's ">$500 for LinkedIn to work"
+floor. Do not revive it without a CEO decision.
+
+**Two sale shapes, matching tribe.md §3.3 and §8.0. Never mixed in one post:**
+1. **Shape A, for their client accounts (LEAD WITH THIS).** Lead response installed on a client account,
+   or resold white-label. This is a **retention product**: it stops the agency getting fired for a
+   follow-up problem that was never theirs, and it repeats across their whole book. Highest LTV.
+2. **Shape B, for their own new business.** The same system on the agency's own inbound. Easier first
+   yes, smaller ceiling, and the natural door into shape A.
+
+**Pricing: unchanged from Lane 1 and deliberately so.** Same build, same delivery, so the same numbers
+apply: **$500 founding for the first 2, then $1,500.** 50% upfront (Payoneer). Guarantee: not live and
+booking in 7 days, you do not pay. Revisit only once there is a delivered agency client and a testimonial.
+
+**Open pricing question, flagged not answered (tribe.md §8.3 item 5):** an agency that wants to resell
+this white-label across multiple client accounts is a different pricing conversation (per-seat, per-account,
+or a partner rate). Decide the shape before an agency asks, not during the call.
+
+Headline stays as-is and is CEO-locked: "GTM Agents + AI automation for Founders & agency owners |
+One system replaces a $20k/year admin hire." The banner's existing **"Book a Free Audit"** button is the
+Florence-campaign entry point (Lakajev §7.4) and the top of the Hormozi value ladder. It is already built
+and currently unused.
 
 Headline stays as-is and is CEO-locked: "GTM Agents + AI automation for Founders & agency owners |
 One system replaces a $20k/year admin hire." An admin does not stop working on Thursday, so a system

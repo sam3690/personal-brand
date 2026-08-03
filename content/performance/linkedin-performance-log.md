@@ -1,5 +1,22 @@
 # LinkedIn Performance Log
-<!-- Appended each Sunday by Agent 6 using Zernio analytics. Newest entry on top. -->
+<!-- Appended each Sunday by Agent 6 using Zernio analytics. Newest entry on top.
+     Post tables MUST carry the funnel columns: | DMs | Replies | Booked calls |
+     Zernio does not report these. Usama supplies them from the LinkedIn inbox and the calendar. -->
+
+## STANDING FUNNEL TRACKER (fill weekly, never overwrite a past row)
+
+Impressions are the vanity number and this account already knows reach is not the constraint on
+revenue. These three columns are the ones that decide whether the agency-owner re-point worked.
+Attribute a DM or a call to the post it followed within 72 hours; if it cannot be attributed to a
+post, log it under `(no post)` so the outbound lane gets credit separately.
+
+| Week of | Posts live | DMs received | DMs replied to | Conversations opened | Booked calls | Source post(s) |
+|---|---|---|---|---|---|---|
+| 2026-08-03 | | | | | | |
+
+**Baseline, stated honestly:** as of 2026-08-03 all four numbers are zero and there is no DM lane
+running (`../knowledge-base/frameworks/lakajev-linkedin-leadgen.md` 7.1). The first non-zero week is
+the first real signal this positioning produces buyers, not reach.
 
 ## 2026-08-03 — Graph audit: how many automation-operator tribe members are actually in Usama's network (tribe.md open action 6)
 
