@@ -54,3 +54,33 @@ with an offer to send the video ("Want me to?").
 - [2026-07-30 18:26 PKT] TOUCH2 SENT info@turnstyleid.com (Turnstyle Interior Design) messageId: 19fb32ee8e3a939f hubspotEngagementId: 387291768517 hubspotContactId: 526385425090
 
 9/9 sent, no immediate bounces. Touch 3 due 2026-08-03.
+
+## Touch 3 (day 7, due 2026-08-03, sent 2026-08-03 20:50 PKT, on time)
+
+**Growth Lead decision (2026-08-03 run):** current-strategy.md flagged an unresolved conflict same day
+this touch came due: the CEO repositioned the niche from interior-design to "automation operator" and
+explicitly noted batch-04 still targets the old niche, leaving two options ("re-source to
+automation operators or run the interior list to completion as a separate test"). Growth Lead resolved
+it: send touch 3 (a breakup/closing email, not new off-niche pitch expansion) and then **close batch-04
+permanently**. No batch-05 interior, no further interior sourcing. All new sourcing from here is
+automation-operator only.
+
+Sent as in-thread replies (GMAIL_REPLY_TO_THREAD). All 9 threads re-checked for bounces/replies before
+sending (GMAIL_FETCH_MESSAGE_BY_THREAD_ID on each) — none found, clean SENT-only threads (2 messages
+each, both from us), no late bounces or replies surfaced. Also swept the general inbox for any reply
+received since the 07-30 run — none from any prospect domain, across any batch.
+
+- [2026-08-03 20:50 PKT] TOUCH3 SENT interiors@austindesigngroup.com (Austin Design Group) messageId: 19fc8513a450b280 hubspotEngagementId: 388180998871 hubspotContactId: 526399494860
+- [2026-08-03 20:50 PKT] TOUCH3 SENT hello@livingoak.com (Living Oak Interior Design, Laura Williams) messageId: 19fc8513aa91a41d hubspotEngagementId: 388261389031 hubspotContactId: 526691551942
+- [2026-08-03 20:50 PKT] TOUCH3 SENT hello@hicountrypaperworks.com (Hi-Country Paperworks, Steve Vaneman) messageId: 19fc8513aaadb4db hubspotEngagementId: 388234485438 hubspotContactId: 526725986028
+- [2026-08-03 20:50 PKT] TOUCH3 SENT hello@wilandfaye.com (Wil and Faye Interiors LLC, Brooklynn) messageId: 19fc8513a23d4fac hubspotEngagementId: 388256842445 hubspotContactId: 526687924940
+- [2026-08-03 20:50 PKT] TOUCH3 SENT info@nextlevelaustin.com (Next Level Austin) messageId: 19fc8514016534c9 hubspotEngagementId: 388261036731 hubspotContactId: 526831100624
+- [2026-08-03 20:50 PKT] TOUCH3 SENT vivahomestagingdesign@gmail.com (Viva Home Staging Design, Ruth Xiomara) messageId: 19fc85141c5232b8 hubspotEngagementId: 388167080661 hubspotContactId: 526689565428
+- [2026-08-03 20:50 PKT] TOUCH3 SENT info@allisonjaffe.com (Allison Jaffe Interior Design) messageId: 19fc851416052ade hubspotEngagementId: 388251628249 hubspotContactId: 526687155907
+- [2026-08-03 20:50 PKT] TOUCH3 SENT sosospiffysales@gmail.com (Spiffy Home Staging & Design, Barbara Cooney) messageId: 19fc85141672fedf hubspotEngagementId: 388260695799 hubspotContactId: 526716901095
+- [2026-08-03 20:50 PKT] TOUCH3 SENT info@turnstyleid.com (Turnstyle Interior Design) messageId: 19fc8514615304c0 hubspotEngagementId: 388260802249 hubspotContactId: 526385425090
+
+9/9 sent, no immediate bounces. **Batch-04 sequence is now COMPLETE and CLOSED.** No further sends to
+this batch, no batch-05 interior. Reply rate: 0/9. Combined pipeline (batch-01 through batch-04):
+0/31 contacted, 0 replies, 22 days in for the oldest batch. See linkedin-connect-todo.md: no new
+entries this run (batch-04's CSV has no LinkedIn URLs, Apify Google Maps source).
