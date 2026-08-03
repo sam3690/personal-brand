@@ -481,5 +481,11 @@ Usama teaches from ahead. Vulnerability is allowed, and the default kind is the 
 3. **Usama:** pull the real runtime numbers off one live system, days running and number of human interventions, and add them to `proof-assets.md`. That claim replaces the retired 500 figure.
 4. **Usama:** naming permission for the three client systems, plus one publishable screenshot per system.
 5. **CEO:** ratify or reject the one-open-scar-per-month carve-out above.
-6. **Usama:** count the operators in the LinkedIn graph. Search connections and followers for "n8n," "Make," "automation," "AI automation," "workflow," "GTM." Write the number into the performance log. It is the cheapest confirmation available that the rebuild was correct.
+6. ~~**Usama:** count the operators in the LinkedIn graph.~~ **Done, 2026-08-03.** ~27-32 of 371
+   connections (7-9%) are high-confidence tribe members by self-description. Full breakdown and the more
+   important composition finding (most are builders/peers in Pakistan's AI/automation scene, not US/EU
+   buyers with a client or revenue process, meaning Segments B and C are underrepresented in the existing
+   graph) are in `content/performance/linkedin-performance-log.md`, 2026-08-03 entry. The vocabulary is
+   confirmed real. The buyer segments are not concentrated here and are more likely reached by a post
+   breaking out-of-network than by the graph itself.
 7. **Content Director:** update the ICP section of `brand-profile.md`, which still reads "founders and agency owners losing deals to slow response times."
