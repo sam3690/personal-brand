@@ -8,7 +8,9 @@
 
 **The buyer, in the CEO's frame.** The AI-automation operator: founders, agency owners, consultants, solo operators and in-house builders who have already decided that AI and automation is how the work gets done, and who are stuck between wanting it and having it run without them. Usama is a member of this tribe, not an outsider selling into it. He got further than most of them. That is the entire positioning, and it is why insider language is available to him natively.
 
-**What this dissolves.** The old file needed a subject/reader split because interior designers do not open LinkedIn. This tribe is LinkedIn-native. They post canvas screenshots there and argue about n8n versus Make there. Subject and reader are the same person, so that apparatus is deleted and does not come back. And the interior design studio, the fragrance brand and the medical-sales GTM manager are now what they always were: three shipped systems, evidence that Usama ships things that stay up, never the target audience again.
+**What this dissolves.** The old file needed a subject/reader split because interior designers do not open LinkedIn. This tribe is LinkedIn-native. They post canvas screenshots there and argue about n8n versus Make there. Subject and reader are the same person, so that apparatus is deleted and does not come back. And the interior design studio, the fragrance brand and the medical-sales GTM manager are now what they always were, **on LinkedIn**: three shipped systems, evidence that Usama ships things that stay up, never the LinkedIn content target again.
+
+**Scope correction (CEO ruling, 2026-08-03, same day as the rebuild).** This document governs **LinkedIn content only.** It does not replace or narrow the cold-email ICP. Cold outbound continues to target interior design studios exactly as it did before this rebuild: `current-strategy.md`'s Lane 1, `outreach-scripts.md`, and the live batch-04 send sequence are all unaffected. "Never the target audience again" two sentences up means never the target of a LinkedIn post again, not never a client. Interior design studios remain the actual client type Lane 1 is pursuing right now. Do not let a LinkedIn writing agent apply this file's vocabulary, hooks or recognition markers to a cold-email draft, and do not let a cold-email agent read this file at all: it has no reason to.
 
 ---
 
@@ -466,12 +468,15 @@ Usama teaches from ahead. Vulnerability is allowed, and the default kind is the 
 **Standing notes.**
 - **Register tradeoff, recorded once and not relitigated:** the raw-confession founder story that produced the 2026-07-28 spike (1,500 impressions, 95% out of network) is retired by CEO decision, and we accept less reach in exchange for never signaling to a buyer that we have not been paid.
 - **Channel:** this tribe is LinkedIn-native. No subject/reader split. Write to the operator directly.
-- **Write once, run three places.** Every LinkedIn post here should be reusable near-verbatim as an X post or thread and as a cold-email body.
+- **Write once, run two places.** Every LinkedIn post here should be reusable near-verbatim as an X post or thread. **Not as a cold-email body.** Cold email is a different lane with a different ICP (interior design studios, see `current-strategy.md` Lane 1) and its own voice in `outreach-scripts.md`. Corrected 2026-08-03: this line previously said three places and included cold email, which was the exact leak the CEO's Lane 1/Lane 2 ruling exists to close.
 - **Ship.** No reach signal, comment count or in-niche-commenter rule may block publishing. Findings append to `content/performance/linkedin-performance-log.md`. The account's number one measured leak is under-shipping.
 - **Rebuild trigger:** rebuild this file if the CEO changes the tribe, if the first paying client from this positioning comes from outside it, or at the next quarterly review.
 
 **Open actions (owner: Usama unless noted).**
-1. **CEO:** rewrite the offer and niche sections of `content/strategy/current-strategy.md` against this tribe and the three-rung ladder in 8.0. The SSOT still describes interior design studios. This file cannot change the SSOT.
+1. ~~**CEO:** rewrite the offer and niche sections of `current-strategy.md` against this tribe.~~ **Done,
+   2026-08-03, and corrected in the doing:** the SSOT is not rewritten wholesale against this tribe. It
+   is split into Lane 1 (cold email, interior design, unchanged) and Lane 2 (LinkedIn, this tribe, now
+   with the three-rung ladder priced). See `current-strategy.md`'s "TWO LANES, TWO ICPs" section.
 2. **Usama:** paste the Axios PR link and a one-line description of the actual fix into `proof-assets.md`. Until then the claim is credential-only and the mechanism in hook 4 stands on its own merits, not on that bug.
 3. **Usama:** pull the real runtime numbers off one live system, days running and number of human interventions, and add them to `proof-assets.md`. That claim replaces the retired 500 figure.
 4. **Usama:** naming permission for the three client systems, plus one publishable screenshot per system.

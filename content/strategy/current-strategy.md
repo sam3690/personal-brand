@@ -3,13 +3,34 @@
 > Do not hardcode niche/offer/price into routines — change it here, once, and everything follows.
 > Last set by: CEO weekly review · 2026-07-24 (founding decision, pre-revenue)
 
-## THE TRIBE (CEO override, 2026-08-03 — supersedes the interior-design niche)
-**The AI-automation operator.** Founders, agency owners, consultants, solo operators and in-house
-builders who have already decided AI and automation is how the work gets done, and who are stuck
-between wanting it and having it run without them. **Usama is inside this tribe**, which is the whole
-positioning: he is not an outsider selling into a trade, he is a member who got further than most.
+## TWO LANES, TWO ICPs (CEO ruling, 2026-08-03: resolves the prior "open conflict")
+The 2026-08-03 tribe rebuild was scoped to **LinkedIn content only**. It does not replace the cold-email
+ICP, which stays interior design studios, unchanged. This was a real ambiguity in how the rebuild first
+got written up (it read as a full niche pivot) and it is corrected here: **two lanes, two audiences, one
+business.** Nothing about this requires reconciling the two into a single ICP. They stay separate.
 
-Three segments, never mixed in one post. Full detail in **`tribe.md`**, which is the operating document.
+| | Lane 1: Cold email (outbound) | Lane 2: LinkedIn (content) |
+|---|---|---|
+| **Audience** | Interior design + adjacent high-ticket home-design studios (unchanged, see below) | The AI-automation operator, see `tribe.md` |
+| **Offer** | "The 7-Day Lead Rescue," unchanged, see below | The three-rung reliability ladder, see below |
+| **Why separate** | Exact-fit proof (UF Designs), high-ticket, referral-dense, and the list already exists and is mid-sequence | Barely any interior designers are on LinkedIn; the automation-operator tribe is LinkedIn-native and is who actually reads and shares this account's posts |
+| **Owning doc** | This section + `outreach-scripts.md` | `tribe.md` + `frameworks/lakajev-linkedin-leadgen.md` |
+
+### Lane 1: Cold email → interior design studios (UNCHANGED, do not touch)
+Interior designers, home remodel/renovation, kitchen & bath, custom cabinetry/furniture, landscape
+design. Why: this is the ONLY vertical where we have exact proof (UF Designs, 3.5x consults). Deals are
+high-ticket ($10k-100k projects) so a lost after-hours lead genuinely hurts and they will pay to fix it.
+Pain is felt fast (local SMB) and the space is referral-dense (designers know designers + adjacent
+trades). Live prospect list: batch-04, 9 Austin interior/staging studios, mid-sequence. Keep running it
+to completion under this ICP. No LinkedIn tribe language, no automation-operator vocabulary, no n8n/Make
+jargon in cold-email copy: `outreach-scripts.md` and the send logs are the source of truth here, not
+`tribe.md`.
+
+### Lane 2: LinkedIn → the AI-automation operator
+Founders, agency owners, consultants, solo operators and in-house builders who have already decided AI
+and automation is how the work gets done, and who are stuck between wanting it and having it run without
+them. **Usama is inside this tribe:** he is not an outsider selling into a trade, he is a member who got
+further than most. Three segments, never mixed in one post, full detail in `tribe.md`:
 - **A, the paralysis.** Knows AI matters, watched the tutorials, two half-built workflows, cannot decide
   what to automate first. Largest audience, **reach not revenue.**
 - **B, the reliability gap.** Built it, it worked in the demo, it works Tuesday and breaks Thursday,
@@ -17,18 +38,12 @@ Three segments, never mixed in one post. Full detail in **`tribe.md`**, which is
   is the exact credential this calls for.
 - **C, the maintenance debt.** An inventory of builds and no idea which are still running. **Nearest money.**
 
-**What changed and why.** The previous entry committed 90 days to interior design + home-design studios.
-That was a category error: interior design was one CLIENT, not the market. The three shipped systems
-(interior design studio, fragrance e-commerce, medical-sales voice agent) are **proof, not persona.**
-Any post may use them as a case study. No post is written TO them. This also fixes a channel problem:
-residential designers barely open LinkedIn, this tribe lives there daily.
+The three shipped systems (interior design studio, fragrance e-commerce, medical-sales voice agent) are
+**proof, not persona,** for LinkedIn content: any post may use them as a case study, no post is written
+TO an interior designer on LinkedIn. That does not change what the interior studio IS in Lane 1: there,
+it is the actual client type being pursued, not a case study.
 
-**Open conflict to resolve:** the live cold-email batches (batch-04, 9 Austin interior/staging studios)
-still target the OLD niche. Content and outbound now point at different people. Either re-source the
-prospect list to automation operators or run the interior list to completion as a separate test, but
-do not leave it undecided past the next CEO review.
-
-## THE OFFER — "The 7-Day Lead Rescue" (for design studios)
+## LANE 1 OFFER: "The 7-Day Lead Rescue" (for design studios, unchanged)
 Every enquiry (Meta/IG ad, form, DM, missed call) answered in under 60 seconds on WhatsApp, qualified,
 and booked into your calendar. Live in 7 days. You own the whole system, no retainer, no lock-in.
 
@@ -45,15 +60,28 @@ and booked into your calendar. Live in 7 days. You own the whole system, no reta
 **Guarantee:** not live and booking in 7 days = you don't pay.
 **First win:** instant-reply live in 48h, full qualify + book by day 7.
 
-## WHAT WE ACTUALLY SELL (revised 2026-08-03, see tribe.md §8.0)
+## LANE 2 OFFER: the reliability ladder for automation operators (tribe.md §8.0)
 **We sell the part that does not break.** Not the build: this tribe can already build. The unit of sale
-is a system that runs unattended, plus the standing guarantee that it keeps doing so. Three rungs:
-1. **The audit.** Fixed price, one pass over the workflows they already have. Output is a ranked list of
-   what will break, why, and in what order to fix it. Cheapest entry, qualifies the retainer. (B and C.)
-2. **The takeover.** Monthly. Usama owns the running systems: error paths, monitoring, the alert that
-   reaches a human, the fixes. **The money rung.** (C.)
-3. **The build, delivered to that standard.** The GTM system itself (inbound answered in seconds
-   wherever it arrives, qualified, booked, logged) with the reliability stack in it from day one.
+is a system that runs unattended, plus the standing guarantee that it keeps doing so. Three rungs, now
+priced (drafted below on Value Equation reasoning, i.e. dream outcome, likelihood, time delay, effort;
+**PROPOSED, pending your confirmation, not yet used in any published copy**):
+
+1. **The audit, $297 flat.** One pass over the workflows they already have. Output is a ranked list of
+   what will break, why, and in what order to fix it. Delivered in 48h. Cheapest entry, qualifies the
+   bigger rungs (B and C). Low effort for you (a few hours against their exported workflows or read-only
+   instance access), high perceived likelihood (it is documentation of what already exists, not a
+   promise), so it can sit near the price floor without reading as junior. **If they upgrade to the
+   takeover or the build within 30 days, the $297 credits against it,** which is what makes saying yes
+   to the audit close to free in their head.
+2. **The takeover, $497/mo founding (first 3 clients), then $900/mo.** Covers up to 15 workflows,
+   +$25/mo per additional 5. Usama owns the running systems: error paths, monitoring, the alert that
+   reaches a human, the fixes. **The money rung** (C). Monthly, no long lock-in beyond a 30-day notice.
+3. **The build, $750 founding (2 spots), then $2,000.** The GTM system itself (inbound answered in
+   seconds wherever it arrives, qualified, booked, logged) with the full reliability stack (`tribe.md`
+   §8.2: Error Workflow, credential-separated alerting, heartbeat, dedupe/idempotency, static-data
+   pointer) built in from day one, not bolted on later. Priced above Lane 1's Lead Rescue because it
+   ships with everything Lane 1's value stack itemizes PLUS the reliability layer Lane 1 does not
+   include, to an audience with higher willingness to pay for infrastructure specifically (segment B).
 
 Headline stays as-is and is CEO-locked: "GTM Agents + AI automation for Founders & agency owners |
 One system replaces a $20k/year admin hire." An admin does not stop working on Thursday, so a system

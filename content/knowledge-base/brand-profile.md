@@ -19,15 +19,25 @@ seconds and don't break in production.
   works if it's reliable enough to bet your business on.*
 - Shipped a fix to **Axios** (the HTTP library running in millions of Node apps). He cares about
   systems that hold up under real traffic, not demos.
-- Operating principle: **"Move fast and don't break things."**
-- Has built **500+ AI workflows** — knows what businesses actually buy (boring, reliable automations).
+- ~~Operating principle: "Move fast and don't break things."~~ **Retired from copy 2026-08-03**
+  (`../strategy/tribe.md` §8.1): to this tribe it reads as a slogan, not a claim.
+- ~~Has built 500+ AI workflows~~ **Retired from copy 2026-08-03** (same section): to a tribe whose
+  running joke is "Copy of Copy of," 500 reads as counted duplicates, not authority.
 
 ## Who he's selling to (ICP)
 
-Founders and agency owners who are **losing deals to slow response times** and are **tired of manual
-follow-up eating their week**. Their CRM feels like a second job.
+**This is the LinkedIn / X content ICP, corrected 2026-08-03.** Cold email is a separate lane with its
+own ICP (interior design studios), see `../strategy/current-strategy.md` Lane 1. Do not use this
+section, or this file, to write cold-email copy.
 
-**Not for:** people who want a chatbot that sounds smart in a demo and breaks in production.
+The AI-automation operator: founders, agency owners, consultants, solo operators and in-house builders
+who have already decided AI and automation is how the work gets done, and who are stuck between wanting
+it and having it run without them. Usama is inside this tribe, not an outsider selling into a trade.
+Full detail, recognition markers and vocabulary: `../strategy/tribe.md` (read it before writing).
+
+**Not for:** people who want a chatbot that sounds smart in a demo and breaks in production. Not for
+course collectors who will never ship. Not for people who need the word "automation platform" explained
+to them, meaning a total beginner with no build in progress.
 
 ## The offer & conversion goals
 
