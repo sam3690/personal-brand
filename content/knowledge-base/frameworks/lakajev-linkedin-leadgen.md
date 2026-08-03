@@ -822,7 +822,7 @@ Brand alignment for these posts is carried by the **profile**, not the post body
 | B8 | Brand nouns used instead of category nouns throughout | 10 | 10 if zero category words survive, 5 if 1-2, 0 if more |
 | B9 | Ends with a question an operator can answer from experience, and that invites disagreement | 10 | 10 debate-inviting, 5 generic, 0 none or bait |
 | B10 | Carries ONE line that states the mechanism in plain words, so a buyer who does not build can still follow it (our clarity rule) | 10 | 10 / 0 |
-| B11 | Segment discipline: the draft names Segment A or Segment B, and the post is legible to the other one without being written to it | 5 | 5 / 0 |
+| B11 | Segment discipline: the draft names Segment A, B or C, and the post is legible to the other two without being written to them | 5 | 5 / 0 |
 
 ### Section C: post-publish audit (Agent 6, within 48h). **Nothing in Section C blocks publishing.**
 
