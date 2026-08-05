@@ -1,0 +1,100 @@
+{
+  "name": "Shared Error Handler + Heartbeat",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "a1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [-220, 0]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f0000000-0000-4000-8000-000000000001",
+              "name": "alertText",
+              "type": "string",
+              "value": "=n8n failure\n\nWorkflow: {{ $json.workflow?.name || 'unknown' }}\nFailed node: {{ $json.execution?.lastNodeExecuted || 'unknown' }}\nError: {{ $json.execution?.error?.message || 'no message' }}\nWhen: {{ $json.execution?.startedAt || '' }}\n\nOpen it: {{ $json.execution?.url || 'no url (manual execution)' }}"
+            },
+            {
+              "id": "f0000000-0000-4000-8000-000000000002",
+              "name": "executionId",
+              "type": "string",
+              "value": "={{ $json.execution?.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0002-4000-8000-000000000002",
+      "name": "Build Alert",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [0, 0],
+      "notes": "The alert names the failing node and links straight to the execution. An alert that only says 'something failed' gets muted inside a week."
+    },
+    {
+      "parameters": {},
+      "id": "a1b2c3d4-0003-4000-8000-000000000003",
+      "name": "SEND NODE GOES HERE",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [220, 0],
+      "notes": "Replace with Slack / Telegram / Twilio and send {{ $json.alertText }}.\n\nRULE: this node must NOT share a credential with the workflows it watches. If Google auth is what broke, the alert cannot go out through Gmail. That is the most common reason a correctly built alarm never rings."
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Heartbeat Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-220, 220],
+      "notes": "Set this to the interval of the workflow you are watching. Then set period = that interval and grace = one more interval on the monitor side. Grace of zero pages you at 3am on one slow run, and then you mute it."
+    },
+    {
+      "parameters": {
+        "url": "PASTE_YOUR_PING_URL_HERE",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "a1b2c3d4-0005-4000-8000-000000000005",
+      "name": "Heartbeat Ping",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, 220],
+      "notes": "Dead man's switch. healthchecks.io, Cronitor or Better Stack all work. The monitor alerts when the ping does NOT land inside the window.\n\nThis is the only thing here that catches a trigger that simply stopped firing. An Error Workflow cannot: no run means no error.\n\nPut this on the SUCCESS path of the workflow you are watching, not in this handler, if you want per-workflow granularity."
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [[{ "node": "Build Alert", "type": "main", "index": 0 }]]
+    },
+    "Build Alert": {
+      "main": [[{ "node": "SEND NODE GOES HERE", "type": "main", "index": 0 }]]
+    },
+    "Heartbeat Schedule": {
+      "main": [[{ "node": "Heartbeat Ping", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "shared-error-handler-heartbeat-template"
+  },
+  "tags": []
+}

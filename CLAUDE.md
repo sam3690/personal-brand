@@ -55,18 +55,22 @@ complex strategy) runs on **opus** (spawn subagents with the model override).
 
 ## Publishing = Zernio, DRAFTS ONLY, human gate
 LinkedIn is connected to Zernio as **"Usama Ayoub", accountId `6a3cf3529d9472faaedefbd5`**.
-Create every post as a **draft** — never auto-publish. Exact call:
+Create every post as a **draft** — never auto-publish. Exact call (verified 2026-08-03):
 ```
-posts_create_post(
+posts_create(
+  platform = "linkedin",
+  account_id = "6a3cf3529d9472faaedefbd5",
   is_draft = true,
   content = <full post body incl. any CTA/P.S.>,
-  title = "<short label> [slot: <day> <time> - ADD IMAGE before publishing]",
-  scheduled_for = "<the slot's date+time as ISO with +05:00 offset>",
-  timezone = "Asia/Karachi",
-  platforms = [{"platform":"linkedin","accountId":"6a3cf3529d9472faaedefbd5"}]
-)   # no publish_now, no media_items
+  title = "<n>/<total> <short label> [slot: <day> <date> <time> ET = <time> PKT - ADD IMAGE before publishing]"
+)   # no publish_now, no media_urls
 ```
-`scheduled_for` MUST be the intended posting slot, NEVER the routine's run time.
+**API changed:** the old `posts_create_post(scheduled_for=..., timezone=..., platforms=[...])` signature
+no longer exists. It is now `posts_create` with `platform` + `account_id`, and there is **no
+`scheduled_for`** — a Zernio draft cannot carry a scheduled time (`is_draft=true` means not published
+AND not scheduled; the only scheduling param is `schedule_minutes`, which drafts ignore). So **the slot
+lives in the title**, which is why the title format above is mandatory, not cosmetic. Usama sets the real
+time when he publishes. Do not "fix" this by scheduling the post: that would remove the human gate.
 Slot times are US Eastern (audience US/EU). Convert to Karachi: 7:30am ET = 4:30pm PKT,
 8am ET = 5pm PKT, 10am ET = 7pm PKT. Example: Tue 8am ET slot = "2026-07-07T17:00:00+05:00".
 Usama adds the image and approves before it goes live. The image step is the human guardrail.
