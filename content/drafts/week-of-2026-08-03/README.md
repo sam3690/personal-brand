@@ -1,5 +1,13 @@
 # Week of 2026-08-03 — the mix, and why
 
+> **Posts 2, 3 and 4 rewritten again 2026-08-04**, after the tribe finished its re-point to the
+> agency owner (`../../strategy/tribe.md`, locked). The versions below were drafted the same day as,
+> but before, that re-point finished, and all three were written to someone who personally builds n8n
+> workflows: exactly the audience the final tribe excludes ("AI automation agencies and n8n builders...
+> never the content target," `tribe.md` §4). Each file's own header now explains what changed and why.
+> Post 1 (the founder story) needed no change: it never named a segment. **The live Zernio drafts for
+> 2, 3 and 4 still hold the old content and need `posts_update` before Wed/Thu/Fri.**
+
 Rewritten 2026-08-03 after two rounds of CEO feedback. Two corrections drove this version.
 
 ## Correction 1: hard character ceiling

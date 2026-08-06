@@ -489,13 +489,7 @@ Vitamin content = objectively good advice with no acute pain attached, so nobody
 
 **For us:** "you should add error handling" is a vitamin. "Your workflow failed at 2am on Thursday, it did not tell anyone, and the client found out before you did" is a painkiller. For Segment A: "you should plan your automation roadmap" is a vitamin. "You have two half-built workflows and neither of them is the one that would have saved you six hours a week" is a painkiller.
 
-FIND:
-**One correction to the claim we make about it.** Speed does not win a $40,000 job. Nobody hands a full first floor to whoever texts back first: they interview two or three studios, they came from a GC or a friend's house, and they pick on taste and on whether they can stand you for fourteen months. Write the true version: **speed decides whether you are one of the two she calls back.** And the mechanism underneath it, from 2.5: a slow reply is not read as busy, it is read as how you will run the project.
-
-REPLACE:
 **One correction to the claim we make about it.** Reliability does not win the deal on its own. Nobody buys a build because it has retries. They buy because the thing does a job they need done, and then they keep it because it does not embarrass them. Write the true version: **reliability decides whether they can take their hands off it, and taking their hands off it is the outcome they are actually paying for.** The mechanism underneath it, from 2.5: a silent failure is not read as bad luck, it is read as how you build.
-
-**One correction to the claim we make about it.** Speed does not win a $40,000 job. Nobody hands a full first floor to whoever texts back first: they interview two or three studios, they came from a GC or a friend's house, and they pick on taste and on whether they can stand you for fourteen months. Write the true version: **speed decides whether you are one of the two she calls back.** And the mechanism underneath it, from 2.5: a slow reply is not read as busy, it is read as how you will run the project.
 
 ---
 
@@ -535,13 +529,7 @@ A referral arrives pre-vouched. A cold email arrives at gate 1. Running the refe
 
 > **Internal only. These counts never appear in a post, a DM or a lead magnet: see 1A.4.** 25 cold emails sent across two prospect lists, 0 replies. 16 to agencies and founders, 9 to interior-design and home-staging studios, touch 1 sent 2026-07-27, touch 2 sent 2026-07-30. Two completely different lists, identical result.
 
-FIND:
-Which means "0/16 proves the old ICP was wrong" is a broken inference: the result does not discriminate between ICPs. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their site, one line on what was built for one interior studio, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
-
-REPLACE:
-Which means "the list was wrong" is a broken inference: the result does not discriminate between lists. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their own build or post, one line on a system we shipped, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
-
-Which means "0/16 proves the old ICP was wrong" is a broken inference: the result does not discriminate between ICPs. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their site, one line on what was built for one interior studio, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
+Which means "the list was wrong" is a broken inference: the result does not discriminate between lists. **The constant is the message, not the vertical.** Touch 1 carries a $3,500 value stack and a guarantee to a total stranger, which is a gate-5 offer arriving at gate 1. Nobody replies to that in any vertical. The fix is in touch 1, not in the prospect list: one named detail from their own site or work, one line on a system we shipped, one optional free thing, no ask. Move the stack and the guarantee to touch 3 or to the call.
 
 ### 6.2 Three lead types, three different messages
 
@@ -661,18 +649,12 @@ Only about 3% of a market is ready to buy right now. Some buyers hold a personal
 
 This lane does not exist today. LinkedIn DM volume is zero. It is the single biggest actionable gap in the whole system. It is Lane 1 because it builds the most trust per interaction (7.3) and produces a number in week one, not because content is secondary: see the ranking in 1A.2.
 
-FIND (targeting cell): `Automation operators per 1A.1: agency owners and consultants who post builds, n8n and Make users, GTM and RevOps people, fractional ops, technical founders. Target by what they post and what they follow, not by metro`
-REPLACE: `Segment A and B operators: automation agency owners, AI consultants, n8n and Make builders, RevOps and GTM leads, technical founders, in-house ops people who build. Source by behavior, not geography: people commenting on n8n, Make, Claude Code and agent posts, members of automation communities, and the engaged audiences of the big build accounts`
-
-FIND (comments cell): `Adjacent operators and trade accounts. Also 10 extra reps a day at writing online`
-REPLACE: `Builder accounts and operator posts, especially threads where someone is describing a failure. Also 10 extra reps a day at writing online`
-
 | Move | Daily minimum | Weekly | Target |
 |---|---|---|---|
-| **Connection requests, no note** | **10** | 50 | Automation operators per 1A.1: agency owners and consultants who post builds, n8n and Make users, GTM and RevOps people, fractional ops, technical founders. Target by what they post and what they follow, not by metro |
+| **Connection requests, no note** | **10** | 50 | Agency owners per `../../strategy/tribe.md` 3.1: owners and co-owners of 1-20 person marketing, performance, creative, web/dev, consulting and recruiting shops in US/UK/CA/AU/Western Europe. They self-identify in the headline ("agency owner," "founder @ [agency]," "we help X do Y"), so target by headline and by what they post, not by metro. **Never n8n/Make/AI-automation builders: they are peers, not buyers** |
 | **New conversations opened** | **5** | 25 | Newly accepted connections first, then intent signals (post engagers, profile viewers, followers), then cold |
 | **Follow-ups on live threads** | **3** | 15 | The 26-touch arc. A thread is not dead until they say so |
-| **Comments on other people's posts** | **10** | 50 | Adjacent operators and trade accounts. Also 10 extra reps a day at writing online |
+| **Comments on other people's posts** | **10** | 50 | Agency-owner accounts and the posts they argue under (retainers vs project work, capacity, churn, client management), especially threads where someone is describing losing an account. Also 10 extra reps a day at writing online |
 
 Time cost: 30-60 minutes a day. LinkedIn allows roughly 150-200 connection requests a week, so 50 is conservative and safe. Volume math: 5 new conversations a day across 250 working days is 1,250 conversations started a year, against ~26 touches per close and ~3% ready now.
 

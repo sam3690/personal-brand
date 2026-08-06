@@ -1,5 +1,65 @@
 # LinkedIn Performance Log
-<!-- Appended each Sunday by Agent 6 using Zernio analytics. Newest entry on top. -->
+<!-- Appended each Sunday by Agent 6 using Zernio analytics. Newest entry on top.
+     Post tables MUST carry the funnel columns: | DMs | Replies | Booked calls |
+     Zernio does not report these. Usama supplies them from the LinkedIn inbox and the calendar. -->
+
+## STANDING FUNNEL TRACKER (fill weekly, never overwrite a past row)
+
+Impressions are the vanity number and this account already knows reach is not the constraint on
+revenue. These three columns are the ones that decide whether the agency-owner re-point worked.
+Attribute a DM or a call to the post it followed within 72 hours; if it cannot be attributed to a
+post, log it under `(no post)` so the outbound lane gets credit separately.
+
+| Week of | Posts live | DMs received | DMs replied to | Conversations opened | Booked calls | Source post(s) |
+|---|---|---|---|---|---|---|
+| 2026-08-03 | | | | | | |
+
+**Baseline, stated honestly:** as of 2026-08-03 all four numbers are zero and there is no DM lane
+running (`../knowledge-base/frameworks/lakajev-linkedin-leadgen.md` 7.1). The first non-zero week is
+the first real signal this positioning produces buyers, not reach.
+
+## 2026-08-03 — Graph audit: how many automation-operator tribe members are actually in Usama's network (tribe.md open action 6)
+
+Manually searched Usama's own LinkedIn connections (network filter = 1st degree, 371 total connections)
+via the search bar for each keyword tribe.md flagged: n8n, automation, AI automation, workflow, GTM.
+
+**Precise, high-confidence keywords:**
+- `n8n` → 27 distinct 1st-degree connections, 3 pages. Near-zero noise: almost every hit self-describes
+  as an AI Automation Specialist, AI Engineer building with n8n/Make/Zapier, Agentic AI Engineer, or
+  GTM/RevOps person using Clay/Apollo/n8n.
+- `"AI automation"` (phrase) → 4 pages (~35-40), heavy overlap with the n8n set. Small net-new add:
+  a handful of adjacent titles (data/BI + agentic AI, full-stack + AI automation).
+- **Deduplicated high-confidence tribe count: ~27-32 people, roughly 7-9% of the 371-connection network.**
+
+**Noisy keywords, unreliable as a count:**
+- `automation` alone → 10+ pages (100+ hits), majority false positives: HR process automation, ERP/BPM
+  enterprise workflow roles, Amazon PPC/WordPress people who list "automation" as one skill among many.
+- `GTM` alone → 10 pages, almost entirely false positives: generic digital marketing, SEO, content and
+  personal-branding people. Genuine GTM-tribe hits (e.g. "AI GTM Architect for B2B Founders," "GTM Expert
+  | Clay | AI Automation | Claude Code") were already captured in the n8n/AI-automation set above.
+- `workflow` alone → 10 pages, almost entirely false positives: PMP/Scrum project managers, ERP/PeopleSoft
+  and IBM BPM roles. Real hits already counted above.
+
+**The finding that matters more than the count: composition, not size.** Of the ~27-32 high-confidence
+tribe members, nearly all are based in Pakistan (Lahore/Karachi), and by title the large majority are
+BUILDERS and PEERS, not BUYERS: other AI Automation Specialists, agency founders selling similar
+automation/voice-AI services, and at least one person explicitly labeled a "GTM & RevOps Learner." Under
+tribe.md 8.4's own Hormozi lens ("can they pay: solo learner with no client, no"), most of this slice
+fails the paying-buyer test. Segment B (built it, breaks Thursday) and Segment C (an inventory, no idea
+what runs) are underrepresented in the CURRENT graph; the network is dense with fellow builders in the
+same Pakistani AI/automation scene Usama already belongs to, thin on the US/EU agency-owner buyer with a
+client or revenue process depending on the build.
+
+**What this does and does not mean.** It does not invalidate the tribe: the vocabulary and recognition
+markers are confirmed real (27+ people in the existing graph already self-describe exactly the way
+tribe.md predicted). It does mean organic reach WITHIN the existing graph will skew toward Segment A
+discourse (fellow builders, reach not revenue) unless a post breaks out-of-network the way the 2026-07-28
+founder story did (95% out-of-network). The buyer segments (B, C) are more likely to be reached by the
+algorithm pushing a post past this account's own graph than by the graph itself.
+
+**Action implied:** the connection-request/DM lane (`tribe.md` 1A.2) should target OUTSIDE this existing
+graph, specifically US/EU agency owners and consultants, not more of the same Pakistani builder community
+already well represented here. Posting into the existing graph will not itself find Segment B/C buyers.
 
 ## 2026-08-01 — Founder story (2026-07-28) broke every record on the account
 

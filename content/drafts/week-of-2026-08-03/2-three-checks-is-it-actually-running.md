@@ -1,81 +1,80 @@
-# Post 2 - "Your workflow has not thrown an error in four days. That is not evidence it is working." (Teach / Playbook)
+# Post 2 - "Your CPL dashboard looks great. Your booked-calls number doesn't." (Teach / Audit)
 
-- **Skeleton:** Teach format #1, Playbook. "How to [outcome] in [N] steps", 3 concrete do-it-today
-  steps, each naming the exact move and tool, ending in what you get if you run all three.
-  (`../../knowledge-base/winning-post-patterns.md`, The Teach format.)
-- **Pillar:** P3 ROI systems · **Segment:** B, the reliability gap
-- **Hook formula:** Counterintuitive claim (Formula 1) aimed at a thing the reader is currently
-  reading as good news
-- **Format:** Text, 1,690 characters. Teach posts win on SAVES, which this account has earned exactly
-  one of in its whole history. This format is the fix.
+> **Rewritten 2026-08-04.** The original version was a builder tutorial (Error Trigger, Workflow
+> Settings, healthchecks.io) written to someone who personally maintains n8n workflows. That is the
+> retired tribe (`../../strategy/tribe.md` header: "a tribe of builders cannot be sold a build").
+> This version is written to the agency owner deciding whether their client's follow-up is actually
+> happening, using only things they can already see or ask for: no build step, no tool install.
+
+- **Skeleton:** Teach format #1, Audit. Three checks an agency owner can run this week using their
+  own client relationship and existing dashboards. No step requires touching anyone's tech stack.
+- **Pillar:** P3 ROI systems · **Shape:** A, their client's inbox (LEAD WITH THIS per `tribe.md` 8.0)
+- **Hook formula:** Recognition object, reused verbatim from `tribe.md` §7 object #6 (already
+  identified as a top-tier hook: "the gap is the whole business problem")
+- **Format:** Text, 1,590 characters.
 - **CTA:** the closing question doubles as the qualifier. No keyword, no link, no price.
 - **Slot:** Wednesday 2026-08-05, 8:00-10:00 AM ET (5:00 PM PKT)
-- **Zernio:** draft `6a70658f65c9da1a4f98ebc9` (is_draft = true; the slot lives in the title, Zernio drafts cannot carry a scheduled time on the current API)
+- **Zernio:** draft `6a70658f65c9da1a4f98ebc9` **(content changed, needs re-sync)**
 
-## Why this post exists
+## Tribe test (per `tribe.md` §10)
 
-Usama's note: the week was missing guide and teaching posts, which attract attention. Correct, and the
-repo already said so: `winning-post-patterns.md` calls the Teach format "a first-class P3 format,
-**currently underused**", and names Nate Herk and Liam Ottley as the people who own it in this niche by
-teaching step by step with zero skipped steps. The teach rule is the bar: **the reader must be able to
-DO the thing from the post alone.** All three steps here are executable today with free tools.
+Two-plus items from sections 3.1 / 5 / 7 required. Present: recognition marker #4 ("You know your CPL
+to one decimal place and cannot tell me your average reply time"), object #6 (CPL dashboard vs
+booked-calls gap), the muted Slack Connect channel (marker #2 / object #7), and the enemy line
+verbatim ("The leads are fine. Nobody called them.", §6). Vocabulary used: CPL, booked calls, the
+account, churn. No n8n/Make/node language anywhere in the body.
 
-- **Sources:** the reliability stack in `../../strategy/tribe.md` section 8.2. Every node name, setting
-  and field verified there. No client, no statistic, no credential flex.
-- **Technical check:** Error Trigger output fields, Workflow Settings as the Error Workflow location,
-  and the credential-separation rule are all correct as written. The heartbeat is scoped to scheduled
-  workflows on purpose, since a webhook has no window to measure.
-- **QA (self-scored):** 89/100 PASS, zero red flags. Hook 16/18 · Specificity 16/16 · Comment-trigger
-  14/16 · Save-worthiness 10/10 (this is the point of the post) · Pillar 12/12 · Dwell 9/10 · Format
-  8/8 · Hashtags 4/4 · Voice 6/6. Hook-payoff integrity: PASS (promises a correction, delivers the
-  mechanism plus three steps). Character count: 1,690 of 3,000.
+- **Sources:** `tribe.md` §6 (the enemy), §7 objects #6 and #7, §5 marker #4. No client named, no
+  invented statistic.
+- **QA (self-scored):** 88/100 PASS, zero red flags. Hook 17/18 (recognition object, pre-validated in
+  tribe.md) · Specificity 14/16 · Comment-trigger 15/16 · Save-worthiness 9/10 (three-step audit
+  format) · Pillar 12/12 · Dwell 8/10 · Format 8/8 · Hashtags 4/4 · Voice 6/6. Hook-payoff integrity:
+  PASS (promises the gap explained, delivers three checks). Tribe test: PASS.
+  Character count: 1,590 of 3,000.
 
 ---
 
-Your workflow has not thrown an error in four days.
+Your CPL dashboard looks great. Your booked-calls number doesn't.
 
-That is not evidence it is working. It is evidence that nothing has run and failed, which is a different sentence.
+That gap is not a media problem. The ads did their job. Somebody just never called the lead back, and by the time it shows up as churn, it is too late to prove it.
 
-An error only exists if something ran. A trigger that quietly stopped firing produces no executions, so it produces no errors, so every alarm you built stays silent. On that screen, a healthy system and a dead one look identical.
+Here is the audit I run before I ever touch a client's account. Three checks. None of them need engineering access. You can do all three this week with what you already have.
 
-Three checks. Ten minutes. Do them today.
+1. Ask for reply time, not just close rate.
 
-1. Look at the gaps, not the reds.
+Almost every agency reports CPL and close rate. Almost none report how long a lead sat before anyone touched it. That is the number that predicts the churn conversation, not the CPL one. If your client cannot answer it in one sentence, neither of you actually knows what is happening after the lead lands.
 
-Open your executions list and sort by newest. If the workflow runs hourly and your last three timestamps are eight hours apart, you just found it. Red rows are loud. Gaps are the ones that cost you money.
+2. Look at the contact timestamps, not the red flags.
 
-2. Set an Error Workflow, and do not let it share a credential with what it watches.
+Nothing errors when a lead just sits. Ask to see the CRM's last-contacted column for the last 20 leads. A three-day gap on a hot lead will not show up in any report your client is already looking at. It will show up in the next "the leads are garbage" message.
 
-In n8n: Workflow Settings, Error Workflow, every workflow pointed at one shared handler. Put the failing node name and the execution link in the alert, or you will mute it inside a week. And if Google auth is the thing that broke, an alert sent through Gmail cannot reach you. That is the single most common reason a correctly built alarm never rings.
+3. Find out where the alert goes, and whether anyone can mute it.
 
-3. Add a heartbeat.
+If a lead sits, someone needs to know before day three, not the day the account reviews the quarter. A Slack Connect channel that gets muted after week two is not a monitoring system. It is a habit of not looking.
 
-The last node on the success path pings a dead man's switch. healthchecks.io, Cronitor and Better Stack are all free at your size. If the ping does not land inside the window, the monitor tells you, and nothing inside your own instance had to be alive for that to happen.
+None of this is a build. It is three questions and one CRM view.
 
-Only the third one catches a trigger that simply stopped. The first two need something to have run.
+What's your average CPL? Now, what's your average reply time? If you don't know the second number, that's the leak, and it was never the ads.
 
-An alarm that rings when something fails cannot tell you that nothing is happening. You need one that rings at silence.
-
-Which of the three do you have on the workflow you would be most embarrassed to find dead?
-
-**FIRST COMMENT:** The window is the part people get wrong. Period is your run interval, grace is one more interval on top of it, not zero. Set grace to zero and one slow run pages you at 3am, and you will have muted the monitor by Friday. What are you running yours at?
+**FIRST COMMENT:** The push-back I get most: "my client would tell me if leads were sitting." They would not, because they do not know either. That is the entire gap. Whose job is it on your accounts to actually check the timestamp, not just the dashboard?
 
 ---
 
 # Media brief
 
-- **Type:** Carousel, 5 slides, 1080x1350, Green Room kit. Carousels are the only format that has
-  broken 7% engagement rate on this account and they earn double the comments of text at the same
-  reach (`../../performance/linkedin-performance-log.md`, 2026-07-19).
-- **Slide 1:** BG-MAIN. Anton, Bone White: "NO ERRORS IN FOUR DAYS" then underneath, smaller, Signal
-  Green: "IS NOT GOOD NEWS."
-- **Slide 2:** the mechanism, JetBrains Mono. Two mock execution lists side by side, one healthy, one
-  with an 8-hour timestamp gap, both showing zero red rows. Caption: "Same screen. One of these is dead."
-- **Slide 3:** "1. LOOK AT THE GAPS, NOT THE REDS." One line of instruction under it.
-- **Slide 4:** "2. ERROR WORKFLOW. SEPARATE CREDENTIAL." Small diagram: watched workflow in Bone
-  White, alert path in Signal Green, visibly not touching the same credential box.
-- **Slide 5:** "3. HEARTBEAT." A ping arrow leaving the instance to an outside monitor. Caption:
-  "The only one that fires when nothing ran." Author badge bottom-right.
-- **Alt text:** "Five slides explaining why an automation with no errors may not be running, and three
-  checks: look at timestamp gaps, set an error workflow on a separate credential, and add a heartbeat."
-- **Fallback:** single image of slide 1, or text-only. Do not miss the slot for the deck.
+- **Type:** Single image, portrait 1080x1350, Green Room kit (`../../knowledge-base/brand-design-system.md`).
+  A dashboard mockup, not a code screenshot.
+- **Concept:** Two stat tiles side by side, BG-MAIN. Left tile: "CPL: $18" in Bone White, a small green
+  up-arrow. Right tile: "BOOKED CALLS: 4" in Bone White, a small red down-arrow. Nothing else on the
+  slide. The visual contradiction IS the post.
+- **Text on image:** below the tiles, one line, Anton, Bone White, last two words in Signal Green:
+  "ONE OF THESE **GETS YOU FIRED.**"
+  Why this one: it refuses to explain the two tiles, so the reader has to look back at both numbers
+  and work out which, and working it out IS the post. It is also a threat aimed precisely at the
+  agency owner's real fear (fired over a number they do not control, `tribe.md` §6), which a neutral
+  caption like "same month, same account" throws away.
+  *Alternate if you want accusation over threat:* "YOU ONLY REPORT **ONE OF THESE.**"
+- **Author badge:** bottom-right, avatar + "USAMA AYOUB", surname in Signal Green.
+- **Alt text:** "Two stat tiles: a good cost-per-lead number next to a bad booked-calls number, same
+  month, same account."
+- **Fallback:** post text-only. The recognition-object hook carries the post without art.

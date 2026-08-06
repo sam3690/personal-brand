@@ -19,15 +19,39 @@ seconds and don't break in production.
   works if it's reliable enough to bet your business on.*
 - Shipped a fix to **Axios** (the HTTP library running in millions of Node apps). He cares about
   systems that hold up under real traffic, not demos.
-- Operating principle: **"Move fast and don't break things."**
-- Has built **500+ AI workflows** — knows what businesses actually buy (boring, reliable automations).
+- ~~Operating principle: "Move fast and don't break things."~~ **Retired from copy 2026-08-03**
+  (`../strategy/tribe.md` §8.1): to this tribe it reads as a slogan, not a claim.
+- ~~Has built 500+ AI workflows~~ **Retired from copy 2026-08-03** (same section): to a tribe whose
+  running joke is "Copy of Copy of," 500 reads as counted duplicates, not authority.
 
 ## Who he's selling to (ICP)
 
-Founders and agency owners who are **losing deals to slow response times** and are **tired of manual
-follow-up eating their week**. Their CRM feels like a second job.
+**This is the LinkedIn / X content ICP, locked 2026-08-03.** Cold email is a separate lane with its
+own ICP (interior design studios), see `../strategy/current-strategy.md` Lane 1. Do not use this
+section, or this file, to write cold-email copy.
 
-**Not for:** people who want a chatbot that sounds smart in a demo and breaks in production.
+**The agency owner.** Owner or co-owner of a service business selling recurring or project work to other
+businesses, typically 1 to 20 people: marketing and performance agencies, creative studios, web and dev
+shops, consultancies, recruiting firms, fractional teams. US, UK, Canada, Australia, Western Europe.
+They say "I run an agency" unprompted, which is why the tribe passes the "I am" test.
+
+**The pain we write to:** the last mile runs through an inbox they do not control. Two shapes, and a
+post picks one, never both. **Shape A (lead with it):** their client does not answer the leads the
+agency generated, says "the leads are garbage," and churns at month four. The agency gets fired for a
+follow-up problem that was never theirs. **Shape B:** their own new-business inquiries sit while they
+are delivering, so the Friday referral gets answered Monday.
+
+**The enemy:** being judged on a number they do not control. Recognition markers, their exact
+vocabulary, the object bank and the hook bank: `../strategy/tribe.md` (read it before writing).
+
+**Not for:** freelancers with no team (different economics, different identity). Pre-revenue and
+course-stage. Enterprise marketing departments (procurement, not a person). **AI automation agencies
+and n8n builders** (they have Usama's skill and will never buy the build; peers and referral partners,
+never the content target). Anyone whose problem is that no leads arrive at all, since we do not do
+demand generation.
+
+**Honesty blocker:** no agency case study exists yet. Never write a sentence implying an agency client.
+Write the mechanism, name the business type honestly, let the agency reader make the connection.
 
 ## The offer & conversion goals
 
