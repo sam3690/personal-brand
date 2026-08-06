@@ -67,7 +67,13 @@ What's your average CPL? Now, what's your average reply time? If you don't know 
 - **Concept:** Two stat tiles side by side, BG-MAIN. Left tile: "CPL: $18" in Bone White, a small green
   up-arrow. Right tile: "BOOKED CALLS: 4" in Bone White, a small red down-arrow. Nothing else on the
   slide. The visual contradiction IS the post.
-- **Text on image:** below the tiles, Anton, Signal Green: "SAME MONTH. SAME ACCOUNT."
+- **Text on image:** below the tiles, one line, Anton, Bone White, last two words in Signal Green:
+  "ONE OF THESE **GETS YOU FIRED.**"
+  Why this one: it refuses to explain the two tiles, so the reader has to look back at both numbers
+  and work out which, and working it out IS the post. It is also a threat aimed precisely at the
+  agency owner's real fear (fired over a number they do not control, `tribe.md` §6), which a neutral
+  caption like "same month, same account" throws away.
+  *Alternate if you want accusation over threat:* "YOU ONLY REPORT **ONE OF THESE.**"
 - **Author badge:** bottom-right, avatar + "USAMA AYOUB", surname in Signal Green.
 - **Alt text:** "Two stat tiles: a good cost-per-lead number next to a bad booked-calls number, same
   month, same account."

@@ -76,10 +76,15 @@ What is the invisible part of your work, the part nobody has ever thanked you fo
 - **Concept:** BG-MAIN dark textured background. A desk at night from behind or side, one monitor
   glow, nothing legible on screen. It should read as anyone's desk, any year. No n8n canvas, no code,
   no charts: the post is about invisible work, so the image must not show off work.
-- **Text on image:** one line in Anton, Bone White, with the last three words in Signal Green:
-  "THEY CLAP FOR TUESDAY. **THEY PAY FOR THURSDAY.**"
+- **Text on image:** Anton, Bone White, last two words in Signal Green:
+  "MY BEST WORK HAS **NO SCREENSHOTS.**"
+  Why this one: it is an admission, not an aphorism, and admissions are what travelled on 07-28. It
+  also does something only an image can do, a picture whose entire claim is that the good stuff was
+  never picturable, which lands against a monitor with nothing legible on it. It withholds the reason,
+  so the caption is the payoff instead of the echo.
+  *Alternate if you want colder and more arithmetic:* "4 YEARS. **NOT ONE THANK YOU.**"
 - **Author badge:** bottom-right, avatar + "USAMA AYOUB", surname in Signal Green.
-- **Alt text:** "A desk lit by a single monitor at night, with the words: they clap for Tuesday, they
-  pay for Thursday."
+- **Alt text:** "A desk lit by a single monitor at night, with the words: my best work has no
+  screenshots."
 - **Fallback:** post text-only. The 2026-07-28 breakout ran without a strong image and still did
   1,500 impressions. Do not delay the slot waiting on art.
