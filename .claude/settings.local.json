@@ -20,7 +20,19 @@
       "mcp__7240bccb-bb9c-47f6-b1c6-e16e6e6214e0__search_threads",
       "Bash(python3 -c ' *)",
       "mcp__Claude_Code_Remote__list_triggers",
-      "mcp__Claude_Code_Remote__update_trigger"
+      "mcp__Claude_Code_Remote__update_trigger",
+      "Bash(grep -n \"^#\\\\{1,3\\\\} \" content/strategy/tribe.md)",
+      "mcp__62a19e33-d412-4b23-a718-ba5111d7a8bf__tool_guidance",
+      "Bash(git check-ignore *)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(git stash *)",
+      "Bash(git checkout *)",
+      "Bash(git pull *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh pr create --base main --head claude/cold-email-mon-2026-08-03 --title 'Cold email Mon 2026-08-03: close batch-04 \\(touch 3 + niche conflict resolved\\)' --body ' *)",
+      "Bash(gh pr *)"
     ]
   }
 }
