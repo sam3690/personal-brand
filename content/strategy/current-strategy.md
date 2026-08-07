@@ -129,13 +129,53 @@ brand (content + WhatsApp assistant, sales up on launches), a medical-sales voic
 The Axios contribution is **credential-only** until the PR link and a one-line description are in
 proof-assets.md; do not characterize what the fix was.
 
-## POSITIONING POSTURE (CEO instruction, 2026-08-03)
+## POSITIONING POSTURE (AMENDED 2026-08-07, Usama's direct instruction — read this before the 08-03 version below)
+
+The week of 2026-08-03 ran under the 08-03 posture and produced **1-2 reactions per post**, against
+the 07-28 post's 18 reactions / 5 comments / 1,500 impressions. Usama's call, 2026-08-07: overhaul it,
+go back to the register that worked, and put real case studies and real delivered work into the feed.
+Full diagnosis: `../drafts/week-of-2026-08-10/README.md`. Three rules replace the paragraph below.
+
+**1. The story register is reinstated. The receipt is the mechanism, not the wound.**
+`../performance/linkedin-performance-log.md` is precise about why 07-28 travelled: *"the admission with
+a number attached to it."* The 08-03 posture banned the admission and left an aphorism. What was
+actually dangerous was never the register, it was the *subject matter*: cash position, zero-reply
+counts, "nobody bought it". Those stay retired. **An honest first-person story with a real number in
+it is the highest-performing asset this account owns and it ships at least one week in four.**
+Where possible the number should now be a delivered result rather than a shortfall, which satisfies
+"write from ahead" and the register at the same time. That is the upgrade, not a rollback.
+
+**2. Every week ships at least two posts carrying real, delivered proof.**
+`../knowledge-base/playbooks/proof-assets.md` has held three shipped systems with hard numbers since
+2026-07-23 and the account has barely posted any of them. The interior studio (24h to seconds; 7-8 to
+27 consults/month), the fragrance brand, the medical-sales voice agent (14 customers in 3 weeks).
+Anonymized until naming permission, never pluralized, never implying an agency client. A post that
+teaches a generic audit anybody could have written is a wasted slot. Show the build, name the tools,
+give the number.
+
+**3. Stop writing in second person to a persona who is not in the graph.**
+The 2026-08-03 graph audit found the network is ~371 connections, mostly builders and peers, and
+almost no US/EU agency owners. Posts addressed as "your client's account" talk past everyone who is
+actually reading. **Write first person about what happened and let recognition do the aiming.** That
+is exactly what 07-28 did, and it is why 95% of its reach came from outside the follower graph.
+Lane 2's ICP is unchanged; how posts *address* the reader is what changes.
+
+**4. One post a month, minimum, gives something away for free with no keyword and no DM gate.**
+The account has earned one save in its history. A real export, a real checklist, a real teach with no
+skipped steps. Link in the first comment, never the body.
+
+<details><summary>Superseded: POSITIONING POSTURE (CEO instruction, 2026-08-03)</summary>
+
 Write from ahead, as the person who already solved this. **Failure stories are retired.** No cash
 position, no "pre-revenue", no zero-reply counts, no "still figuring it out". Nothing that tells a buyer
 he has not been paid. Vulnerability is allowed only with the fix attached: a bug found and killed, a
 wrong assumption replaced by a better system. Never an open scar. Noted once: this trades away the
 register that produced the 2026-07-28 reach spike (1,500 impressions, 95% out-of-network). The CEO has
 ruled that trade in favor of buyer confidence. Settled, not re-argued.
+
+*Overturned 2026-08-07 by Usama after one week of live results. The trade was made explicitly and it
+cost exactly what it said it would.*
+</details>
 
 ## THIS QUARTER'S GOAL
 First 2-3 paying clients + named testimonials, from this niche. The metrics that matter right now are
