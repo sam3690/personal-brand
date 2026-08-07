@@ -7,6 +7,13 @@ Learnings:
 - ...
 -->
 
+## 2026-08-07
+No per-post metrics this run: Apify is not connected in this session at all (ToolSearch for "apify"/scraper tools returned zero matches, not even an auth-blocked entry), so the scrape step is skipped rather than retried — consistent with the 07-24 learning not to re-probe a blocker that hasn't changed. Composio TWITTER_USER_LOOKUP_ME (cheap authenticated read) confirms account-level deltas vs the 07-24 entry: tweet_count 41 → 53 (+12 over 14 days), media_count 3 → 4 (+1), following 100 → 105 (+5), most_recent_tweet_id changed (2079983472408658384 → 2083087977257877751, so new posts did go out). followers_count is UNCHANGED at 8 — same as every entry back to 07-15 (three-plus weeks flat).
+Learnings:
+- +12 posts in 14 days is ~0.9/day, well under the 2-3/day cadence target and roughly half of what even the 07-22→07-24 catch-up pace implied. The backlog (22 pending-approval drafts spanning 07-07 through 07-24, confirmed via file grep this run) is not shrinking fast enough relative to daily generation — publishing throughput is still the binding constraint, not content supply.
+- Followers flat at 8 through 53 total posts is now a 3+ week pattern, not a blip. At this follower count X is giving standalone posts effectively zero organic distribution. Reiterating the 07-22 recommendation with more weeks of evidence behind it: shift a meaningful share of posts toward replies/quote-tweets on larger AI accounts rather than more standalone takes, since standalone-post volume alone has not moved followers once in a month.
+- Do not spend a cycle re-attempting the Apify connection each run; this session had zero Apify-related tools discoverable at all (a step below prior sessions' 402/noResults, which at least reached the tool). Flag to Usama once, then rely on the free Composio account-level read for state-change detection only.
+
 ## 2026-07-24
 Publishing freeze BROKE. Composio TWITTER_USER_LOOKUP_ME: tweet_count 41 (was 39 on 07-22, +2), most_recent_tweet_id 2079983472408658384 (changed from 2079223785585324171), media_count 3 (was 2, +1), following 100 (was 97). followers_count still 8 (unchanged), so the 2 new posts haven't moved the needle yet. Per-post metrics still unreachable (same Apify/X-API-credit blockers as every prior entry; not re-tested today since the tooling diagnosis hasn't changed since 07-22 and re-running it would just reproduce the same 402/noResults). CEO weekly review (07-24) confirmed the backlog independently: 12 drafts sitting pending-approval across 07-19/07-20/07-21/07-22, none marked posted.
 Learnings:
