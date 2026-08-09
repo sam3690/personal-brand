@@ -215,17 +215,24 @@ evidence than anything currently published.
 
 ## 0b. OPEN ACTIONS (next session starts here)
 
-Nothing below has been done yet. In this order, because each one gates the next.
+In this order, because each one gates the next. Status updated 2026-08-10. The live log for actions
+2 to 5 is `dm-lane-tracker.md`.
 
-1. **Rewrite the profile.** Not done. Headline, banner line, and About section. Every connection
+1. **Rewrite the profile.** ✅ Copy written 2026-08-10: `profile-rewrite-2026-08-10.md`. Two fill-ins
+   left for Usama (the US overlap window, the Axios line) and then it has to be pasted into LinkedIn by
+   hand. **Nothing in action 2 goes out until it is live.** Original brief below. Headline, banner line, and About section. Every connection
    request lands on this, so it gates the whole lane. Drop "speed to lead" and the generic
    "AI automation for Founders & agency owners" framing (a named buyer with 31 agreeing commenters
    said he now auto-rejects anyone whose profile says AI automation). Put the three anonymized numbers
    above the fold, and state the US-hours overlap commitment in About.
-2. **Run the two matched batches of 25** from section 5. Twenty minutes. Read at day 7.
-3. **Start the community habit** from Recipe 5. Two complete answers a day, no pitch.
-4. **Cold email: finish in flight only.** Send what is due under the existing sequence up to ~120 sends
-   total, then stop. No new domains, no new lists. Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
+2. **Run the two matched batches of 25** from section 5. Twenty minutes. Read at day 7. Tables, search
+   method and the day-7 read are set up in `dm-lane-tracker.md`. Manual sending only, blocked on 1.
+3. **Start the community habit** from Recipe 5. Two complete answers a day, no pitch. Logged daily in
+   `dm-lane-tracker.md`.
+4. **Cold email: finish in flight only.** **107 of 120 sends are done** (counted from the four send logs
+   on 2026-08-10), so 13 owed follow-ups remain and then this lane stops. The Mon/Thu scheduled tasks
+   must be stopped or emptied at that point or they will source new prospects on their own. Send what
+   is due under the existing sequence up to ~120 sends total, then stop. No new domains, no new lists. Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
    and since May 2025 Google and Microsoft require SPF/DKIM/DMARC, a 14-day domain age, a 200/day ramp
    on new domains, and spam complaints under 0.10%. Compliant senders reach the inbox ~89% of the time,
    non-compliant senders get 22-34% routed to spam. The setup cost no longer justifies scaling this lane
