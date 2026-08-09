@@ -52,9 +52,29 @@ can deliver is the same month a good lead sits unanswered for two days.**
 ### 3.1 CHOSEN TRIBE: you started an agency
 
 **Definition.** Owner or co-owner of a service business that sells recurring or project work to other
-businesses, typically 1 to 20 people. Marketing and performance agencies, creative studios, web and dev
-shops, consultancies, recruiting firms, fractional teams. Not freelancers (no team, different economics,
-different identity). Not enterprise (procurement, not a person).
+businesses, **1 to 10 people, hard ceiling 20.** Creative studios, performance and media-buying shops,
+recruiting firms, fractional teams, boutique consultancies with a non-technical service. Not freelancers
+(no team, different economics, different identity). Not enterprise (procurement, not a person).
+
+**Size band narrowed and three categories cut, 2026-08-09 (CEO ruling after the market research in
+`2026-08-09-dm-lane-decision-brief.md`). The tribe itself is unchanged and stays locked.** What changed
+is who inside it we contact:
+
+- **1 to 10 people, not 1 to 20.** ReachIQ 2026 reply rate by seniority: C-suite 1.9%, VP 3.4%,
+  Director 4.6%, Manager 5.5%, IC 6.1%. Belkins across 7.5M emails: 11-50 employee firms 0.49%,
+  10,000+ 0.22%. Sapience 2026: contacts at 1-10 person companies reply 75% more often than at 5,000+.
+  At 4 people the founder IS the operator. At 40 the CEO is a layer, and that layer does not answer.
+- **Cut: web and dev shops, software agencies.** They employ the engineers who would build this. This
+  is the peer-not-buyer failure that killed tribe version 2. It does not come back.
+- **Cut: IT and management consultancies.** They sell the same service.
+- **Cut: marketing and performance agencies running GoHighLevel.** GHL ships missed-call text-back as a
+  native toggle on every plan ($97/$297/$497/mo, verified 2026-08-09). They already own the feature.
+  If one is otherwise a strong fit, the only surviving pitch is what GHL cannot do without a builder:
+  WhatsApp + Instagram DM + web form + phone unified under one qualification brain with CRM write-back.
+
+**The one disqualifier that replaces all of the above:** if the prospect's own product is software,
+marketing automation, data, or technical consulting, they are a peer, not a buyer. A 6-person recruiting
+firm passes. An 8-person dev shop does not.
 
 **The initiation.** Every member has paid at least three of these:
 1. **The first client who paid before there was a process.** You invented the delivery on the way.
@@ -185,6 +205,9 @@ is how long a lead sits before anybody replies.*
 - **AI automation agencies and n8n builders.** They have Usama's skill. This was version 2's error and it
   does not come back. They are peers, referral partners, and possible white-label buyers, never the
   content target.
+- **Anyone whose own product is software, marketing automation, data, or technical consulting.** Same
+  failure, wider net: web and dev shops, IT and management consultancies, SaaS startups. Added
+  2026-08-09, see 3.1.
 - **Anyone whose problem is that they have no leads at all.** We do not do demand generation. If nothing
   is arriving, we are the wrong call and saying so early is what earns the referral later.
 

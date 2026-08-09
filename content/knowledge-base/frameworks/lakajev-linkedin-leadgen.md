@@ -658,6 +658,12 @@ This lane does not exist today. LinkedIn DM volume is zero. It is the single big
 
 Time cost: 30-60 minutes a day. LinkedIn allows roughly 150-200 connection requests a week, so 50 is conservative and safe. Volume math: 5 new conversations a day across 250 working days is 1,250 conversations started a year, against ~26 touches per close and ~3% ready now.
 
+> **STALE, 2026-08-09.** Script 1 below is written in n8n-builder language ("when one of your workflows
+> fails at 2am"), which is the retired tribe version 2. So are the §6.4 universal opener and the §7.4
+> Florence invite, and the §6.3 cold DM is written for interior design studios (Lane 1). **The live
+> scripts are `../../business/dm-lane-targeting-spec.md` §6.** Keep this file for the method, not the
+> copy. The daily volume table above is also superseded: 20-25 requests a week, not 50, see the spec.
+
 **Script 1, the accepted-connection opener (send within 24 hours of the accept):**
 
 > Hey [Name], thanks for connecting. I saw [specific thing: the agent you posted, the n8n build, that you run [company]].

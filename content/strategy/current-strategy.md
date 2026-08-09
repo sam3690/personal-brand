@@ -28,9 +28,19 @@ jargon in cold-email copy: `outreach-scripts.md` and the send logs are the sourc
 
 ### Lane 2: LinkedIn → the agency owner
 **"I am an agency owner"** is an identity people claim out loud, which is what makes it a tribe rather
-than a demographic. Owner or co-owner of a service business selling to other businesses, 1 to 20 people:
-marketing and performance agencies, creative studios, web and dev shops, consultancies, fractional teams.
+than a demographic. Owner or co-owner of a service business selling to other businesses, **1 to 10
+people, hard ceiling 20**: creative studios, performance and media-buying shops, recruiting firms,
+fractional teams, boutique consultancies with a non-technical service.
 Full detail in `tribe.md`, which is the operating document.
+
+**Narrowed 2026-08-09 (CEO ruling, tribe unchanged and still locked).** Size band cut from 1-20 to 1-10,
+and three categories removed: web/dev shops and software agencies (they employ the engineers),
+IT and management consultancies (they sell the same service), and marketing agencies running
+GoHighLevel (it ships missed-call text-back as a native toggle, so the feature is already in their
+stack). **One disqualifier replaces all of it: if their own product is software, marketing automation,
+data, or technical consulting, they are a peer, not a buyer.** Contact the owner-operator, never a
+C-suite title at a company big enough for the title to mean a layer. Evidence and sources:
+`2026-08-09-dm-lane-decision-brief.md`. Operating spec: `../business/dm-lane-targeting-spec.md`.
 
 **The pain, in two shapes, never mixed in one post:**
 - **Shape A, their client's inbox (LEAD WITH THIS).** They run the ads, leads arrive, the client answers

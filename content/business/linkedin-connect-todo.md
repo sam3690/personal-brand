@@ -1,37 +1,26 @@
-# LinkedIn connect-request todo (manual, Usama sends these himself)
+# LinkedIn connect-request todo
 
-Blank connection requests (no note) get accepted more often. ~10/day from your own profile.
-When accepted, send the DM opener from outreach-scripts.md ("genuine question, not a pitch...").
-Check off once sent. This file is seeded/updated by the cold-email-outreach routine each run.
+**The old 24-name queue was deleted on 2026-08-09 and was never sent.** Every name on it was a C-suite
+contact at an established agency: BAMF, OpenSponsorship, FITZ & CO, Advantages, IGNITE Media and
+similar. They were sourced for cold email and reused here, which was the mistake.
 
-## Batch 1 (2026-07-06, touch 3 sent 2026-07-20)
-- [ ] Miguel Guerrero, Otis AI — https://linkedin.com/in/miguelmeep
-- [ ] David Stolyar, DL Media — https://linkedin.com/in/david-stolyar-491002262
-- [ ] Mitesh Patel, 247 Digital Marketing — https://linkedin.com/in/miteshpatelbusinessgrowth
-- [ ] Michelle Medoff, IGNITE Media — https://linkedin.com/in/michelle-medoff-78599737
-- [ ] Gerard Lynch, Rise Media — https://linkedin.com/in/gerard-lynch-4963b611
-- [ ] Hogan Shrum, A Little Bird — https://linkedin.com/in/hoganshrum
-- [ ] Ishveen Jolly, OpenSponsorship — https://linkedin.com/in/ishveenjolly
-- [ ] Houston Golden, BAMF — https://linkedin.com/in/houstongolden
+Two reasons, both from `../strategy/2026-08-09-dm-lane-decision-brief.md`:
 
-## Batch 2 (2026-07-09, touch 2 sent 2026-07-20)
-- [ ] April Rain, Digital Rain Inc — https://linkedin.com/in/aprilrain
-- [ ] Farryn Weiner, FARRYNHEIGHT — https://linkedin.com/in/farryn
-- [ ] Michael Griffin, MissionOne Media — https://linkedin.com/in/michaelgriffin
-- [ ] Fran Biderman, Advantages — https://linkedin.com/in/franbidermangross
-- [ ] Marisa Ricciardi, The Ricciardi Group — https://linkedin.com/in/marisariccciardi
-- [ ] Jay Ives, Jives Media — https://linkedin.com/in/jay-ives
-- [ ] Sara Fitzmaurice, FITZ & CO — https://www.linkedin.com/in/sara-fitzmaurice
-- [ ] Suzanne Rosnowski, Relevance International — https://linkedin.com/in/suzanne-rosnowski-a295702
+1. **They do not reply.** ReachIQ 2026: C-suite reply rate 1.9% against 5.5% for managers. Belkins
+   across 7.5M emails: 11-50 employee firms 0.49%, 10,000+ 0.22%.
+2. **Sending them risks the account.** LinkedIn's own help docs name invitations "ignored, left pending,
+   or marked as spam by the recipients" as a restriction trigger, escalating from hours to a month to
+   suspension. One account, no backup.
 
-## Batch 3 (2026-07-23, touch 1 sent; 2 bounced, removed)
-- [ ] Levi Brooks, Use All Five — https://linkedin.com/in/levib
-- [ ] Dave Anderson, Anderson & Partners LLC — https://www.linkedin.com/in/dave-anderson-a92756121
-- [ ] Augusto Fernandez, Blue Pure Loyalty — https://linkedin.com/in/augusto-fernandez-516a4516
-- [ ] John Surdakowski, Avex E-commerce — https://linkedin.com/in/jsurda
-- [ ] Casey Brown, Uppercase Brands — https://linkedin.com/in/browncasey
-- [ ] Arya Bina, Kobe Digital — https://linkedin.com/in/arya-bina-39b83222
-- [ ] Brooke Apffel, Coastal Collective Marketing — https://linkedin.com/in/brookeapffel
-- [ ] Cheryl Marchese, 325 — https://linkedin.com/in/cmarchese325
+Anything already sent stays sent. **Do not withdraw:** withdrawal locks out re-inviting that person for
+up to three weeks, there is no bulk withdraw, and the recipient is never notified.
 
-(Gayle Kalvert/Creo Collective and Jeffrey Pulvino/Boost Media Group dropped: their touch-1 emails bounced, see dead-addresses.md. No email relationship to reference in a connection request for them.)
+## What replaces it
+
+`dm-lane-targeting-spec.md`. It carries the target profile, the search recipes, the 30-second qualify
+checklist, the daily run sheet and the tracking table. Source fresh each day from the recipes rather
+than working a pre-built list, because the qualify checklist has to run against a live profile.
+
+**The cold-email routine should stop seeding names into this file.** Cold email is Lane 1 (interior
+design studios, see `../strategy/current-strategy.md`) and its prospects are not LinkedIn targets. The
+two funnels point at different people and joining them is what produced the deleted queue.
