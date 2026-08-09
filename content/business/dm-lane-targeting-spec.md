@@ -213,6 +213,25 @@ evidence than anything currently published.
 
 ---
 
+## 0b. OPEN ACTIONS (next session starts here)
+
+Nothing below has been done yet. In this order, because each one gates the next.
+
+1. **Rewrite the profile.** Not done. Headline, banner line, and About section. Every connection
+   request lands on this, so it gates the whole lane. Drop "speed to lead" and the generic
+   "AI automation for Founders & agency owners" framing (a named buyer with 31 agreeing commenters
+   said he now auto-rejects anyone whose profile says AI automation). Put the three anonymized numbers
+   above the fold, and state the US-hours overlap commitment in About.
+2. **Run the two matched batches of 25** from section 5. Twenty minutes. Read at day 7.
+3. **Start the community habit** from Recipe 5. Two complete answers a day, no pitch.
+4. **Cold email: finish in flight only.** Send what is due under the existing sequence up to ~120 sends
+   total, then stop. No new domains, no new lists. Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
+   and since May 2025 Google and Microsoft require SPF/DKIM/DMARC, a 14-day domain age, a 200/day ramp
+   on new domains, and spam complaints under 0.10%. Compliant senders reach the inbox ~89% of the time,
+   non-compliant senders get 22-34% routed to spam. The setup cost no longer justifies scaling this lane
+   at 10-15 hours a week. Decision to close it properly comes at 120 sends, not before.
+5. **Then** work the daily run sheet in section 4.
+
 ## 6. THE SCRIPTS
 
 **The rules these obey, all from the research. Do not break them to save a message.**
