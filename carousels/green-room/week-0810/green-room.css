@@ -1,0 +1,197 @@
+/* Green Room kit v1.2 — self-contained slide styles for week-of-2026-08-10.
+   Tokens copied from content/knowledge-base/brand-design-system.md §2/§4.
+
+   bg-main.png and headshot-round.png were never exported from the design project
+   (both exceed the sync tool's 256 KiB cap, see carousels/green-room/README.md).
+   Until they land this file approximates BG-MAIN with a CSS flow-field plus the real
+   grain.png, which IS synced. Drop the two PNGs into carousels/green-room/ and they
+   take over automatically: the image layers below sit on top of the gradient. */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --ink: #05130C;
+  --forest: #123B24;
+  --field: #1E7A42;
+  --signal: #2FBF66;
+  --bone: #F2F6F3;
+  --stroke: rgba(255, 255, 255, 0.5);
+  --panel: #0E1F16;
+  --code: #CFE8D8;
+  --stop: #E5484D;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #000; }
+
+/* ---------- slide shell ---------- */
+.slide {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  background-color: var(--ink);
+  font-family: 'Archivo', system-ui, sans-serif;
+  color: var(--bone);
+  page-break-after: always;
+  break-after: page;
+}
+
+/* BG-MAIN stand-in: deep emerald flow-field, glows at the edges, never behind text (§3) */
+.slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 80% at 8% -10%, rgba(30, 122, 66, 0.38) 0%, transparent 55%),
+    radial-gradient(100% 70% at 105% 108%, rgba(18, 59, 36, 0.85) 0%, transparent 60%),
+    radial-gradient(80% 55% at 95% 5%, rgba(47, 191, 102, 0.10) 0%, transparent 60%),
+    linear-gradient(165deg, #071A10 0%, var(--ink) 45%, #04100A 100%);
+}
+
+/* real BG-MAIN when it lands, plus the synced grain texture */
+.slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../bg-main.png'), url('../grain.png');
+  background-size: 230% auto, 420px 420px;
+  background-position: 50% 48%, 0 0;
+  background-repeat: no-repeat, repeat;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.slide > * { position: relative; z-index: 2; }
+
+/* lighter crop for single cards (§3: banners/CTA use light zoom) */
+.slide.card::after { background-size: 150% auto, 420px 420px; opacity: 0.42; }
+
+/* ---------- type ---------- */
+.h {
+  font-family: 'Anton', Impact, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: 0.005em;
+}
+.h.xl { font-size: 96px; }
+.h.lg { font-size: 82px; }
+.h.md { font-size: 62px; }
+.green { color: var(--signal); }
+.dim { color: rgba(242, 246, 243, 0.42); }
+
+.body {
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgba(242, 246, 243, 0.88);
+  font-weight: 400;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---------- components (§5) ---------- */
+.chip {
+  display: inline-block;
+  background: var(--signal);
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 12px 22px;
+  border-radius: 8px;
+  box-shadow: -3px 4px 0 rgba(18, 77, 43, 0.9);
+  text-transform: uppercase;
+}
+
+.step-marker {
+  display: inline-block;
+  border: 3px solid var(--signal);
+  color: var(--signal);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  padding: 10px 26px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.frame {
+  position: absolute;
+  inset: 64px 64px 96px;
+  border: 3px solid var(--stroke);
+}
+
+.plate {
+  background: var(--panel);
+  border: 2px solid rgba(47, 191, 102, 0.35);
+  border-radius: 14px;
+  padding: 34px 38px;
+  transform: rotate(-1.2deg);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  line-height: 1.7;
+  color: var(--code);
+}
+
+/* stat rows (§5 before/after table, simplified to two rows) */
+.stat-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-top: 3px solid var(--stroke);
+  padding: 40px 0 34px;
+}
+.stat-row:last-of-type { border-bottom: 3px solid var(--stroke); }
+.stat-label { font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 600; letter-spacing: 0.1em; color: rgba(242,246,243,0.55); text-transform: uppercase; }
+.stat-val { font-family: 'Anton', Impact, sans-serif; font-size: 76px; text-transform: uppercase; }
+
+/* before/after 2-col (§5) */
+.ba { display: grid; grid-template-columns: 1fr 1fr; border: 3px solid var(--stroke); }
+.ba > div { padding: 44px 40px; }
+.ba > div:first-child { border-right: 3px solid var(--stroke); }
+.ba h3 { font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 600; letter-spacing: 0.12em; margin-bottom: 30px; text-transform: uppercase; }
+.ba p { font-size: 31px; line-height: 1.45; margin-bottom: 24px; }
+.ba p:last-child { margin-bottom: 0; }
+
+/* ---------- author badge + footer (§5) ---------- */
+.footer {
+  position: absolute;
+  left: 72px;
+  right: 72px;
+  bottom: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+.counter { font-family: 'JetBrains Mono', monospace; font-size: 24px; font-weight: 600; letter-spacing: 0.1em; color: rgba(242,246,243,0.5); }
+
+.badge { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+.badge .av {
+  width: 64px; height: 64px; border-radius: 50%;
+  border: 3px solid var(--bone);
+  background: var(--forest) url('../headshot-round.png') center/cover no-repeat;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Anton', sans-serif; font-size: 26px; color: var(--bone);
+}
+.badge .nm { font-family: 'Anton', Impact, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: 0.02em; }
+.badge.big .av { width: 110px; height: 110px; border-width: 4px; font-size: 42px; }
+.badge.big .nm { font-size: 40px; }
+
+/* ---------- print: exact 1080x1350 pages ---------- */
+@page { size: 1080px 1350px; margin: 0; }
+@media print {
+  body { background: #fff; }
+  .slide { box-shadow: none; }
+}

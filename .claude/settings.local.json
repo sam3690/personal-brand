@@ -32,7 +32,32 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(gh pr create --base main --head claude/cold-email-mon-2026-08-03 --title 'Cold email Mon 2026-08-03: close batch-04 \\(touch 3 + niche conflict resolved\\)' --body ' *)",
-      "Bash(gh pr *)"
+      "Bash(gh pr *)",
+      "Bash(awk '/[Oo]pen [Aa]ction/,0' content/business/dm-lane-targeting-spec.md)",
+      "WebFetch(domain:homeguide.com)",
+      "WebFetch(domain:www.expertise.com)",
+      "WebFetch(domain:tvlcreative.com)",
+      "WebFetch(domain:margaritabravo.com)",
+      "WebFetch(domain:post31interiors.com)",
+      "WebFetch(domain:duetdesigngroup.com)",
+      "WebFetch(domain:anekainteriorsinc.com)",
+      "WebFetch(domain:www.sensationalhome.com)",
+      "WebFetch(domain:gigidavisstudio.com)",
+      "WebFetch(domain:baczewskiluxury.com)",
+      "WebFetch(domain:nancysanford.com)",
+      "WebFetch(domain:adamscustomcabinetry.com)",
+      "WebFetch(domain:landdesignsbycolton.com)",
+      "WebFetch(domain:www.houseofalpine.com)",
+      "WebFetch(domain:fbcremodel.com)",
+      "WebFetch(domain:d2dstudio.com)",
+      "WebFetch(domain:atelierid.com)",
+      "WebFetch(domain:megankaneinteriors.com)",
+      "WebFetch(domain:kbrantinteriors.com)",
+      "WebFetch(domain:www.wwms.net)",
+      "WebFetch(domain:atcustomwoodworks.com)",
+      "WebFetch(domain:designoneinteriors.net)",
+      "mcp__62a19e33-d412-4b23-a718-ba5111d7a8bf__discover_hubspot_schema",
+      "Bash(git rm *)"
     ]
   }
 }
