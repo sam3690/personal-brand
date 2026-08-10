@@ -235,9 +235,17 @@ In this order, because each one gates the next. Status updated 2026-08-10. The l
    individual emails, and three emails to one uninterested person is one decision. **The tasks stay ON.**
    Rationale in `../strategy/current-strategy.md`, COLD EMAIL RULING.)*
    **Real position: 31 of 120 prospects contacted, about 26% of the way.** No owed follow-ups remain,
-   batches 01-04 are all fully sequenced, so the next action is a fresh batch-05 touch 1 sourced through
-   section 1 above. Sourcing continues to 120 unique prospects, then the close decision is taken on reply
-   count. Deliverability discipline still applies in full: Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
+   batches 01-04 are all fully sequenced. **Citation fix (found 2026-08-10 during the batch-05 run):**
+   the cold-email lane's actual sourcing criteria live in **section 2, Recipe 4** ("Apify Google Maps,
+   for the cold-email lane only" — review count/rating/chain filters, metro rotation) plus the peer
+   disqualifier and the "already has a bot" check pulled from section 1. Section 1's target profile
+   itself (headcount, B2B service-firm business type, GoHighLevel check) is written for Lane 2 LinkedIn
+   DM and does not map onto interior-design/home-design studios; reading it literally for Lane 1 sourcing
+   would incorrectly disqualify the entire niche. Batch-05 (Denver, 10 sourced) was sourced correctly
+   under this reading. `current-strategy.md`'s COLD EMAIL RULING still says "section 1" and should be
+   updated to point here the next time that file is touched. Sourcing continues to 120 unique prospects,
+   then the close decision is taken on reply count. Deliverability discipline still applies in full:
+   Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
    and since May 2025 Google and Microsoft require SPF/DKIM/DMARC, a 14-day domain age, a 200/day ramp
    on new domains, and spam complaints under 0.10%. Compliant senders reach the inbox ~89% of the time,
    non-compliant senders get 22-34% routed to spam. The setup cost no longer justifies scaling this lane

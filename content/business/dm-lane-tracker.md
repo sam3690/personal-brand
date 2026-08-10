@@ -145,5 +145,5 @@ The close decision happens at **120 unique prospects contacted** and reads one n
 | 02 | 8 | 0 |
 | 03 | 6 | 0 |
 | 04 | 9 | 0 |
-| 05 | | |
-| **Total** | **31 of 120** | **0** |
+| 05 | 9 (1 bounce, 10 sent) | 0 |
+| **Total** | **40 of 120** | **0** |
