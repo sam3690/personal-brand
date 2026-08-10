@@ -117,21 +117,33 @@ Weekly ceiling: 20-25 requests. Not 50.
 
 ---
 
-## Cold email, closing out (spec 0b action 4)
+## Cold email, CONTINUING (CEO ruling 2026-08-10, corrects the unit error below)
 
-**107 of the 120 sends are done** (batches 01-04, counted from the send logs on 2026-08-10). Thirteen
-left, all of them follow-ups already owed to people who were contacted. Finish those, send nothing new,
-no new domains and no new lists. The Monday and Thursday scheduled tasks will keep firing, so they need
-to be stopped or emptied once the last touch 3 goes out, otherwise they will source fresh prospects on
-their own.
+> **CORRECTED. The previous version of this section said "107 of the 120 sends are done" and told the
+> Monday and Thursday scheduled tasks to be stopped or emptied. That was wrong and it is overruled.
+> The tasks stay ON. Full rationale: `../strategy/current-strategy.md`, COLD EMAIL RULING.**
 
-The close decision happens at 120 sends and reads one number: replies. Median is 3.43-4.8%, so on 120
-sends the honest expectation was 4 to 6 replies.
+The 120 threshold in `../strategy/2026-08-09-dm-lane-decision-brief.md` section 4 counts **one
+independent contact attempt**, not one email. That is the only reading under which "zero replies from 25
+sends" is 29-42% likely and "one booked meeting takes 114". Counting each person's touch 2 and touch 3 as
+extra shots treats three emails to one uninterested person as three decisions. It is one.
 
-| Batch | Sends | Replies so far |
+**Real position: 31 of 120 prospects. About 26% of the way, not 89%.** At the median reply rate, zero
+replies from 31 prospects still happens 22-34% of the time by luck alone. Underpowered, not dead.
+
+There are **no owed follow-ups**: batches 01-04 are all fully 3-touch sequenced and complete. So the next
+action is a **new batch-05 touch 1**, sourced through the qualify list in `dm-lane-targeting-spec.md`
+section 1. Note that batches 01-03 predate that spec and several of those prospects would be disqualified
+today by the peer disqualifier, so the effective on-spec sample is smaller than 31 and list quality, not
+the offer, is the untested variable.
+
+The close decision happens at **120 unique prospects contacted** and reads one number: replies.
+
+| Batch | Prospects contacted | Replies |
 |---|---|---|
-| 01 | 28 | |
-| 02 | 26 | |
-| 03 | 24 | |
-| 04 | 29 | |
-| **Total** | **107** | |
+| 01 | 8 | 0 |
+| 02 | 8 | 0 |
+| 03 | 6 | 0 |
+| 04 | 9 | 0 |
+| 05 | | |
+| **Total** | **31 of 120** | **0** |

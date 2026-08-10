@@ -229,10 +229,15 @@ In this order, because each one gates the next. Status updated 2026-08-10. The l
    method and the day-7 read are set up in `dm-lane-tracker.md`. Manual sending only, blocked on 1.
 3. **Start the community habit** from Recipe 5. Two complete answers a day, no pitch. Logged daily in
    `dm-lane-tracker.md`.
-4. **Cold email: finish in flight only.** **107 of 120 sends are done** (counted from the four send logs
-   on 2026-08-10), so 13 owed follow-ups remain and then this lane stops. The Mon/Thu scheduled tasks
-   must be stopped or emptied at that point or they will source new prospects on their own. Send what
-   is due under the existing sequence up to ~120 sends total, then stop. No new domains, no new lists. Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
+4. **Cold email: CONTINUES. Keep sourcing.** *(Corrected by CEO ruling 2026-08-10. This item previously
+   read "107 of 120 sends are done, finish in flight only" and told the Mon/Thu scheduled tasks to be
+   stopped or emptied. That was a unit error: the 120 threshold counts independent contact attempts, not
+   individual emails, and three emails to one uninterested person is one decision. **The tasks stay ON.**
+   Rationale in `../strategy/current-strategy.md`, COLD EMAIL RULING.)*
+   **Real position: 31 of 120 prospects contacted, about 26% of the way.** No owed follow-ups remain,
+   batches 01-04 are all fully sequenced, so the next action is a fresh batch-05 touch 1 sourced through
+   section 1 above. Sourcing continues to 120 unique prospects, then the close decision is taken on reply
+   count. Deliverability discipline still applies in full: Reply rates fell from 8.5% in 2019 to ~3.4% in 2026,
    and since May 2025 Google and Microsoft require SPF/DKIM/DMARC, a 14-day domain age, a 200/day ramp
    on new domains, and spam complaints under 0.10%. Compliant senders reach the inbox ~89% of the time,
    non-compliant senders get 22-34% routed to spam. The setup cost no longer justifies scaling this lane
