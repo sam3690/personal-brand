@@ -47,7 +47,7 @@ Most design studios I look at: next business day. On a $20k+ project, by then th
 
 I recently built this exact setup for an interior-design studio: their WhatsApp response time went from ~24 hours to seconds, and booked consultations went from 7-8 a month to 27. Same system: every enquiry answered in under 60 seconds on WhatsApp, qualified, and booked into your calendar.
 
-I call it the 7-Day Lead Rescue. Live in 7 days, you own the whole thing, no retainer, no lock-in. If it's not live and booking in 7 days, you don't pay. Two founding spots this month at $500 (normally $1,500).
+I call it the 7-Day Lead Rescue. Live in 7 days, you own the whole thing, no retainer, no lock-in. If it's not live and booking in 7 days, you don't pay. I'm taking 2 builds this month at $500, priced against proof, not the market rate: a written testimonial with your real numbers and a reference call for one future prospect once it's delivered. After these 2, it's $1,500.
 
 Worth 15 minutes to see if it fits {{company}}?
 
@@ -65,7 +65,7 @@ Subject: closing the loop
 
 Last note from me. If slow after-hours enquiries aren't a problem at {{company}}, ignore this and I'll get out of your inbox.
 
-If they are, I'm taking 2 founding builds this month at $500 (goes to $1,500 after). 7-day delivery, fixed scope: instant reply, qualification, calendar booking. If it's not live and booking in 7 days, you don't pay.
+If they are, I'm taking 2 builds this month at $500, priced against proof: a written testimonial with your real numbers and a reference call once it's delivered. $1,500 after these 2. 7-day delivery, fixed scope: instant reply, qualification, calendar booking. If it's not live and booking in 7 days, you don't pay.
 
 Either way, good luck with the season.
 
