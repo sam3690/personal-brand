@@ -69,11 +69,11 @@ If they are, I'm taking 2 founding builds this month at $500 (goes to $1,500 aft
 
 Either way, good luck with the season.
 
-## LinkedIn DM (connection accepted)
-Thanks for connecting, {{first_name}}. Genuine question, not a pitch: how do you handle leads that come in after hours right now, does anything reply before morning?
-
-(If they engage:)
-That's the exact gap I fix. I build an AI system that answers in under 60 seconds, qualifies, and books the call. Fixed $500, live in 7 days, you own the whole thing. Want me to send a 2-min Loom of one running?
+## LinkedIn DM
+**Moved 2026-08-09 to `dm-lane-targeting-spec.md` §6.** The old script here dropped the $500 offer in
+message two, which is a gate-5 offer arriving at gate 2, and it was written in Lane 1 voice for a Lane 2
+audience. This file is Lane 1 only (cold email to interior design studios). LinkedIn is Lane 2 and has
+its own tribe, its own size band and its own scripts.
 
 ## Upwork proposal template
 Hi, I can have this live in 7 days, fixed price.

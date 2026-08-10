@@ -22,10 +22,10 @@ That question is the whole filter. Someone looking for free labor has no good an
 
 | They say | Do |
 |---|---|
-| "Run it for me, we split revenue / equity" | Decline the split, counter with a small flat-fee pilot. |
+| "Run it for me, we split revenue / equity" | Decline the split, counter with a founding slot at $500. |
 | "I'd pay, what does it cost" | Real prospect. Book the call. |
 | "Just trade notes / co-market" | Cheap yes. 20 min, zero build. |
-| "Let's collaborate now, sort money later" | Decline on cost grounds, counter with the pilot. |
+| "Let's collaborate now, sort money later" | Decline on cost grounds, counter with the founding slot. |
 | Vague / dodges | Let it die. One follow-up max. |
 
 **Time cap: one call.** Do not build a list, write sequences, or do a "quick audit" as a
@@ -42,7 +42,7 @@ favor. That is the trap in every one of these conversations.
 > Every "sort it later" deal I've seen ends with one person having spent money and the other
 > having spent goodwill.
 >
-> What I can do is make the entry small enough that it isn't a real risk for you. [pilot].
+> What I can do is make the entry small enough that it isn't a real risk for you. [founding slot].
 > If it books you nothing, you've spent less than a month of your own tool bill and you still
 > own the setup.
 >
@@ -52,15 +52,26 @@ favor. That is the trap in every one of these conversations.
 Refuse on YOUR cost, not their worth. Keeps it non-insulting. The number being small turns
 "I can't" into "I won't," which tells you everything.
 
-### The pilot (outbound build, priced below the flagship Lead Rescue offer)
+### The pilot
 
-> 200 filtered contacts, verified. Sequence written for your product, day 0/3/7. Sending
-> domain bought and warmed, inboxes configured. Replies land in your inbox, you handle the
-> conversations. The whole build is yours to keep, no retainer. $300, half up front, two
-> weeks to first send because warmup can't be rushed.
+**The $300 cold-email-infrastructure pilot is dead as of 2026-08-09 (CEO ruling after the market
+research).** Three reasons: it is a different product from the lead-response build and needs separate
+delivery; it sits below every reference price found (a live n8n job ad pays contract engineers
+$500-$1,200 per build, and competitors' *pilots* run $1,500); and it was pointed at pre-revenue peers
+who cannot pay. Do not offer it. Do not revive it without a CEO decision.
+
+**What to offer instead when someone wants a smaller first step:** the founding slot on the real offer.
+$500 for the first 2, then $1,500, and frame it as what it is, two founding slots bought in exchange for
+a named reference and a testimonial with a number in it. Never as "I'm cheaper."
+
+That framing is not cosmetic. Discounting does not buy past the trust gap: Upwork's own commissioned
+economist report finds US freelancers earn 82% more from the same clients and are 51% more likely to be
+hired after controlling for the rate bid, and the NBER paper behind it measures the substitution
+elasticity at 0.039. Buyers who filter on country leave rather than trade down. A lower price only
+reduces what you collect from the buyers who were going to hire you anyway.
 
 Before saying yes, ask: what's your price point, and have you closed one customer yet, even
-manually? If no, do not sell. Tell them to close three by hand first. Losing $300 to gain
+manually? If no, do not sell. Tell them to close three by hand first. Losing the deal to gain
 someone who says you were the one who did not sell them something is a good trade.
 
 ### Equity / rev-share ask
