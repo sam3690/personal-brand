@@ -75,14 +75,20 @@ Slot times are US Eastern (audience US/EU). Convert to Karachi: 7:30am ET = 4:30
 8am ET = 5pm PKT, 10am ET = 7pm PKT. Example: Tue 8am ET slot = "2026-07-07T17:00:00+05:00".
 Usama adds the image and approves before it goes live. The image step is the human guardrail.
 
-## X.com publishing = Composio, disk drafts, human gate
-X is connected via **Composio** (free tier: 500 posts/month, write-only API — metrics come from
-Apify scraping, never the API). Flow: daily routine writes drafts to `content/drafts/x/<YYYY-MM-DD>/`
-with frontmatter (`status: pending-approval`, `media: []`, `first_reply`, `qa_score`) → Usama
-reviews, drops media path(s) into `media:` → runs **`/x-publish`**, which confirms each post
-in-session, then posts via COMPOSIO_SEARCH_TOOLS + COMPOSIO_MULTI_EXECUTE_TOOL (thread parts are
-dependent calls: post in reply-chain order, never parallel; source link goes as a reply).
-**Never publish a draft Usama has not confirmed in-session. Agents never attach or generate media.**
+## X.com publishing = disk drafts, human gate (Composio blocked, browser posting since 2026-08-11)
+Drafts land in `content/drafts/x/<YYYY-MM-DD>/` with frontmatter (`status: pending-approval`,
+`media: []`, `first_reply`, `qa_score`). **`first_reply` must be a real, specific link**: the news
+article for a news post, the **GitHub repo or official site** for an open-source tool/release post
+— never blank. Media is optional per post, not mandatory; don't hold a post for lack of an image.
+
+Composio X writes are blocked (API credits depleted — see `content/performance/x-performance-log.md`).
+Publishing path: Usama reviews a draft in-session and approves it explicitly, then Claude posts it
+via the **Claude in Chrome extension**, using Usama's own logged-in X session — ad hoc, one draft
+at a time, never a standing auto-post queue or batch approval. Claude shows the exact composed post
+text before clicking Post. **Never publish a draft Usama has not confirmed in-session, and never
+auto-post the next draft in a folder without a fresh yes for that specific one. Agents never
+attach or generate media.** If Composio credits are ever restored, re-test with one post before
+reverting to it.
 
 ## The routines (the agentic loops)
 Exact schedules + the full prompt of every routine: **`content/ROUTINES.md`** (the recovery file).

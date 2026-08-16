@@ -7,7 +7,13 @@ unlike LinkedIn which stays on the 4 niche pillars). Voice stays Usama's: direct
 - Hook line carries the post. Number, bold claim, or curiosity gap in the first 8 words.
 - ≤280 chars per post. Threads (2-5 posts) only when the story earns it.
 - **No hashtags. No links in the post body** — source link goes in the first reply.
+- **Every post's `first_reply` must be a real, specific link (Usama, 2026-08-11):** the news
+  article for a news/story post, or the project's **GitHub repo or official site** for an
+  open-source tool / release post. Never leave it blank or generic — this is the only citation
+  the post carries and it doubles as the reader's next click.
 - No em dashes ever. No fluff words. End with a take or a sharp question.
+- **Media is optional, not required per post (Usama, 2026-08-11).** Skip the media brief/image
+  when the post doesn't need one; don't hold a post back from posting for lack of an image.
 
 ## Formats that travel (2026)
 1. **Builder/demo post (DEFAULT, per Usama 2026-07-07)**: build-something content — stunning AI/3D
@@ -28,9 +34,13 @@ Reply to comments in the first hour — replies are the strongest growth signal 
 
 ## Pipeline
 `x0-trend-scout → x1-post-writer → x2-media-brief → x3-qa` (files in `../agents/x/`), then
-Agent 6 (performance analyst) closes the loop daily. Drafts land in `content/drafts/x/<date>/`,
-Usama adds media + approves, publishing goes through Composio (X free tier: 500 posts/month,
-2-3/day fits fine).
+Agent 6 (performance analyst) closes the loop daily. Drafts land in `content/drafts/x/<date>/`.
+
+**Publishing (as of 2026-08-11):** Composio X writes are blocked (API credits depleted, see
+`../performance/x-performance-log.md`). Usama approves each draft in-session, then Claude posts
+it via the **Claude in Chrome extension** (his real, already-logged-in X session) — ad hoc, one
+draft at a time, never a standing auto-post queue. Claude shows the exact composed post before
+clicking Post; only an explicit per-draft yes triggers the publish. Do not batch-approve.
 
 ## Brand design system (replaces the earlier Canva-template plan)
 LinkedIn/X post images use Usama's fixed visual system — not Canva, a Claude Design project:
