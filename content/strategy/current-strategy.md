@@ -1,9 +1,13 @@
 # Current Strategy — Single Source of Truth
 > The CEO agent owns this file. Every routine (content + outreach) reads it FIRST and obeys it.
 > Do not hardcode niche/offer/price into routines — change it here, once, and everything follows.
-> Last set by: CEO weekly review · 2026-08-10 (week 5, pre-revenue, 31 prospects / 0 replies)
-> Niche, offer and positioning KEPT. Changed this week: pricing FRAME (not the number), and the cold
-> email unit error that was about to shut the outbound lane down on its own. Both ruled below.
+> Last set by: CEO weekly review · 2026-08-16 (week 6, pre-revenue, 40 prospects / 0 replies)
+> Niche, offer and positioning KEPT again. Changed this week: the $500 clause moves from a stated
+> expectation to a written pre-payment condition (UF Designs took delivery and refused it), the
+> primary proof asset rotates off UF Designs (contract terminated, naming refused) onto the
+> medical-sales voice agent, and a 48-hour instant-reply-only rung is added at the same $500 price as
+> a discovery-call fallback, not a discount. A skipped send (batch-05 touch 2, due 08-13) is being
+> caught up, not repeated: see the scheduler failure note in WEEK OF 2026-08-17 DIRECTIVES.
 
 ## TWO LANES, TWO ICPs (CEO ruling, 2026-08-03: resolves the prior "open conflict")
 The 2026-08-03 tribe rebuild was scoped to **LinkedIn content only**. It does not replace the cold-email
@@ -129,6 +133,26 @@ the buyer who wanted cheap.
 Confidence on this call is medium, per the brief's own grading, and it is reversible: it changes framing
 and adds a condition, it does not move the number. Revisit at the first delivered client.
 
+**Addendum, CEO ruling 2026-08-16: the clause becomes a written pre-payment condition, not a stated
+expectation.** UF Designs took delivery of the build and then refused the testimonial-and-reference
+commitment that is "the entire reason the price is $500" (point 2 above). That is a real event, not a
+theory, and the no-blind-offers mandate requires acting on it. **From now on: the clause is agreed in
+writing, in the same message as the Payoneer payment link, before the first payment goes out, and it
+names the consequence in one sentence: no clause, the price is $1,500.** This does not change the
+number. It closes the enforcement hole the number had. Applies to the discovery-call script and touch
+3 of cold email; see WEEK OF 2026-08-17 DIRECTIVES for the exact copy change.
+
+## 48-HOUR OFFER-SHAPE TEST (CEO ruling, 2026-08-16)
+Usama's own read: the funnel is failing at gate 1 (the reply), not on calls, so a lower-effort yes
+aimed at that exact gate is worth testing. Ruling: this is a **scope cut, not a discount.** The 7-Day
+Lead Rescue's first line item, "instant WhatsApp + email responder (<60s)," already exists in the
+value stack above at $800 of stated value. Sold on its own as a 48-hour build (instant-reply only, no
+qualification, no booking, no CRM, no 30-day tuning), it becomes a new delivery shape **at the same
+$500 price** the $1,500 full build already anchors against. **Where it ships: discovery calls and DMs
+only, as the fallback rung when someone balks at a 7-day timeline. Not in cold email touch 1**, which
+already carries the copy experiment below and two variables on one small batch produces nothing
+readable. Confidence medium, fully reversible, revisit at the first delivered client of either shape.
+
 ## COLD EMAIL RULING (CEO, 2026-08-10): the lane CONTINUES. Unit error corrected.
 `../business/dm-lane-tracker.md` and `../business/dm-lane-targeting-spec.md` open action 4 both claimed
 **"107 of 120 sends are done"** and instructed that cold email wind down and the Mon/Thu scheduled tasks
@@ -221,8 +245,21 @@ is exactly what 07-28 did, and it is why 95% of its reach came from outside the 
 Lane 2's ICP is unchanged; how posts *address* the reader is what changes.
 
 **4. One post a month, minimum, gives something away for free with no keyword and no DM gate.**
-The account has earned one save in its history. A real export, a real checklist, a real teach with no
-skipped steps. Link in the first comment, never the body.
+The account has earned **three** saves in its history (corrected 2026-08-16: 1 from 07-07, 2 from the
+07-28 post once its Zernio-synced total replaced the old screenshot number, see performance log). A
+real export, a real checklist, a real teach with no skipped steps. Link in the first comment, never
+the body. **August has zero confirmed shipped instances of this rule** — post 3 (week of 08-10)
+promised one in the body but the first comment's Gist-link status is unverified as of this review,
+see WEEK OF 2026-08-17 DIRECTIVES.
+
+**5. [Added 2026-08-16] Keep the mechanism, move the subject.** Usama keeps writing as an n8n and
+Claude Code builder, in builder nouns, showing canvases and execution logs — that is what makes him
+legible and it is not the risk. What changes is what the build is *for*: the outcome in every post is
+someone else's booked revenue, not the elegance of the workflow. Post 4 of the week of 08-10
+(`urn:li:share:7493522957965758464`, 12.31% ER, the account record) already does this and is the
+template. Corollary: never announce the niche, the pricing frame, or the offer-shape test on either
+public feed. X stays broad AI, LinkedIn stays builder-voiced, interior design stays entirely inside
+cold email.
 
 <details><summary>Superseded: POSITIONING POSTURE (CEO instruction, 2026-08-03)</summary>
 
@@ -361,3 +398,159 @@ The tribe narrowing from 2026-08-09 was already in this file and needed no ratif
 at or under 5%; at least 1 reply of any kind; 10 community answers with 3+ asker replies; 50 names loaded;
 4 LinkedIn posts live in-slot with the Gist attached; X routine deleted and backlog archived; profile live;
 Loom recorded.
+
+**GRADED 2026-08-16: zero clean passes. Top of the list, no spin: a scheduled send was skipped.**
+Batch-05 touch 2 (9 prospects) was due Thu 2026-08-13 and never sent; the `cold-email-outreach-thu`
+task's actual last execution before today was a silent no-op (diagnosed below), not a fire-and-send.
+This is the exact failure NO SKIPPED WEEKS exists to catch, in week 6.
+
+1. PARTIAL — batch-05 sent 10 (not 20), 9 delivered, 1 bounce, only 3 of 10 (not 9) actually reached a
+   named owner's personal inbox (the rest were `info@`/`inquiry@`/generic). Touch 2 not sent (above).
+2. NOT DONE — the touch-1 copy experiment never ran; batch-05 touch 1 shipped with the full offer,
+   price and meeting ask still in message one.
+3. SKIPPED — 0 community answers logged, one empty run-sheet row since 08-10.
+4. SKIPPED — 50-name load never happened, both LinkedIn batch tables empty.
+5. SHIPPED, both gates failed — all 4 LinkedIn drafts are live (real progress), but gate (a) (cut the
+   two lines from post 1) was not applied on the published body, gate (b) (no Wednesday post without
+   the Gist) is unverified (see below, top human item), and all 4 published 23:00-00:30 ET against
+   7:30am-10am ET slots, the fourth straight week timing was never tested.
+6. HALF DONE — backlog archived (20 drafts), but `daily-x-trending-posts` is still enabled and fired
+   again today, the second week running a CEO deletion ruling was ignored by the routine itself.
+7. SKIPPED — profile not published, all three `dm-lane-tracker.md` boxes unticked, third week.
+8. SKIPPED — Loom not recorded, fourth week asked.
+9. FAILED, permanently — UF Designs refused naming permission and terminated the contract; see PROOF
+   ROTATION note above. Dropped from the human list below, the only entry that shrinks it.
+
+**Two corrections behind this grading, both confirmed by live tool calls, not assumption:**
+- **LinkedIn followers are 415, not 308.** The "Zernio sync gap" noted in the 08-10 pipeline line
+  above closed; verified live via `accounts_get_follower_stats` on 2026-08-16 (415 flat over the last
+  3 days). +113 over the 302 baseline on 07-15, +37% in 32 days.
+- **The account's best post is 4x larger than every decision since 08-01 assumed.** See the
+  2026-08-16 correction on the 07-28 row in `../performance/linkedin-performance-log.md`: verified
+  live via `analytics_get_post_timeline` on the post's own LinkedIn URN, true total 6,267 impressions
+  / 4,613 reach / 75 likes / 19 comments / 2 saves, not the 1,500/1,056/18/5 read off an early
+  screenshot. Corrects the "one save in its history" line in POSITIONING POSTURE above to three.
+
+---
+
+## WEEK OF 2026-08-17 DIRECTIVES (CEO weekly review, run Sunday 2026-08-16, delegated to and
+refined by Content Director and Growth Lead, both opus, both same day)
+
+**Pipeline truth, all channels: 40 of 120 unique prospects contacted (Lane 1 cold email decision
+threshold), 0 replies, 0 calls, 0 closes, $0, 41 days since the first send.** At the brief's own
+math (`../business/2026-08-09-dm-lane-decision-brief.md` §4, ~114 prospects per expected meeting),
+40 contacted buys roughly 0.35 of an expected meeting — zero replies is not evidence of a dead offer,
+it is evidence of a starved one. At the current sourcing rate (9-10/week) the 120-prospect decision
+does not arrive until 2026-09-28, six weeks out and too close to the 90-day window's edge. **Volume
+must roughly double this week, and the sample must actually be on-spec** (see item 2, batch-05 does
+not clear its own qualify filter). Effort this week was 100% content, 0% outbound on Usama's own
+logged hours; last review said outbound grades first, and outbound volume went down (10 vs 27 the
+prior week). **Decision: KEEP niche, KEEP price, KEEP positioning** (full rationale above in PROOF
+ROTATION, the pricing-frame addendum, and the offer-shape test section). This week's list is
+short and mostly machine-executable on purpose: nine directives with five routed through one man's
+evenings produced zero clean passes last week.
+
+**A structural risk, not just a missed send: the scheduler can fail silently.**
+`cold-email-outreach-thu` and `daily-x-trending-posts` both show `lastRunAt` 2026-08-16, 25
+milliseconds apart, a missed-task replay on app restart, not an independent Thursday firing. The
+replay produced no send: no touch-2 entry in `batch-05-send-log.md`, no new commit. **A routine that
+fires and silently does nothing is indistinguishable from success at the task-list level.** Monday's
+`cold-email-outreach` is exposed to the same dependency (this business's routines only run while the
+app is open, see CLAUDE.md). Every send this week gets verified against the send log the same day,
+in-session, not assumed from a `lastRunAt` timestamp.
+
+1. **[Cadence/Growth] Catch up the skipped send with correct spacing, not by stacking it.** Batch-05
+   touch 2 (9 recipients, all except the dead Adams Custom Cabinetry address) sends **Monday
+   2026-08-17**. Touch 3 sends **Thursday 2026-08-20**, not also Monday: two emails to the same cold
+   prospect in one day reads as automated pressure and risks the spam-complaint ceiling on a domain
+   this business cannot afford to burn. The Loom still does not exist (`[LOOM LINK]` unfilled, 4th
+   week asked, see human item below) — touch 2 ships the written fallback: name the three steps the
+   system runs and what happens at each, then one question. Never invent a link.
+2. **[Growth] Source batch-06 at 20 on-spec prospects across two metros, and actually qualify them
+   this time.** Batch-05's true named-owner-inbox rate was 3 of 10, not 9 (most went to `info@` or a
+   generic inbox), and roughly half the batch fails Recipe 4's own filter (15-250 reviews, 4.2+
+   rating) because no Apify/Google-Maps data path was available when it was sourced. **That tooling
+   gap is unresolved and blocks doing this properly at 20 — flag it back to Usama rather than
+   repeating batch-05's contamination at double the size** (cheapest fix: pull review/rating data by
+   hand via the browser against Usama's own logged-in session; the alternative is paying for Apify
+   access). Metros: Charlotte NC + Phoenix/Scottsdale AZ (the metro the 08-10 directive named and the
+   rotation skipped). Full qualify list including the peer disqualifier and the Podium/Birdeye/GHL
+   check, MX-verified, cross-checked against all 9 dead addresses, review count and rating actually
+   captured on every row (not left "unconfirmed"), target 10+ true named-owner-inbox sends. Batch-06
+   touch 1 fires **Thursday 2026-08-20 or Monday 2026-08-24**, whichever day the list is genuinely
+   qualified first — follow-ups (item 1) take Thursday's slot ahead of a new touch-1.
+3. **[Growth] Run the copy experiment that never ran, on batch-06 touch 1.** `../business/outreach-
+   scripts.md` interior touch 1 (~lines 41-54): delete the offer name, price, guarantee and "worth 15
+   minutes" line entirely; replace with one question (in the shape of "when an enquiry lands at 9pm,
+   does it get answered that night or roll to the next morning?") and a reply ask. Hold the subject
+   line, the anonymized proof paragraph (already compliant, do not touch it), and timing constant so
+   the read is single-variable. Read next Sunday: 2+ replies makes it permanent, 1 keeps testing on
+   batch-07, 0 means the subject line is next. A negative reply still counts as a positive read.
+4. **[Growth] Rewrite the discovery-call script — this is the actual site of the UF Designs failure
+   and outranks item 3 on consequence.** It still reads "$500 fixed, live in 7 days, 50% to start," no
+   $1,500 anchor, no clause. Anchor at $1,500, present $500 as one of two remaining proof slots priced
+   against a specific exchange (never a discount, never struck-through), and state the clause in the
+   same breath as the price: no written testimonial-and-reference commitment, the price is $1,500. Per
+   the pricing-frame addendum above, **the clause goes in writing in the same message as the Payoneer
+   link, and the link does not go out until it is agreed.** Add the 48-hour instant-reply-only rung
+   here too (see 48-HOUR OFFER-SHAPE TEST above), as the fallback when someone balks at 7 days. Also
+   update touch 3 with the same one-sentence consequence. While in the file: drop the stale "10 new
+   cold emails (Apollo list)" cadence line and the retired "500+ AI workflows" figure from the Upwork
+   template.
+5. **[Growth] Community answering, still zero after two weeks of directives.** 2 complete, no-pitch
+   answers a day in forum.n8n.io and r/n8n, logged in the run sheet. Leading indicator is asker
+   replies, not answer count. If the DM lane closes this week (item 7), its hours redirect here and
+   into item 2's sourcing, not held open a further week.
+6. **[Content] Run the timing experiment, finally: Tuesday's post ships as an exact replication of
+   07-28 — same register (hero/story), same weekday, same hour, 06:00-06:30 ET.** The prior 7:30-10am
+   ET band is right for the other three, but 06:05 ET is the only clock time this account has ever
+   seen break out, and replicating it exactly costs nothing at this sample size. Wed and Thu run the
+   post-4 skeleton (build-in-public, one hard client number, first person, mechanism named, a
+   question that asks for a confession) — post 4 (12.31% ER, the account record) is the template, not
+   the 07-28 story alone; do not go zero-hero, the corrected 07-28 number (6,267 impressions) is ~96x
+   last week's best post and the story register is not dead. Mon/Fri wildcard is a teach post, every
+   step in the body, not a carousel-only substitute (last week's teach shipped at ~180 characters
+   because the give moved into a PDF). **Cap the "14 customers in 3 weeks" figure at one appearance**
+   this week; interior-studio numbers are barred from the LinkedIn feed entirely now (cold email
+   only). Pass/fail, set now: last week totaled 280 impressions across 4 posts; pass is a 4-post total
+   above 800 or any single post above 500 with over 50% out-of-network reach; fail is under 400 total
+   with under 25% out-of-network on all four. Never announce the niche, pricing frame or offer-shape
+   test on either feed.
+7. **[Content] X: generate nothing.** `daily-x-trending-posts` should be deleted, not throttled — this
+   review deletes it directly rather than issue a third ask (see below). 10 drafts already sit
+   pending (not 8: two more, Lovable $400M raise and GPT-5.6-Cyber, are committed on the unmerged
+   `claude/x-drafts-2026-08-13` branch, PR #22, invisible from the main working tree). 5 of the 10 are
+   news-pegged and 3-9 days stale; archive them at next review rather than let a second stale pile
+   accumulate like 07-07 through 07-22 did. 53+ posts have produced 8 followers; draft supply was
+   never the constraint.
+8. **[Human — Usama, most severe open item] Confirm whether the Gist is actually live in post 3's
+   first comment right now**, or whether `[GIST LINK]` is still showing to the public.
+   `../drafts/week-of-2026-08-10/3-answer-every-lead-in-60-seconds.md` line 89. The post has been live
+   since 08-11 promising this to everyone who saw it; if the placeholder is still there, the account
+   has been publicly failing its own "one free give a month, no gate" rule (POSITIONING POSTURE rule
+   4) for five days without anyone knowing. Neither Content Director nor this review can check it.
+9. **[Human — Usama] Publish the amended profile by Wed 2026-08-20, with two specific cuts, or the
+   DM lane closes.** Delete "I hold 9am to 1pm ET every weekday as standard overlap" (reads as a
+   standing commitment to outside work during business hours, exactly what a manager screenshots, and
+   it conflicts with the day-job-conflict constraint already on file) and move "Live in 7 days or you
+   don't pay" out of the About body into DMs/calls, where a guarantee belongs. **If not live by
+   Wednesday, the DM lane is formally CLOSED for the remainder of the 90-day window** and its hours
+   move to items 2 and 5. Also needed regardless: screenshot the LinkedIn analytics panel on each of
+   this week's 4 posts (Zernio does not report out-of-network split, item 6's read needs it), and fill
+   the blank standing-funnel-tracker row for week of 08-10 in `../performance/linkedin-performance-
+   log.md` (DMs, replies, booked calls).
+10. **[Human — Usama] Record the 90-second Loom.** Fifth week asked. Fills `[LOOM LINK]` in
+    `outreach-scripts.md` touch 2. Optional, 20 minutes: archive Usama's own build artifacts (n8n
+    canvas, execution logs, before/after timestamps) from the UF Designs engagement while access to
+    anything shared still exists — the client cannot repost those away from him.
+
+**Dropped from the human list entirely, the one good outcome of a bad week:** UF Designs naming
+permission. It is closed. Do not re-raise it.
+
+**Checked next review (Sunday 2026-08-23):** batch-05 touch 2 + touch 3 both sent, verified by real
+messageIds in the log; batch-06 at 20 truly on-spec prospects (review/rating captured, 10+ named
+inboxes, bounce rate ≤5%); touch-1 experiment live and readable; discovery-call script and touch 3
+carry the written clause; 4 LinkedIn posts published in their stated slots (Tue 06:00-06:30 ET, others
+7:30-10am ET) with impressions read against 280; Gist status confirmed; profile live or DM lane
+formally closed; Loom recorded; `daily-x-trending-posts` deleted (done this review, verify it stayed
+deleted); community answering shows non-zero answers; any reply of any kind, negative included.

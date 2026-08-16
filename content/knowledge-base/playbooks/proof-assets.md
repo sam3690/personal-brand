@@ -36,8 +36,20 @@
 **Content (pillar P1):** each build is a build-in-public post. Anonymize if you don't have naming permission yet.
 **Guarantee ladder:** once these have real numbers + testimonials, you've earned the Tier 3 performance guarantee from `grand-slam-offer.md`.
 
-## Status: numbers collected (2026-07-23)
-All three now have real metrics and testimonial quotes above, gathered via WhatsApp reconnect.
+## Status: numbers collected (2026-07-23), UF Designs closed (2026-08-16)
+
+All three had real metrics and testimonial quotes gathered via WhatsApp reconnect. **UF Designs
+(the interior-design studio) has since refused naming permission and terminated the contract; they
+have also begun posting Usama's delivered work under their own name without credit.** This is closed
+and negative, not pending. Do not ask again.
+
+**Proof rotation (CEO ruling, 2026-08-16):** the medical-sales voice agent (14 new customers in 3
+weeks) is now the **primary** proof asset for LinkedIn content — that relationship is undamaged and
+naming permission has never been asked. The interior-studio numbers (24h to seconds reply time, 7-8 to
+27 consults/month) stay usable **in cold email only**, always anonymized as "an interior-design
+studio," with **no future naming ask of UF Designs, ever**. Do not brief this as an open permission
+action to any content or outreach agent.
 
 ## TODO (Usama)
-Only one thing left: **permission to name each business publicly** (or agree to anonymize). Until confirmed, use these in outreach/content as "an interior-design studio," "a fragrance brand," "a medical-sales team," not by name.
+Naming permission is closed for UF Designs, do not re-raise it. Medical-sales voice agent and the
+fragrance brand naming permission remain open if Usama wants to pursue them, lower priority.

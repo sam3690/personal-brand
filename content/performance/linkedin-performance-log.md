@@ -13,10 +13,40 @@ post, log it under `(no post)` so the outbound lane gets credit separately.
 | Week of | Posts live | DMs received | DMs replied to | Conversations opened | Booked calls | Source post(s) |
 |---|---|---|---|---|---|---|
 | 2026-08-03 | | | | | | |
+| 2026-08-10 | 4 | | | | | (needs Usama: inbox + calendar) |
 
 **Baseline, stated honestly:** as of 2026-08-03 all four numbers are zero and there is no DM lane
 running (`../knowledge-base/frameworks/lakajev-linkedin-leadgen.md` 7.1). The first non-zero week is
 the first real signal this positioning produces buyers, not reach.
+
+## 2026-08-16 — Week of 2026-08-10 review: all 4 shipped, proof beat story
+
+All 4 planned posts are live (Zernio, synced 2026-08-16). Followers 398 → 415, **+17 (+4.27%)**.
+
+| Date (ET) | Post | Format | Impr | Reach | Likes | Comments | Saves | ER |
+|---|---|---|---|---|---|---|---|---|
+| 08-09 11:08pm | 1 Message I read at my desk (P4) | Story | 91 | 25 | 3 | 0 | 0 | 3.30% |
+| 08-10 11:02pm | 2 Studio answering leads a day late (P1) | Case study | 60 | 30 | 1 | 2 | 0 | 5.00% |
+| 08-11 11:46pm | 3 Answer every lead in 60s (P3) | Carousel | 64 | 34 | 3 | 2 | 0 | 7.81% |
+| 08-13 12:25am | 4 He was the bottleneck (P1) | Before/after | 65 | 39 | 5 | 3 | 0 | 12.31% |
+
+**Best: post 4, 12.31% ER, the highest in the account's history** (prior best 7.48%), with the week's best
+reach and most comments. Plain text, before/after columns, one hard number (14 customers in 3 weeks), and a
+question about work the reader still does by hand.
+**Worst: post 1, 3.3% ER, zero comments.** The 07-28 breakout did not reproduce (91 impressions vs 1,500),
+and 91 impressions over 25 reached means one small in-network set saw it 3-4 times. No out-of-network push.
+
+**Learnings:**
+1. **ER rose monotonically with proof density** (3.3 → 5.0 → 7.8 → 12.3); the story ranked last. Run 4
+   proof/teach posts and zero hero next week; if ER holds above 7%, retire the 1-hero-in-3 ratio.
+2. **The teach shipped without its teach.** The six steps moved from the body into a carousel PDF, so the
+   body went out at ~180 chars vs the drafted 2,225, and the n8n gift sat in a comment. Still 0 saves this
+   week (**3 in account history** after the 2026-08-16 correction to the 07-28 row: 1 from 07-07, 2 from
+   07-28). Test one teach with every step IN the body, no PDF.
+3. **Never in-slot.** All four published 11pm-12:30am ET (8-9am PKT), not the 7:30-10am ET slots in the
+   titles. Three weeks of drafts remain untested in their intended window.
+4. **Funnel columns need Usama.** DMs, replies and booked calls are not in Zernio; this week's tracker row
+   stays blank until he fills it from the inbox and calendar.
 
 ## 2026-08-03 — Graph audit: how many automation-operator tribe members are actually in Usama's network (tribe.md open action 6)
 
@@ -69,9 +99,19 @@ Logged from the post's own LinkedIn analytics panel (screenshot supplied by Usam
 |---|---|---|---|---|---|---|---|---|
 | 07-28 | Tue | Founder story, "that is not a success story, it is a receipt" (P4) | 1,500 | 1,056 | 18 | 5 | 12 | 3 |
 
-**This is the single biggest result the account has produced.** Prior best impressions: 196. Prior best
-reactions: 5. So roughly **7.6x the impressions and 3.6x the reactions of anything before it**, and the
-first post to move profile views and followers in a measurable way.
+**Correction, 2026-08-16 (CEO weekly review):** the row above was read off Usama's screenshot of the
+LinkedIn analytics panel taken shortly after posting. Zernio's synced platform timeline for this same
+post (`urn:li:share:7487810498852294657`, verified live via `analytics_get_post_timeline` on
+2026-08-16) shows the post kept growing for a week and the true total is **6,267 impressions, 4,613
+reach, 75 likes, 19 comments, 2 saves.** That is roughly **4x the impressions the account has been
+reasoning from for two weeks.** The profile-views (12) and followers (3) columns above have no
+Zernio equivalent and are unverified, not confirmed. Every content decision made between 2026-08-01
+and 2026-08-16 that cited "1,500 impressions" as the account's best post was working from a number
+about a quarter of the true one.
+
+**This is the single biggest result the account has produced.** Prior best impressions: 196. Corrected,
+that is roughly **32x the impressions and 15x the reactions of anything before it** (against the old
+196 baseline), and the first post to move profile views and followers in a measurable way.
 
 Distribution split matters: **95% out-of-network, 5% in-network.** Every previous post was
 reach-capped near 100 impressions and stayed inside the follower graph. This one got pushed out. That
