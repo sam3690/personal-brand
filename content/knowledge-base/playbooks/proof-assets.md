@@ -36,7 +36,21 @@
 **Content (pillar P1):** each build is a build-in-public post. Anonymize if you don't have naming permission yet.
 **Guarantee ladder:** once these have real numbers + testimonials, you've earned the Tier 3 performance guarantee from `grand-slam-offer.md`.
 
-## Status: numbers collected (2026-07-23), UF Designs closed (2026-08-16)
+## Status: numbers collected (2026-07-23), UF Designs closed (2026-08-16), REOPENED (2026-08-17)
+
+> **2026-08-17, Usama, direct update. Read this before the 08-16 block below, which it supersedes.**
+> UF Designs is not terminated. The automation pipeline is paused; Usama met the owner and agreed to
+> build and host one simple landing page free, traded for a written review plus 5 named referrals into
+> the owner's contacts. **Naming permission is live again and is now a written pre-launch condition,
+> not a closed ask**: the review must cover the delivered lead-response work with its real numbers
+> (~24h to seconds, 7-8 to 27 consults/month), not just the landing page, and it is agreed in writing
+> before the site goes live on Usama's server. Full terms: `../../strategy/current-strategy.md`,
+> section UF DESIGNS REOPENED.
+> **Until that review is in hand, nothing changes in copy:** the interior-studio numbers stay
+> anonymized, cold-email only, barred from the LinkedIn feed, and the medical-sales voice agent
+> remains the primary proof asset. Permission is agreed, not delivered. Do not name the studio, do not
+> brief any agent to ask the client for anything, and do not treat this as an open action for anyone
+> other than Usama.
 
 All three had real metrics and testimonial quotes gathered via WhatsApp reconnect. **UF Designs
 (the interior-design studio) has since refused naming permission and terminated the contract; they
