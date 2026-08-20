@@ -220,13 +220,13 @@ In this order, because each one gates the next. Status updated 2026-08-10. The l
 
 1. **Rewrite the profile.** ✅ Copy written 2026-08-10: `profile-rewrite-2026-08-10.md`. Two fill-ins
    left for Usama (the US overlap window, the Axios line) and then it has to be pasted into LinkedIn by
-   hand. **Nothing in action 2 goes out until it is live.** Original brief below. Headline, banner line, and About section. Every connection
+   hand. **DONE: published by Usama the night of 2026-08-10, confirmed 2026-08-20. Action 2 is unblocked.** Original brief below. Headline, banner line, and About section. Every connection
    request lands on this, so it gates the whole lane. Drop "speed to lead" and the generic
    "AI automation for Founders & agency owners" framing (a named buyer with 31 agreeing commenters
    said he now auto-rejects anyone whose profile says AI automation). Put the three anonymized numbers
    above the fold, and state the US-hours overlap commitment in About.
 2. **Run the two matched batches of 25** from section 5. Twenty minutes. Read at day 7. Tables, search
-   method and the day-7 read are set up in `dm-lane-tracker.md`. Manual sending only, blocked on 1.
+   method and the day-7 read are set up in `dm-lane-tracker.md`. Manual sending only. **Unblocked: action 1 is live.**
 3. **Start the community habit** from Recipe 5. Two complete answers a day, no pitch. Logged daily in
    `dm-lane-tracker.md`.
 4. **Cold email: CONTINUES. Keep sourcing.** *(Corrected by CEO ruling 2026-08-10. This item previously

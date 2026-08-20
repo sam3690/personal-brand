@@ -3,13 +3,13 @@
 The live log for `dm-lane-targeting-spec.md`. One row a day. Everything here is sent by hand from
 Usama's own account, never automated (LinkedIn's Prohibited Software policy).
 
-## Gate: do not send anything until the profile is live
+## Gate: CLEARED 2026-08-10
 
-The headline, banner and About from `profile-rewrite-2026-08-10.md` have to be published first. Every
-request lands on that profile, and acceptance rate is the first number this file measures, so sending
-before the rewrite is live destroys the only reading it produces.
+The headline, banner and About from `profile-rewrite-2026-08-10.md` are live. Usama published them
+the night of 2026-08-10; this file was not updated until 2026-08-20, so for ten days the repo said the
+lane was blocked when it was not. Nothing was waiting on the profile.
 
-Profile published: ☐ headline ☐ banner ☐ About
+Profile published: ☑ headline ☑ banner ☑ About (all three live 2026-08-10, confirmed by Usama 2026-08-20)
 
 ---
 

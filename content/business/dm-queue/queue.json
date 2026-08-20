@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-20",
+  "note": "Spine test rows only, the sourcing agent replaces this file every weekday at 7am. Profile gate is CLEARED, the rewrite has been live since 2026-08-10. Nothing is blocking sends.",
+  "rows": [
+    {
+      "name": "Example Owner",
+      "company": "Example Studio",
+      "url": "https://www.linkedin.com/in/",
+      "headcount": 6,
+      "action": "connect",
+      "shape": "A",
+      "evidence": "Placeholder so the page renders. The sourcing agent replaces this file every morning.",
+      "messages": []
+    },
+    {
+      "name": "Example Accepted",
+      "company": "Example Media",
+      "url": "https://www.linkedin.com/in/",
+      "headcount": 4,
+      "action": "message",
+      "shape": "A",
+      "evidence": "Accepted yesterday. Shape A script, two messages back to back, no pitch.",
+      "messages": [
+        "Thanks for connecting Sam. Saw you run Example Media and you're doing paid social for home services.",
+        "Genuine question, no pitch attached. When you hand a client a month of leads and the booked-calls number comes back low, how often does it turn out they just did not call them back?"
+      ]
+    }
+  ]
+}
