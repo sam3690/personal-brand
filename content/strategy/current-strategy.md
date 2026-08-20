@@ -1,10 +1,17 @@
 # Current Strategy — Single Source of Truth
 > The CEO agent owns this file. Every routine (content + outreach) reads it FIRST and obeys it.
 > Do not hardcode niche/offer/price into routines — change it here, once, and everything follows.
-> Last set by: CEO weekly review · 2026-08-16 (week 6, pre-revenue, 40 prospects / 0 replies)
+> Last set by: Usama, direct update · 2026-08-17 (amends the 2026-08-16 CEO weekly review)
+> **2026-08-17 amendment, read before the 08-16 lines below:** UF Designs is NOT terminated. Usama met
+> the owner; the content/Meta automation pipeline is paused and replaced by a free landing page built
+> and hosted by Usama, traded for a written review plus 5 named referrals. Naming permission is live
+> again and is now a pre-launch condition, not a closed ask. A second, smaller lane opens: websites for
+> Instagram-only local businesses. Both are specified in their own sections below, which override any
+> earlier line saying UF Designs is closed.
+> Prior header: CEO weekly review · 2026-08-16 (week 6, pre-revenue, 40 prospects / 0 replies)
 > Niche, offer and positioning KEPT again. Changed this week: the $500 clause moves from a stated
 > expectation to a written pre-payment condition (UF Designs took delivery and refused it), the
-> primary proof asset rotates off UF Designs (contract terminated, naming refused) onto the
+> primary proof asset rotates off UF Designs (contract terminated, naming refused: REVERSED 08-17) onto the
 > medical-sales voice agent, and a 48-hour instant-reply-only rung is added at the same $500 price as
 > a discovery-call fallback, not a discount. A skipped send (batch-05 touch 2, due 08-13) is being
 > caught up, not repeated: see the scheduler failure note in WEEK OF 2026-08-17 DIRECTIVES.
@@ -152,6 +159,92 @@ $500 price** the $1,500 full build already anchors against. **Where it ships: di
 only, as the fallback rung when someone balks at a 7-day timeline. Not in cold email touch 1**, which
 already carries the copy experiment below and two variables on one small batch produces nothing
 readable. Confidence medium, fully reversible, revisit at the first delivered client of either shape.
+
+## UF DESIGNS REOPENED: LANDING-PAGE BARTER (Usama's direct update, 2026-08-17)
+**This overrides the 2026-08-16 "contract terminated, naming closed forever" ruling.** Usama met the
+owner in person. Outcome: the content-creation and Meta pipeline stays **PAUSED** (not resumed, not
+cancelled), and in its place Usama builds one simple landing page for the studio and hosts it free on
+his own server. The owner would not pay, so this is a barter. What Usama gets back: a clear written
+review, and referrals into the owner's own contacts, other studio owners and competitors who he says
+need websites and content-posting automation.
+
+**What does NOT change is the lesson that produced the 08-16 ruling.** This client took delivery once
+and then refused the exchange. The pricing-frame addendum's fix applies here in barter form: **the
+clause is agreed in writing before the site goes live, not after.** Usama controls the hosting, so
+"it goes live on my server" is the natural gate, and that leverage exists only before launch.
+
+**The four terms, sent in one message before the build starts. All four, not three:**
+1. **A written review covering the delivered lead-response work with the real numbers** (reply time
+   ~24h to seconds, consults 7-8/mo to 27/mo), not only the landing page. This is the whole point of
+   the trade. A landing-page testimonial proves nothing about the offer that is actually for sale.
+2. **Permission to name UF Designs and show the site** (screenshots + live link) in a portfolio, on
+   LinkedIn, and in cold email.
+3. **Named intros, a specific count: 5**, introduced by name over WhatsApp or email. Not "I will
+   mention you". A vague referral promise is what the last exchange was made of.
+4. **The review arrives within 7 days of the site going live.**
+
+If the site carries no credit or backlink (Usama's call, fine), then terms 1-3 are the entire
+consideration and are non-negotiable. Free build + no credit + no review + no intros is a donation.
+
+**Scope cap:** one page, showcase for his clients, his existing photos, mobile-first, one enquiry or
+WhatsApp button. No CMS, no bespoke illustration, no award-winning design. Cap ~8-10 hours. **Build it
+as a reusable template**, because the next four are supposed to come from his referrals and the entire
+value of this deal is the second build costing hours instead of days.
+
+**Untouched by this:** the $500 / $1,500 pricing frame. A free landing page is a barter for proof and
+distribution, not a discount on the 7-Day Lead Rescue, and the two never appear in the same sentence
+to a prospect. It does not consume either founding slot. Lane 1's ICP is unchanged and this sits
+inside it: UF Designs is an interior-design studio and his contacts are the same vertical. Do not
+announce any of this on either public feed.
+
+**Why this outranks most of the current directive list:** 5 warm intros from a studio owner into the
+exact vertical Lane 1 has cold-emailed for 41 days with 0 replies is worth more than the next 40 cold
+prospects, and referrals do not have to wait for the 120-prospect decision threshold to pay off. If
+the intros land, they get worked before new sourcing. Recovering term 1 also un-kills the single most
+valuable dead asset in the business: the interior-studio numbers, currently barred from LinkedIn and
+anonymized in cold email.
+
+## WEBSITE WEDGE: Instagram-only local businesses (opened 2026-08-17, opportunistic and capped)
+Second signal the same week: two Instagram pages Usama found, a brownie/cake seller and a chocolate
+seller, both with real product and real service and **no website at all**. Plus UF Designs' own
+statement that his contacts need websites and content-posting automation. Two independent sources in
+one week saying the buyable thing right now is a website, not an automation.
+
+**Ruling: a website is a wedge, not a new business.** Take it, under three guardrails.
+1. **Paid, except the one.** UF Designs is the single free build, and it is free only because it buys
+   named proof plus 5 intros. Nobody else gets a free site. A second free build is a hobby.
+2. **Same template, not bespoke.** No 3D parallax or scroll animation on the early ones: that is the
+   most expensive way to build the least tested thing. Ship the simple template, get paid, and build
+   the fancy version only after someone has paid for the plain one and asked for more.
+3. **The site is the door, the order flow is the product.** For a home baker or a chocolate seller the
+   website is not what makes the money; unanswered DMs are what cost it. Sell the page, then sell the
+   thing already for sale: enquiry lands, instant WhatsApp reply, order captured, nothing lost. That
+   keeps this on-strategy instead of turning Usama into a web shop.
+
+**Pricing (CORRECTED 2026-08-18 by Usama; the original $150-$250 read was too low).** Local food SMBs
+cannot pay US automation prices and must never be quoted against them, but pricing at the local
+student rate loses on the same logic as the $500 error in PRICING FRAME above. **Animated build
+Rs 60,000, simple build Rs 35,000, 50% upfront.** Hosting is never bundled into the build price:
+first year included, then **Rs 12,000/year** for domain, hosting and small updates. That yearly fee
+is this business's first recurring revenue line and is not to be discounted away to close a build. The WhatsApp
+order-capture add-on is quoted separately and **never below $300**, so it cannot drag the $500/$1,500
+anchor down. These sales do not touch the two founding proof slots.
+
+**FIRST RESULT (2026-08-18), and it is the only reply this business has ever produced.**
+Brownies by T (Karachi) was DM'd on 2026-08-17 with a live link to a site built from their own
+photos. Reply came the same day: *"The website looks Very nice."* Follow-up asked whether they had
+tried the order button. Second reply: *"I did, that's super convinient."* So: opened it, used the
+order builder, and named the benefit unprompted.
+
+Set against Lane 1: **40 cold-email prospects, 41+ days, 0 replies of any kind.** One DM carrying a
+built demo produced two engaged replies inside 24 hours. That is n=1 and it is not yet money, so it
+does not overturn anything on its own. But it is the first evidence in six weeks that the constraint
+was never the offer, it was that nothing being sent gave the recipient something to react to.
+**Whatever happens with this deal, the mechanism to carry forward is: build the thing first, then
+send it.** Flag for the Sunday 2026-08-23 review. choco_nua (Baku) not yet contacted.
+
+**Time guardrail:** this lane never outranks outbound. In any week where the outbound directives are
+unshipped, no website work happens that week. Outbound is the 90-day bet; this is a wedge into it.
 
 ## COLD EMAIL RULING (CEO, 2026-08-10): the lane CONTINUES. Unit error corrected.
 `../business/dm-lane-tracker.md` and `../business/dm-lane-targeting-spec.md` open action 4 both claimed
@@ -379,11 +472,12 @@ The tribe narrowing from 2026-08-09 was already in this file and needed no ratif
    `../drafts/x/archive/`; keep only evergreen builder or demo drafts from 07-24 and 08-07. Do not rebuild
    a queue. **The read, since there are no per-post metrics: follower count, baseline 8 on 2026-08-10,
    re-read 2026-09-07. Pass is 25+, fail is under 15.** Under 15 closes X for the rest of the 90-day window.
-7. **[Human — Usama] PUBLISH THE REWRITTEN PROFILE BY TUE 2026-08-11 EOD.** Headline, banner and About
-   from `../business/profile-rewrite-2026-08-10.md`. This is a 15-minute paste job and it is the single
-   hard gate on the entire DM lane: 0 of 50 requests can send until it is live, and sending before it is
-   live would destroy the acceptance-rate read, which is the only number that experiment produces. Tick
-   the three boxes in `../business/dm-lane-tracker.md`.
+7. **[Human — Usama] PUBLISH THE REWRITTEN PROFILE. ✅ DONE 2026-08-10** (confirmed by Usama
+   2026-08-20). Headline, banner and About from `../business/profile-rewrite-2026-08-10.md` are live.
+   **The boxes went unticked for ten days, so every file in the repo kept reporting the DM lane as
+   blocked on a gate that had already cleared, and the lane sat at 0 requests for a reason that did not
+   exist.** The action item was never "publish the profile", it was "publish it AND record it". Any
+   future human-side gate gets recorded in the same session it completes.
 8. **[Human — Usama] Record the 90-second Loom by Wed 2026-08-12 EOD.** UF Designs build answering,
    qualifying and booking. Third week this has been asked for. It fills `[LOOM LINK]` in
    `outreach-scripts.md` for Thursday's touch 2; batch-04's touch 2 had to drop the line and substituted
@@ -544,10 +638,22 @@ in-session, not assumed from a `lastRunAt` timestamp.
     canvas, execution logs, before/after timestamps) from the UF Designs engagement while access to
     anything shared still exists — the client cannot repost those away from him.
 
+11. **[Human — Usama, added 2026-08-17, highest expected value on this list] Send the UF Designs terms
+    message before writing a line of the landing page.** The four terms are in UF DESIGNS REOPENED
+    above: review covering the delivered lead-response numbers, permission to name and show the site,
+    5 named intros, review within 7 days of launch. One message, in writing, agreed before the site
+    goes live on Usama's server. That gate is the only leverage this deal has and it disappears at
+    launch. Then build to the scope cap (one page, ~8-10 hours, reusable template), not beyond it.
+
 **Dropped from the human list entirely, the one good outcome of a bad week:** UF Designs naming
 permission. It is closed. Do not re-raise it.
 
-**Checked next review (Sunday 2026-08-23):** batch-05 touch 2 + touch 3 both sent, verified by real
+> **REVERSED 2026-08-17 by Usama.** The relationship reopened in person and naming permission is back
+> on the table, now as a written pre-launch condition of the free landing page. See UF DESIGNS REOPENED
+> above. This is the live instruction; the paragraph directly above it is superseded.
+
+**Checked next review (Sunday 2026-08-23):** UF Designs terms message sent in writing and what came
+back (this is a new top-line check, added 08-17); batch-05 touch 2 + touch 3 both sent, verified by real
 messageIds in the log; batch-06 at 20 truly on-spec prospects (review/rating captured, 10+ named
 inboxes, bounce rate ≤5%); touch-1 experiment live and readable; discovery-call script and touch 3
 carry the written clause; 4 LinkedIn posts published in their stated slots (Tue 06:00-06:30 ET, others

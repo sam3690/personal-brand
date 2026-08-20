@@ -39,6 +39,16 @@ sources more prospects via Apollo when the list runs low, verifies MX before fir
 for bounces/replies after sending. LinkedIn connection requests stay manual (Usama's own account,
 ~10/day, no note) — the routine queues names into `linkedin-connect-todo.md` but never sends them.
 
+**LinkedIn DM lane (outbound, Lane 2):** scheduled task `daily-linkedin-dm-queue` (weekdays 7am PKT)
+sources + qualifies up to 5 agency owners from the **public web only**, writes
+`content/business/dm-queue/queue.json`, and renders `queue.html` — a single-file page Usama opens each
+morning and clicks through in ~15 minutes. Agent spec: `content/agents/outbound/dm-sourcing-scout.md`.
+Tracker: `content/business/dm-pipeline.md`. Booking link: `https://calendly.com/usamabinayoub/30min`,
+never in message one.
+**NEVER automate LinkedIn itself** — no scraping, no auto-connect, no auto-DM, no browser automation
+against linkedin.com. Prohibited Software policy, escalates to permanent suspension, one account and no
+backup. The system prepares every action; the human presses send. That is the design, not a gap to close.
+
 **Both:** `Agent 6 Performance Analyst` (`content/agents/6-performance-analyst.md`) closes the loop:
 daily for X (Apify scrapes public metrics — the X free API is write-only), Sunday for LinkedIn
 (Zernio analytics). Learnings append to `content/performance/*.md`; writing agents read those logs
