@@ -1,29 +1,46 @@
 {
-  "date": "2026-08-20",
-  "note": "Spine test rows only, the sourcing agent replaces this file every weekday at 7am. Profile gate is CLEARED, the rewrite has been live since 2026-08-10. Nothing is blocking sends.",
+  "date": "2026-08-21",
+  "note": "First live sourcing run (2026-08-20 shipped placeholder spine-test rows only). Profile gate is CLEARED, confirmed live by Usama 2026-08-20. Checked 11 agency owners across Clutch, DesignRush, Agency Spotter and web search (PR, brand consulting, B2B social-selling firms); 4 survived qualify. Dropped: a full-stack developer on the team (Point Taken Communications), two solo freelancers with no team (Elliott Stares PR, Unicorn Hunter Recruiting), one agency at 11-50+ employees against the 20 ceiling (Outpost Recruitment), one with a conflicting headcount read across sources (Quimby Digital, 2-10 band vs 19 listed). Shipping 4, not padding to 5.",
   "rows": [
     {
-      "name": "Example Owner",
-      "company": "Example Studio",
-      "url": "https://www.linkedin.com/in/",
+      "name": "Claire Arnaud-Aubour",
+      "company": "SpLAshPR Agency",
+      "url": "https://www.linkedin.com/in/claire-arnaud-aubour/",
       "headcount": 6,
       "action": "connect",
       "shape": "A",
-      "evidence": "Placeholder so the page renders. The sourcing agent replaces this file every morning.",
+      "evidence": "Founder of SpLAshPR Agency, Santa Monica/LA. Full-service PR, events and digital-marketing agency for talent, fashion, food/wine and hospitality brands, running 8+ years. Team page lists 5 named staff besides Claire (digital marketing specialist, SEO/social manager, account manager, business developer, creative lead), none technical. Real client roster and press coverage (Voyage LA, DesignRush profile). Source: splashpragency.com/our-team, designrush.com.",
       "messages": []
     },
     {
-      "name": "Example Accepted",
-      "company": "Example Media",
-      "url": "https://www.linkedin.com/in/",
+      "name": "Jamie Lamonde",
+      "company": "Kindship Group",
+      "url": "https://www.linkedin.com/in/jamie-lamonde/",
       "headcount": 4,
-      "action": "message",
+      "action": "connect",
       "shape": "A",
-      "evidence": "Accepted yesterday. Shape A script, two messages back to back, no pitch.",
-      "messages": [
-        "Thanks for connecting Sam. Saw you run Example Media and you're doing paid social for home services.",
-        "Genuine question, no pitch attached. When you hand a client a month of leads and the booked-calls number comes back low, how often does it turn out they just did not call them back?"
-      ]
+      "evidence": "Founder & CEO of Kindship Group, Madison WI. Strategic marketing, brand and comms consultancy for organic/regenerative food and agriculture brands, founded 2020. Team of 4 (Founder, Creative Director, Strategic Comms Director, Strategic Development Director), no engineer or developer listed. 11 years prior at Organic Valley marketing, founded and sold Edible Madison magazine. Real named clients in food/ag press features. Source: kindshipgroup.com/team, Mountain Laurel Digital feature.",
+      "messages": []
+    },
+    {
+      "name": "Mandy McEwen",
+      "company": "Mod Girl Marketing",
+      "url": "https://www.linkedin.com/in/mandymcewen/",
+      "headcount": 7,
+      "action": "connect",
+      "shape": "A",
+      "evidence": "Founder & CEO of Mod Girl Marketing, San Diego CA, founded 2010. Done-for-you B2B LinkedIn prospecting and social-selling consultancy for sales teams (a service, not a self-serve software tool: no automation platform, no SaaS pricing on the site). LinkedIn company page confirms 2-10 employee band, 7 people including a Head of Client Services and a Director of Operations, no engineer or developer role. Source: modgirlmarketing.com/about, LinkedIn company page.",
+      "messages": []
+    },
+    {
+      "name": "Kilee Hughes",
+      "company": "Six One Agency",
+      "url": "https://www.linkedin.com/in/kileehughes/",
+      "headcount": 7,
+      "action": "connect",
+      "shape": "A",
+      "evidence": "Founder & CEO of Six One Agency, Denver CO, founded 2017. WBENC-certified, Black-owned PR and brand-strategy agency for beauty, wellness and lifestyle brands. LinkedIn company page confirms 7 employees (2-10 band), no engineer or developer on team. Real client roster of majority female/BIPOC-owned beauty and wellness brands. Source: sixoneagency.com/about, LinkedIn company page.",
+      "messages": []
     }
   ]
 }
