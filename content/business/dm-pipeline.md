@@ -17,6 +17,7 @@ and the account is the asset being protected.
 | Date | Queued | Requests sent | Accepts | First messages | Replies | Booked |
 |---|---|---|---|---|---|---|
 | 2026-08-20 | 0 | | | | | |
+| 2026-08-24 | 3 | | | | | |
 
 ## People
 
@@ -25,7 +26,9 @@ Never re-source a name that appears here in any state.
 
 | Name | Company | Profile | Stage | Shape | Last touch | Next action | Notes |
 |---|---|---|---|---|---|---|---|
-| | | | | | | | |
+| Amanda Christoff | Bloom Talent | [linkedin.com/in/amandachristoff](https://www.linkedin.com/in/amandachristoff/) | queued | B | 2026-08-24 | Usama sends blank connect | Boutique recruiting agency (EAs, Chiefs of Staff, People Ops), SF Bay Area, ~6 people |
+| Sue Ebrahim | Hire Talent | [linkedin.com/in/sueebrahim](https://www.linkedin.com/in/sueebrahim/) | queued | B | 2026-08-24 | Usama sends blank connect | Interim/executive recruitment, Houston TX, 2-9 people (Clutch) |
+| Mary Lou Bunn | Flower Shop | [linkedin.com/in/mary-lou-bunn-643192b](https://www.linkedin.com/in/mary-lou-bunn-643192b/) | queued | B | 2026-08-24 | Usama sends blank connect | Creative ad agency, NYC, team of 8, Adweek Creative 100 2026 |
 
 ## Read at day 7 of the first 100 requests
 
