@@ -1,7 +1,10 @@
 # Current Strategy — Single Source of Truth
 > The CEO agent owns this file. Every routine (content + outreach) reads it FIRST and obeys it.
 > Do not hardcode niche/offer/price into routines — change it here, once, and everything follows.
-> Last set by: Usama, direct update · 2026-08-17 (amends the 2026-08-16 CEO weekly review)
+> Last set by: CEO weekly review · 2026-08-24 (grades the 2026-08-17 directives; niche, offer, price and
+> positioning all KEPT; the live finding is a two-week silent-failure bug in the scheduled outbound and
+> content tasks, not a dead bet; see WEEK OF 2026-08-24 DIRECTIVES at the bottom). Prior: Usama, direct
+> update · 2026-08-17 (amends the 2026-08-16 CEO weekly review)
 > **2026-08-17 amendment, read before the 08-16 lines below:** UF Designs is NOT terminated. Usama met
 > the owner; the content/Meta automation pipeline is paused and replaced by a free landing page built
 > and hosted by Usama, traded for a written review plus 5 named referrals. Naming permission is live
@@ -660,3 +663,133 @@ carry the written clause; 4 LinkedIn posts published in their stated slots (Tue 
 7:30-10am ET) with impressions read against 280; Gist status confirmed; profile live or DM lane
 formally closed; Loom recorded; `daily-x-trending-posts` deleted (done this review, verify it stayed
 deleted); community answering shows non-zero answers; any reply of any kind, negative included.
+
+**GRADED 2026-08-24, no spin, top of this update: the outbound engine went dark for two straight
+scheduled fires while `lastRunAt` kept reporting green.** Batch-05 touch 2 (due 08-13, rescheduled
+08-17) and touch 3 (due 08-17, rescheduled 08-20) were never sent. `cold-email-outreach` shows
+`lastRunAt` 2026-08-17 and `cold-email-outreach-thu` shows `lastRunAt` 2026-08-20, but
+`batch-05-send-log.md` has no touch 2 or touch 3 entry, and no commit or PR exists for either date.
+This is the same "fires and reports success while doing nothing" failure the 08-17 review diagnosed
+for the Thursday task alone. It has now recurred on both the Monday and Thursday cold-email tasks in
+the same two-week span, and the same-day verification that review mandated ("every send this week gets
+verified against the send log the same day, in-session, not assumed from a `lastRunAt` timestamp") did
+not happen either, or this would have surfaced a week ago.
+
+1. FAILED. Batch-05 touch 2 not sent, no send-log entry, no commit.
+2. FAILED. Batch-06 never sourced, no file exists.
+3. NOT RUN. The touch-1 copy experiment needs a live touch 1 to test on; batch-06 never shipped so
+   there was nothing to run it against.
+4. PARTIAL, verified by direct read of `outreach-scripts.md`. The $1,500 anchor and the written
+   testimonial-and-reference clause landed in both the discovery-call script (line 50) and touch 3
+   (line 68), real progress. The 48-hour instant-reply-only fallback rung was not added anywhere in
+   the file.
+5. SKIPPED. Community answering: still zero. `dm-lane-tracker.md`'s daily run sheet has one blank row
+   (08-10) and nothing since, third straight week.
+6. PARTIAL. 3 of 4 week-of-08-17 LinkedIn posts shipped per PR #24's own title ("3 Zernio drafts + 1
+   blocked story"); the blocked post's resolution is not recorded anywhere in this repo.
+7. DONE. `daily-x-trending-posts` confirmed still deleted, it is absent from the current scheduled-task
+   list. 10 drafts remain pending-approval (07-24 through 08-13), none archived as directed, all now
+   six-plus weeks stale.
+8. UNRESOLVED. Gist status in post 3's first comment was not independently confirmed this review either;
+   `[GIST LINK]` is still the literal text on disk in the source draft, which at minimum means the file
+   is unresolved and at worst means the placeholder is still showing to the public.
+9. DONE. Profile stayed live, no regression found.
+10. FAILED. Loom still not recorded. Sixth week asked. `[LOOM LINK]` is still literal text in
+    `outreach-scripts.md`.
+11. FAILED. No evidence in the repo that the UF Designs 4-term barter message was sent. This was flagged
+    as the list's highest expected-value item and it sat untouched for a full week.
+
+**Correction made mid-review, left in so the record is honest: this review first read the
+`weekly-linkedin-zernio-drafts` gap as a third silent-fire failure, then found live evidence against
+that while still writing this file.** `weekly-linkedin-zernio-drafts` was due Sunday 2026-08-23, 5:13pm
+PKT; its `lastRunAt` reads 2026-08-24T05:03:32Z, about one second before this same CEO review's own
+dispatch stamp. But `content/research/week-of-2026-08-24.md` exists on disk, untracked, timestamped a
+few minutes into this same review session: a completed Agent 0 Research Scout brief (5 ranked angles,
+real dated news pegs, pillar-balance and format-load analysis). That is real output, not nothing, so
+this is not the same failure as the cold-email tasks. What is true: no draft files past the research
+stage, no new branch, no PR exist yet, so either the routine is still mid-pipeline (Strategist through
+QA) as this is written, or it stopped after step 0 for an unknown reason. Both are live possibilities
+and this review cannot tell them apart from the repo alone. Do not repeat the "3 of 4 shipped, 0 queued"
+framing this paragraph originally had; it was written before the research file was found and was wrong.
+
+**One more open loop found this review, not previously tracked:** the LinkedIn DM lane's first real
+output, 4 qualified agency owners sourced 2026-08-21, has sat unmerged on PR #26 for three days. The
+one channel that produced something usable is stuck behind a review nobody has done yet.
+
+---
+
+## WEEK OF 2026-08-24 DIRECTIVES (CEO weekly review, run Monday 2026-08-24, one day late; Sunday's
+scheduled fire produced no output, see above)
+
+**Pipeline truth, all channels, cumulative: 40 of 120 cold-email prospects contacted (Lane 1, unchanged
+for 14 days), 0 replies, 0 calls, 0 closes, $0.** LinkedIn DM lane (Lane 2): 4 prospects sourced and
+qualified (08-21), still unmerged on PR #26, 0 connection requests actually sent, 0 replies. LinkedIn
+content: 3 of 4 week-of-08-17 posts shipped; this week's draft run has a completed research brief on
+disk but no drafts past that stage as of this writing, status unresolved (see note above). X: 0 posts shipped in six-plus
+weeks, 10 drafts stale in the queue. Website wedge (Lane 3, opportunistic, capped): the only channel that
+has produced anything at all, Brownies by T replied twice and used the order builder (08-17), still not
+converted to a paid site, no update since. **The honest number, unchanged from every prior review: $0
+collected, 0 clients, day 49 of the 90-day window, 41 days left.**
+
+**Effort allocation since 08-17, honestly: roughly 45% building the new DM-queue tooling, 25% strategy
+and the UF Designs and website-wedge work, 20% LinkedIn content (partial), under 10% actually executing
+the cold-email lane.** That under-10% produced zero verified sends. The 08-17 review said outbound grades
+first; outbound did not just underperform this time, it looks like it did not run at all on two of its
+two scheduled fires.
+
+**Is the niche or offer producing replies yet? No, but this review found no new evidence against either.**
+Nothing was fully re-sequenced this period to test against: batch-05 never got its follow-ups, batch-06
+never shipped. There is no fresh signal on message-market fit either way. What broke is execution, not
+positioning: two different scheduled tasks reported success while shipping nothing, in the exact two-week
+window the prior review already named this risk. **Fix the process, not the bet.**
+
+**Decision: KEEP niche, KEEP offer, KEEP price, KEEP positioning.** No batch has been fully re-sequenced
+since the last review to produce disconfirming evidence, and the one green shoot in the business
+(Brownies by T) sits in the already-ring-fenced website-wedge lane, which by design never outranks Lane
+1 or Lane 2. Niche-hopping is still what broke this business before and nothing this week justifies
+repeating it. What changes is priority: **understanding why the scheduled outbound and content tasks
+report success while shipping nothing outranks every other item below.**
+
+1. **[Human — Usama, top priority] Diagnose the silent-fire failures before trusting any scheduled
+   task's `lastRunAt` again.** `cold-email-outreach` (08-17) and `cold-email-outreach-thu` (08-20) both
+   show a run timestamp with no corresponding send-log entry, commit, branch, or PR days after the
+   fact, real evidence of a silent no-op. `weekly-linkedin-zernio-drafts` is a separate, unresolved
+   case: it shows `lastRunAt` 2026-08-24 with a completed research-stage file on disk but nothing
+   past it as of this review, so it may simply still be mid-pipeline rather than failed, check its
+   actual completion before folding it into this diagnosis. CLAUDE.md already notes these routines
+   only fire while this app is open on this machine: check whether the app was closed at each cold-email
+   scheduled time, and whether the "missed-task replay" catch-up is silently swallowing the task body
+   instead of actually re-running it. Until this is understood, a green `lastRunAt` alone proves nothing.
+2. **[Cadence/Growth] Send batch-05 touch 2 and touch 3 today, by hand if the scheduled task fires and
+   produces nothing again.** 9 prospects, all but the dead Adams Custom Cabinetry address. Verify
+   against `batch-05-send-log.md` and a real commit the same day this fires, do not close this item on
+   a `lastRunAt` alone: that gap is exactly what hid the last two weeks' failure.
+3. **[Growth] Source batch-06, 20 on-spec prospects, actually qualified this time.** Two review cycles
+   overdue. Charlotte NC and/or Phoenix/Scottsdale AZ per the existing rotation, full qualify list
+   including the peer disqualifier and the Podium/Birdeye/GHL check, review and rating actually
+   captured (not left "unconfirmed"), target 10+ true named-owner inboxes. Fires as soon as sourced,
+   does not wait for next Monday.
+4. **[Human — Usama] Clear PR #26 (the 08-21 DM queue, 4 qualified agency owners) and work its connect
+   requests.** It has sat unmerged for three days; the one channel that produced real candidates this
+   month is stuck behind a review nobody has done yet. Profile gate is cleared, nothing else blocks
+   sending.
+5. **[Human — Usama] Two five-minute unblocks asked for four to six weeks running: record the
+   90-second Loom, and confirm or fix whether `[GIST LINK]` in the week-of-08-10 post 3 first comment
+   is still literally showing to the public.** Both are cheap and both are still open.
+6. **[Content] Check whether this week's LinkedIn draft run (research brief already on disk,
+   `content/research/week-of-2026-08-24.md`) actually completes to a `week-of-2026-08-24` drafts
+   folder and a PR.** If it stalls after the research stage, finish it by hand from that brief rather
+   than waiting for a retry; the angles are already ranked and sourced. If it never progresses and no
+   one revisits it, this week ships zero LinkedIn content on top of zero cold email.
+
+**Not on this list on purpose:** the UF Designs terms message (directive 11 last week) and community
+answering both carried over from last week without action. They are real and still open, but item 1 is
+a bigger structural risk than either, and an eleven-item list is what produced zero clean passes last
+week. Pick these two back up the moment items 1 through 4 are moving.
+
+**Checked next review (Sunday 2026-08-30):** batch-05 touch 2 and 3 sent, verified by real messageIds
+in the log the same day; batch-06 sourced and touch 1 sent; PR #26 merged or closed and its 4 requests
+worked; Loom recorded; Gist status confirmed either way; a real week-of-2026-08-24 LinkedIn draft set
+exists with a PR; and, the actual test of item 1, whether next week's `cold-email-outreach`,
+`cold-email-outreach-thu`, and `weekly-linkedin-zernio-drafts` runs each leave a verifiable commit or PR
+trail rather than just a clean `lastRunAt`.
