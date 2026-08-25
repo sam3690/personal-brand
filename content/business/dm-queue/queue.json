@@ -1,35 +1,25 @@
 {
-  "date": "2026-08-24",
-  "note": "3 of the 5-ceiling shipped, not padded. Several candidates researched today failed qualification: a PR-agency owner whose second company is a LinkedIn automation platform (peer, not buyer), two agencies with headcount that couldn't be confirmed under the 20 ceiling (Social House Inc. 21-30 confirmed too big, Reputation Ink 11-50 unconfirmed), and one eCommerce/web-dev shop (technical, disqualified). Also worth flagging: PR #26, the 2026-08-21 queue (4 names: Claire Arnaud-Aubour, Jamie Lamonde, Mandy McEwen, Kilee Hughes), is still open and unmerged 3 days later, so none of those four have gone out yet. This batch avoided re-sourcing all four. None of today's three fit the shape A framing (none of them hand a client leads from ads/PR the way the script assumes), so all three use shape B.",
+  "date": "2026-08-25",
+  "note": "2 of the 5-ceiling shipped, not padded. Checked ~14 candidates today across Clutch, DesignRush, The Manifest, and general/podcast web search (PR firms, event/experiential agencies, branding studios, media-buying shops, executive search, boutique consulting). Dropped: two PR firms over the 20-employee ceiling (BLND PR 10-49, VenturePR 10-49), one PR firm with ambiguous multi-city headcount likely over 20 (R Public Relations), one design studio disqualified as a dev shop (CC Creative sells 'software development' and mobile app dev as core services), one media-buying agency far too big (Nunn Media, 112-200 employees), one San Francisco event agency with no disclosed headcount and 'global' branding (DPEM), one event-production founder with only himself named and no confirmed headcount, plus a self-described equipment 'tinkerer' background that risks the build-it-themselves test (Corporate Streams), one Manchester branding outfit that turned out to be a distributed freelance network rather than a fixed team, listing 'technologists' among collaborators (Love&Logic), one Boston strategy consultant at 1 employee (Aryo Consulting Group, fails the no-team freelancer check), and one Australian executive-search founder with only herself listed on the team page (DreamVast, same no-team issue). Also worth flagging: PR #26 (2026-08-21, 4 names) and the 2026-08-24 batch (3 names) were both still sitting unmerged as of this morning; Usama merged PR #26 himself and this session merged the 08-24 DM queue, the CEO review, and the LinkedIn-drafts PR, so all 7 prior names are now live in dm-pipeline.md. Neither of today's two fits the shape A framing (neither runs client lead-gen campaigns the way the script assumes), so both use shape B.",
   "rows": [
     {
-      "name": "Amanda Christoff",
-      "company": "Bloom Talent",
-      "url": "https://www.linkedin.com/in/amandachristoff/",
-      "headcount": 6,
-      "action": "connect",
-      "shape": "B",
-      "evidence": "Woman-owned boutique recruiting agency (SF Bay Area), places Executive Assistants, Chiefs of Staff, Office Managers, People Ops. Team is founder + COO + 2 recruiting/ops staff, no engineer or n8n/Zapier/Make mention anywhere. Not software, not marketing automation. Real clients: Silicon Valley startups, VCs, HNWIs. Active publicly (podcast guest, LinkedIn presence). Eyeball at click time: posted in last 30 days, headcount on the company page.",
-      "messages": []
-    },
-    {
-      "name": "Sue Ebrahim",
-      "company": "Hire Talent",
-      "url": "https://www.linkedin.com/in/sueebrahim/",
-      "headcount": 7,
-      "action": "connect",
-      "shape": "B",
-      "evidence": "Interim and executive recruitment firm, Houston TX, founded 2013. Clutch lists 2-9 employees. No engineer, no automation product, no GoHighLevel relevance (not a marketing agency). Thousands of searches run since founding, real ongoing client base. Eyeball at click time: posted in last 30 days, headcount on the company page.",
-      "messages": []
-    },
-    {
-      "name": "Mary Lou Bunn",
-      "company": "Flower Shop",
-      "url": "https://www.linkedin.com/in/mary-lou-bunn-643192b/",
+      "name": "Susan Major",
+      "company": "Major Executive Search",
+      "url": "https://www.linkedin.com/in/susanmajor/",
       "headcount": 8,
       "action": "connect",
       "shape": "B",
-      "evidence": "Creative ad agency, NYC, founded 2022 by Bunn (CEO) and Al Merry (CCO) after leaving big-agency roles. Adweek Creative 100 2026. Team of 8, produces brand campaigns and films, not software or automation. Revenue up 48% then 32% YoY. Active on LinkedIn, a recent post drew 27 comments. Eyeball at click time: posted in last 30 days, headcount on the company page.",
+      "evidence": "Founder & CEO of Major Executive Search, San Diego-based global retained executive search firm (US offices/alliances in Chicago and New York, international partners in Europe and Asia-Pacific), 20+ years in executive search. LeadIQ lists headcount at 8; the team page also names 4 partners, 1 board advisor, 1 principal and 3 staff plus a handful of international affiliate partners, some of whom may be contractors rather than core W-2 staff, but well under the 20 ceiling either way. The firm places C-suite and board executives for technology companies, but its own product is executive search, not software: no engineer, developer or technical role appears on the team page. Member of AESC and the Partners Search Alliance, both professional recruiting bodies. Note: a different person named 'Susan B. Major' owns a LinkedIn automation SaaS called Salesflow, confirmed as a distinct individual, not this Susan Major, before using this URL. Source: majorexecutivesearch.com/our-team, LeadIQ.",
+      "messages": []
+    },
+    {
+      "name": "Mike Knapp",
+      "company": "Incrementa (un)consulting",
+      "url": "https://www.linkedin.com/in/mikevknapp/",
+      "headcount": 4,
+      "action": "connect",
+      "shape": "B",
+      "evidence": "Founder & CEO of Incrementa (un)consulting, Vancouver BC. Business strategy and execution coaching for mid-market companies ($10M-$100M revenue), blending Scaling Up, EOS and Metronomics frameworks with Lencioni-style team health practices. Headcount reported 2-4 depending on source (ContactOut 4, RocketReach 2); Clutch shows 16 client reviews, so a real ongoing client base, not pre-revenue or course-stage. No engineer, developer or technical co-founder mentioned anywhere on the site. Prior career: co-founded and grew Solly's Bagelry, a Vancouver bakery/wholesale business, into a multi-location operation before starting Incrementa, a non-technical background. Source: incrementa.ca, clutch.co/profile/incrementa-unconsulting-0, rocketreach.co.",
       "messages": []
     }
   ]
