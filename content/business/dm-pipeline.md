@@ -17,6 +17,7 @@ and the account is the asset being protected.
 | Date | Queued | Requests sent | Accepts | First messages | Replies | Booked |
 |---|---|---|---|---|---|---|
 | 2026-08-20 | 0 | | | | | |
+| 2026-08-21 | 4 | | | | | |
 | 2026-08-24 | 3 | | | | | |
 
 ## People
@@ -26,6 +27,10 @@ Never re-source a name that appears here in any state.
 
 | Name | Company | Profile | Stage | Shape | Last touch | Next action | Notes |
 |---|---|---|---|---|---|---|---|
+| Claire Arnaud-Aubour | SpLAshPR Agency | [linkedin.com/in/claire-arnaud-aubour](https://www.linkedin.com/in/claire-arnaud-aubour/) | queued | A | 2026-08-21 | Usama sends blank connect | PR/events agency, Santa Monica, ~6 people |
+| Jamie Lamonde | Kindship Group | [linkedin.com/in/jamie-lamonde](https://www.linkedin.com/in/jamie-lamonde/) | queued | A | 2026-08-21 | Usama sends blank connect | Fractional CMO/brand consultancy, Madison WI, 4 people |
+| Mandy McEwen | Mod Girl Marketing | [linkedin.com/in/mandymcewen](https://www.linkedin.com/in/mandymcewen/) | queued | A | 2026-08-21 | Usama sends blank connect | B2B LinkedIn prospecting consultancy, San Diego, 7 people |
+| Kilee Hughes | Six One Agency | [linkedin.com/in/kileehughes](https://www.linkedin.com/in/kileehughes/) | queued | A | 2026-08-21 | Usama sends blank connect | PR/brand strategy, beauty/wellness, Denver, 7 people |
 | Amanda Christoff | Bloom Talent | [linkedin.com/in/amandachristoff](https://www.linkedin.com/in/amandachristoff/) | queued | B | 2026-08-24 | Usama sends blank connect | Boutique recruiting agency (EAs, Chiefs of Staff, People Ops), SF Bay Area, ~6 people |
 | Sue Ebrahim | Hire Talent | [linkedin.com/in/sueebrahim](https://www.linkedin.com/in/sueebrahim/) | queued | B | 2026-08-24 | Usama sends blank connect | Interim/executive recruitment, Houston TX, 2-9 people (Clutch) |
 | Mary Lou Bunn | Flower Shop | [linkedin.com/in/mary-lou-bunn-643192b](https://www.linkedin.com/in/mary-lou-bunn-643192b/) | queued | B | 2026-08-24 | Usama sends blank connect | Creative ad agency, NYC, team of 8, Adweek Creative 100 2026 |
