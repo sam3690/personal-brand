@@ -35,7 +35,7 @@ Never re-source a name that appears here in any state.
 | Amanda Christoff | Bloom Talent | [linkedin.com/in/amandachristoff](https://www.linkedin.com/in/amandachristoff/) | queued | B | 2026-08-24 | Usama sends blank connect | Boutique recruiting agency (EAs, Chiefs of Staff, People Ops), SF Bay Area, ~6 people |
 | Sue Ebrahim | Hire Talent | [linkedin.com/in/sueebrahim](https://www.linkedin.com/in/sueebrahim/) | queued | B | 2026-08-24 | Usama sends blank connect | Interim/executive recruitment, Houston TX, 2-9 people (Clutch) |
 | Mary Lou Bunn | Flower Shop | [linkedin.com/in/mary-lou-bunn-643192b](https://www.linkedin.com/in/mary-lou-bunn-643192b/) | queued | B | 2026-08-24 | Usama sends blank connect | Creative ad agency, NYC, team of 8, Adweek Creative 100 2026 |
-| Susan Major | Major Executive Search | [linkedin.com/in/susanmajor](https://www.linkedin.com/in/susanmajor/) | queued | B | 2026-08-25 | Usama sends blank connect | Executive search firm, San Diego, ~8 people, places C-suite for tech companies but not itself technical |
+| Susan Major | Major Executive Search | [linkedin.com/in/susanmajor](https://www.linkedin.com/in/susanmajor/) | dead | B | 2026-08-25 | None, blank connect blocked | Executive search firm, San Diego, ~8 people. LinkedIn gated the blank connect: "enter their email to connect." Her invite settings require a known email or a note, which breaks the no-note rule. Not worth guessing an email to force it. Dropped, do not re-source. |
 | Mike Knapp | Incrementa (un)consulting | [linkedin.com/in/mikevknapp](https://www.linkedin.com/in/mikevknapp/) | queued | B | 2026-08-25 | Usama sends blank connect | Business strategy/execution coaching, Vancouver BC, 2-4 people |
 
 ## Read at day 7 of the first 100 requests
