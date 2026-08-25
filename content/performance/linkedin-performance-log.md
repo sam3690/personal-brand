@@ -14,10 +14,64 @@ post, log it under `(no post)` so the outbound lane gets credit separately.
 |---|---|---|---|---|---|---|
 | 2026-08-03 | | | | | | |
 | 2026-08-10 | 4 | | | | | (needs Usama: inbox + calendar) |
+| 2026-08-17 | 3 (of 4 planned; post 3, fragrance-WhatsApp case study, still an unpublished Zernio draft) | | | | | (needs Usama: inbox + calendar) |
 
 **Baseline, stated honestly:** as of 2026-08-03 all four numbers are zero and there is no DM lane
 running (`../knowledge-base/frameworks/lakajev-linkedin-leadgen.md` 7.1). The first non-zero week is
 the first real signal this positioning produces buyers, not reach.
+
+## 2026-08-24 — Week of 2026-08-17 review: pass/fail bar FAILED, replication did not reproduce
+
+Pulled live via `analytics_get_post_timeline` (cumulative through 2026-08-24) and
+`accounts_get_follower_stats`. Only 3 of the 4 planned posts published; post 3 (fragrance-ecommerce
+WhatsApp case study, drafted for the Wed 08-19 slot) is still sitting unpublished in Zernio.
+
+| Post | Format/pillar | Impr | Reach | Likes | Comments | Saves | ER |
+|---|---|---|---|---|---|---|---|
+| 1 GHL missed-call teach (P3) | Teach, Welsh Trailer | 57 | 22 | 1 | 2 | 0 | 5.26% |
+| 2 "Six weeks in" founder story (P4) | Hero, exact 07-28 time/register replication | 84 | 24 | 1 | 0 | 0 | 1.19% |
+| 4 Medical-sales manager case study (P1) | Case study, skeleton A | 23 | 19 | 1 | 0 | 0 | 4.35% |
+
+**Followers: 415 → 446, +31 (+7.47%)** over 08-16 to 08-24. Real growth, but this window also
+includes the DM-queue system going live (08-20/08-21) and cold-email/community activity, so it
+cannot be attributed to these 3 posts alone.
+
+**The pre-committed pass/fail bar (set in current-strategy.md's WEEK OF 08-17 DIRECTIVES) FAILED
+decisively.** Bar: "pass is a 4-post total above 800 or any single post above 500 ... fail is under
+400 total." Actual: **164 total impressions across 3 posts**, no post cleared even 100, let alone
+500. This is worse than the already-low week-of-08-10 baseline (280 total across 4 posts) despite
+one post being a deliberate replication of the account's best-ever result.
+
+**Best: post 1 (GHL teach), 5.26% ER, the only post with any comments (2, both from the same
+commenter across the week — check if that's a real conversation or one person).** Lowest reach of
+the three but the only one that earned a reply.
+
+**Worst, and the most important finding: post 2, the exact-time/exact-register replication of
+2026-07-28, did NOT reproduce anything close to that result.** 84 impressions / 24 reach / 1 like /
+0 comments, against the corrected 07-28 baseline of 6,267 impressions / 4,613 reach / 75 likes / 19
+comments, a **~75x shortfall**. This directly answers the open question flagged in the 2026-08-01
+log entry ("does chapter two of the same story hold the reach, or was 07-28 a one-off novelty
+spike?"). **Answer: one-off.** Same slot, same register, same "unresolved confession + real number"
+structure, zero replication of the reach. Register and timing are not sufficient causes on their own;
+07-28 likely also depended on something not yet identified (algorithmic novelty push, a specific
+network moment, or distribution luck).
+
+**Learnings:**
+1. **Retire "replicate 07-28 exactly" as a strategy.** It was tested cleanly (same hour, same
+   register, same weekday) and failed by 75x. Whatever made 07-28 travel, exact repetition of its
+   surface features is not it. Stop spending hero-post slots trying to re-trigger it mechanically.
+2. **All three posts are reach-capped in-network at a smaller scale than even the account's normal
+   baseline** (23-84 impressions vs. the ~60-200 range most non-viral posts get). Something beyond
+   register may be suppressing reach right now — check posting cadence, whether the account looks
+   inactive to the algorithm between posts, or whether Zernio's publish path itself is scoring worse
+   than native posting.
+3. **Case study (post 4) beat founder story (post 2) on ER despite zero comments on both being close
+   to true** (post 4 got 0 comments too) — proof-driven posts are not underperforming story right now;
+   story specifically underperformed its own history.
+4. **The account has now failed 2 of the last 2 pre-committed weekly pass/fail bars** (this week: 164
+   vs 400 needed; prior weeks also flagged as reach-capped). Reach, not register, looks like the
+   binding constraint again — worth re-testing the 2026-07-19 finding ("reach, not resonance, is the
+   bottleneck") now that the register experiment has run its course.
 
 ## 2026-08-16 — Week of 2026-08-10 review: all 4 shipped, proof beat story
 
