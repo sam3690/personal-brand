@@ -16,10 +16,10 @@ and the account is the asset being protected.
 
 | Date | Queued | Requests sent | Accepts | First messages | Replies | Booked |
 |---|---|---|---|---|---|---|
-| 2026-08-20 | 0 | | | | | |
-| 2026-08-21 | 4 | | | | | |
-| 2026-08-24 | 3 | | | | | |
-| 2026-08-25 | 2 | | | | | |
+| 2026-08-20 | 0 | 0 | | | | |
+| 2026-08-21 | 4 | 0 | | | | |
+| 2026-08-24 | 3 | 0 | | | | |
+| 2026-08-25 | 2 | 8 | | | | |
 
 ## People
 
