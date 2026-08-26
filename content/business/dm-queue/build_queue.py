@@ -9,6 +9,7 @@ Usage: python3 build_queue.py [queue.json] [queue.html]
 import html
 import json
 import sys
+import urllib.parse
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -68,6 +69,9 @@ border-radius:6px;padding:10px;font:12px/1.5 ui-monospace,monospace;resize:verti
 <li><label><input type="checkbox" data-k="s1"><span>Leave 3 substantive comments on target posts. Not "great post".</span></label></li>
 <li><label><input type="checkbox" data-k="s2"><span>Reply to every accept and every reply from yesterday.</span></label></li>
 </ul>
+
+<h2>Posts to work <span style="text-transform:none;letter-spacing:0;font-weight:400">&mdash; opens LinkedIn search, latest first</span></h2>
+<ul class="simple" id="searches">{{SEARCHES}}</ul>
 
 <h2>People</h2>
 <ul id="rows">{{ROWS}}</ul>
@@ -129,6 +133,30 @@ VERIFY = ("Verify on the profile before sending: posted in the last 30 days &mid
           "headcount on the company page &middot; no engineer or n8n/Zapier mention")
 
 
+SEARCH_BASE = "https://www.linkedin.com/search/results/content/"
+
+
+def search_html(i, s):
+    """One-click LinkedIn content search, filtered to the past week, latest first.
+
+    ponytail: params are built here, not stored, so the scout only writes the phrase.
+    If LinkedIn ever renames a param, set the filters once in the UI and copy the
+    address bar into `url` on the row instead.
+    """
+    e = html.escape
+    url = s.get("url") or SEARCH_BASE + "?" + urllib.parse.urlencode({
+        "keywords": s.get("query", ""),
+        "datePosted": '"past-week"',
+        "sortBy": '"date_posted"',
+    })
+    why = f' <span class="co">{e(s["why"])}</span>' if s.get("why") else ""
+    return (
+        f'<li><label><input type="checkbox" data-k="q{i}">'
+        f'<span><a href="{e(url)}" target="_blank" rel="noopener">{e(s.get("query", "search"))}</a>'
+        f"{why}</span></label></li>"
+    )
+
+
 def row_html(i, r):
     e = html.escape
     name, co = r.get("name", "?"), r.get("company", "")
@@ -156,13 +184,15 @@ def main():
     data = json.loads(src.read_text())
     rows = data.get("rows", [])
     note = f'<div class="note">{html.escape(data["note"])}</div>' if data.get("note") else ""
+    searches = data.get("searches", [])
     out = (TEMPLATE
            .replace("{{ROWS}}", "".join(row_html(i, r) for i, r in enumerate(rows)))
+           .replace("{{SEARCHES}}", "".join(search_html(i, s) for i, s in enumerate(searches)))
            .replace("{{TOTAL}}", str(len(rows)))
            .replace("{{NOTE}}", note)
            .replace("{{DATE}}", html.escape(data.get("date", ""))))
     dst.write_text(out)
-    print(f"{dst}: {len(rows)} rows")
+    print(f"{dst}: {len(rows)} rows, {len(searches)} searches")
 
 
 if __name__ == "__main__":

@@ -70,6 +70,40 @@ Copy the register from spec §6 exactly. The rules that are not negotiable:
 - Pick shape A (their client's inbox) **or** shape B (their own inbox). Never both in one thread.
   Lead with shape A.
 
+## The "Posts to work" block (5 searches a day, rotating)
+
+Usama cannot be handed prospects' posts, because you never touch LinkedIn. What you CAN hand him is
+five one-click searches that land him on the right posts. He comments, harvests the commenters, and
+follows the good posters.
+
+Put five entries in `searches` in queue.json. `build_queue.py` turns each into a LinkedIn content
+search URL filtered to the past week, sorted latest first. You write only the phrase.
+
+```json
+"searches": [
+  {"query": "\"the leads are garbage\"", "why": "shape A, they used the words themselves"}
+]
+```
+
+**Rotate through the bank so the same five never run two days running.** Three shape A, two shape B.
+
+| Shape A: their client's inbox | Shape B: their own inbox |
+|---|---|
+| `"the leads are garbage"` | `"went to voicemail"` |
+| `"lead quality"` | `"they went with someone else"` |
+| `"client churned"` | `"missed the call"` |
+| `"blamed us"` | `"already booked someone"` |
+| `"we got fired"` | `"didn't get back to them"` |
+| `"they never called them back"` | `"lost the job"` |
+| `"leads aren't converting"` | `"came in over the weekend"` |
+| `"at capacity"` | `"still hasn't replied"` |
+
+**Search the words an owner would type, never a vendor's.** "Speed to lead" returns competitors.
+"The leads are garbage" returns the buyer. This is the same rule that governs the message copy.
+
+You may also add a `url` field on a search row to override the generated URL, for a saved search or
+a specific person's activity feed. Only do that when you have a real URL, never a guessed one.
+
 ## Output format
 
 Write `content/business/dm-queue/queue.json`:
@@ -95,6 +129,8 @@ Write `content/business/dm-queue/queue.json`:
 
 `action` is one of `connect`, `message`, `follow-up`, `comment`. `messages` is a list, one string
 per consecutive message, empty for a blank connect.
+
+`searches` sits alongside `rows` at the top level, five entries, as specified above.
 
 Then run: `python3 content/business/dm-queue/build_queue.py`
 

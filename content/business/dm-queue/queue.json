@@ -22,5 +22,27 @@
       "evidence": "Founder & CEO of Incrementa (un)consulting, Vancouver BC. Business strategy and execution coaching for mid-market companies ($10M-$100M revenue), blending Scaling Up, EOS and Metronomics frameworks with Lencioni-style team health practices. Headcount reported 2-4 depending on source (ContactOut 4, RocketReach 2); Clutch shows 16 client reviews, so a real ongoing client base, not pre-revenue or course-stage. No engineer, developer or technical co-founder mentioned anywhere on the site. Prior career: co-founded and grew Solly's Bagelry, a Vancouver bakery/wholesale business, into a multi-location operation before starting Incrementa, a non-technical background. Source: incrementa.ca, clutch.co/profile/incrementa-unconsulting-0, rocketreach.co.",
       "messages": []
     }
+  ],
+  "searches": [
+    {
+      "query": "\"the leads are garbage\"",
+      "why": "shape A, they used the words themselves"
+    },
+    {
+      "query": "\"lead quality\"",
+      "why": "shape A, high volume, skim for owners not vendors"
+    },
+    {
+      "query": "\"client churned\"",
+      "why": "shape A, work the commenters not the poster"
+    },
+    {
+      "query": "\"went to voicemail\"",
+      "why": "shape B, their own missed inquiry"
+    },
+    {
+      "query": "\"they went with someone else\"",
+      "why": "shape B, the loss they can name"
+    }
   ]
 }

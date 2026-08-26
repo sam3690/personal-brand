@@ -202,10 +202,11 @@ NEVER touch LinkedIn programmatically. No scraping, no automated search, no auto
 1. The profile gate is CLEARED (rewrite live since 2026-08-10). Do not re-raise it. Build the queue normally.
 2. Source and qualify up to FIVE new agency owners from the PUBLIC WEB ONLY (Clutch.co, DesignRush, Agency Spotter, The Manifest, Google Maps via Apify, job boards, podcast guest lists, X bios). Find each owner's LinkedIn profile URL by web search on "<name> <company> linkedin". If no profile is found in two tries, drop the name. Do not guess a URL.
    FIVE IS A CEILING, NOT A TARGET. If fewer than 5 survive qualification, ship fewer. Never pad the queue. Sending more than 20-25 requests a week is how accounts get restricted.
-3. Add a `message` row for every person in dm-pipeline.md at stage `accepted` who has not been messaged, using the right script from targeting-spec section 6. Add a `follow-up` row for stale threads.
-4. Write content/business/dm-queue/queue.json in the schema documented in the agent spec.
-5. Run: python3 content/business/dm-queue/build_queue.py
-6. Append the new names to the People table in content/business/dm-pipeline.md at stage `queued`, and add today's row to the Daily log table.
+3. Write FIVE entries into the `searches` array of queue.json: three shape A, two shape B, rotated from the phrase bank in the agent spec so the same five never run two days running. You write only the phrase; build_queue.py builds the LinkedIn search URL. Search the words an OWNER would type, never a vendor's.
+4. Add a `message` row for every person in dm-pipeline.md at stage `accepted` who has not been messaged, using the right script from targeting-spec section 6. Add a `follow-up` row for stale threads.
+5. Write content/business/dm-queue/queue.json in the schema documented in the agent spec.
+6. Run: python3 content/business/dm-queue/build_queue.py
+7. Append the new names to the People table in content/business/dm-pipeline.md at stage `queued`, and add today's row to the Daily log table.
 
 ## Message rules, not negotiable
 - Connect requests are BLANK, no note.
